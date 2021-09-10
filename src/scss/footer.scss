@@ -1,0 +1,174 @@
+.footer {
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+
+  background-color: #202020;
+  color: white;
+  font-size: 1.4rem;
+
+  @include breakpoint(tablet) {
+    padding-top: 4rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-auto-rows: auto;
+    column-gap: 5.6rem;
+    row-gap: 7rem;
+
+    grid-template-areas: 'logo  contacts menu  copyright'
+                         'links links    links made-by';
+
+    @include breakpoint(tablet) {
+      column-gap: 3rem;
+      row-gap: 4rem;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      grid-template-areas: 'logo      empty1'
+                           'contacts  menu'
+                           'copyright empty2'
+                           'links     empty2'
+                           'made-by   empty2';
+    }
+    @include breakpoint(small-tablet) {
+      row-gap: 4rem;
+
+      grid-template-columns: 1fr;
+
+      grid-template-areas: 'logo'
+                           'menu'
+                           'contacts'
+                           'copyright'
+                           'links'
+                           'made-by';
+    }
+    @include breakpoint(mobile) {
+      text-align: center;
+    }
+  }
+
+  &__logo-link {
+    grid-area: logo;
+    align-self: flex-start;
+    justify-self: flex-start;
+
+    display: inline-block;
+
+    @include defaultHoverEffect(0.8);
+
+    @include breakpoint(mobile) {
+      justify-self: center;
+    }
+  }
+
+  &__logo {
+  }
+
+  &__contacts {
+    grid-area: contacts;
+  }
+
+  &__address {
+    margin-bottom: 2rem;
+
+    font-style: normal;
+    line-height: 1.5;
+  }
+  &__telephone {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    font-weight: 700;
+  }
+  &__working-time {
+    display: block;
+
+    margin-bottom: 3rem;
+
+    font-style: 1.1rem;
+    font-weight: 600;
+    color: var(--back-color);
+  }
+  &__email {
+    display: block;
+
+    font-weight: 700;
+
+    color: var(--accent-color) !important;
+  }
+
+  &__menu {
+    grid-area: menu;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 7.2rem;
+    row-gap: 3rem;
+
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+  &__list-item {
+  }
+  &__menu-link {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+
+    color: var(--back-color);
+    font-size: 1.2rem;
+  }
+
+  &__links {
+    grid-area: links;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    align-self: flex-start;
+
+    @include flexRowGap(0.8rem);
+
+    @include breakpoint(mobile) {
+      align-self: center;
+    }
+  }
+
+  &__made-by {
+    grid-area: made-by;
+
+    display: flex;
+    align-items: center;
+
+    @include defaultHoverEffect(0.8);
+
+    @include breakpoint(mobile) {
+      justify-content: center;
+    }
+  }
+
+  &__made-by-label {
+    position: relative;
+    top: -0.4rem;
+    margin-right: 1.7rem;
+
+    color: var(--back-color);
+    font-size: 1.2rem;
+  }
+
+  &__made-by-icon {
+    width: 8.5rem;
+    height: 2.1rem;
+  }
+}

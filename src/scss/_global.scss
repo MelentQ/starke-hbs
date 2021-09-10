@@ -22,6 +22,8 @@ h1, h2, h3, h4, h5, h6 {
   --accent-color: #FF2204;
   --content-color: black;
 
+  --back-color: #828282;
+
   --link-hover-color: rgba(#FF2204, 0.8);
 
   @include breakpoint(tablet) {

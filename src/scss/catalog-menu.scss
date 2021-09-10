@@ -1,5 +1,7 @@
 .catalog-menu {
-  $block-name:                &; // #{$block-name}__element
+  @include breakpoint (tablet) {
+    display: none;
+  }
 
   &__btn {
     display: flex;

@@ -25,12 +25,7 @@
     display: inline-block;
 
     color: inherit;
-    transition: opacity 0.3s ease;
-
-    &:hover,
-    &:focus {
-      opacity: 0.8;
-    }
+    @include defaultHoverEffect(0.8);
   }
 
   &__logo {
@@ -42,7 +37,11 @@
     object-fit: contain;
   }
 
-  &__menu {}
+  &__menu {
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
 
   &__list {
     display: flex;
@@ -69,6 +68,10 @@
 
     letter-spacing: 2%;
     font-weight: 700;
+
+    @include breakpoint (tablet) {
+      display: none;
+    }
   }
 
   &__write-to-us {
@@ -87,5 +90,70 @@
     &:focus {
       border-bottom-color: rgba(#FF2204, 1);
     }
+
+    @include breakpoint (tablet) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    align-items: center;
+
+    margin-right: 1rem;
+
+    &:hover,
+    &:focus {
+      .header__burger-label {
+        color: var(--accent-color);
+      }
+    }
+
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+  }
+  &__burger-icon {
+    margin-right: 0.8rem;
+    width: 1.8rem;
+    height: 0.4rem;
+
+    fill: none;
+    stroke: var(--accent-color);
+  }
+  &__burger-label {
+    transition: color 0.3s ease;
+  }
+
+  &__telephone-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 3.6rem;
+    height: 3.6rem;
+
+    border-radius: 50%;
+    border: 1px solid #FFC800;
+
+    &:hover,
+    &:focus {
+      .header__telephone-mobile-icon {
+        fill: var(--accent-color);
+      }
+    }
+
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+  }
+
+  &__telephone-mobile-icon {
+    width: 1.9rem;
+    height: 1.8rem;
+
+    fill: var(--text-color);
+
+    transition: fill 0.3s ease;
   }
 }
