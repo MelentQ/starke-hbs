@@ -1,5 +1,39 @@
-<header class="page-header">
+<header class="page-header header">
     <div class="container">
-        <h2>Header</h2>
+        <div class="header__inner">
+            <div class="header__navigation">
+                <a class="header__logo-link" href="#" title="На главную">
+                    <img class="header__logo" src="img/logo-dark.png" alt="Лого">
+                </a>
+
+                {{> catalog-menu}}
+
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="header__menu-link" href="#">Галерея</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu-link" href="#">Калькулятор</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu-link" href="#">Библиотека</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu-link" href="#">О нас</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__contacts">
+                <a class="header__telephone" href="tel:+79865647678" title="Позвонить">+7 986 564 76 78</a>
+
+                <a class="header__write-to-us" href="#">Написать нам</a>
+            </div>
+        </div>
     </div>
 </header>

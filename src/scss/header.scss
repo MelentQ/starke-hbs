@@ -1,0 +1,91 @@
+.header {
+  padding-top: 2.3rem;
+  padding-bottom: 2.3rem;
+
+  color: var(--text-color);
+
+  background-image: url(../img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+
+    margin-right: 2rem;
+  }
+
+  &__logo-link {
+    display: inline-block;
+
+    color: inherit;
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__logo {
+    display: block;
+
+    width: 9.2rem;
+    height: 3.8rem;
+
+    object-fit: contain;
+  }
+
+  &__menu {}
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    margin-right: 2.4rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__menu-link {
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  &__telephone {
+    margin-right: 4rem;
+
+    letter-spacing: 2%;
+    font-weight: 700;
+  }
+
+  &__write-to-us {
+    flex-shrink: 0;
+
+    display: block;
+
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgba(#FF2204, 0.8);
+
+    color: var(--accent-color) !important;
+
+    transition: border-bottom-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: rgba(#FF2204, 1);
+    }
+  }
+}
