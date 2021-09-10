@@ -1,0 +1,44 @@
+.form {
+
+  &__inputs {
+  }
+
+  &__input {
+    padding: 1rem 2rem;
+
+    color: var(--text-color);
+    font-size: 1.4rem;
+
+    &::placeholder {
+      color: #7B7B7B;
+    }
+  }
+
+  &__submit {
+    padding: 1rem 2rem;
+
+    background-color: black;
+    color: white;
+  }
+
+  &__policy {
+    display: block;
+
+    font-size: 1rem;
+    color: var(--back-color);
+    text-align: center;
+  }
+
+  &__policy-link {
+    display: inline;
+
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--back-color);
+    transition: color 0.3s, border-bottom-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: #FF2204;
+    }
+  }
+}

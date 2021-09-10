@@ -1,0 +1,42 @@
+.breadcrumbs {
+
+  padding: 1rem 0;
+
+  &__list {
+    display: flex;
+
+    color: var(--back-color);
+  }
+
+  &__list-item {
+    position: relative;
+
+    margin-right: 2.2rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -1.4rem;
+      transform: translateY(-50%);
+
+      width: 0.6rem;
+      height: 0.6rem;
+
+      border-radius: 50%;
+
+      background-color: var(--back-color);
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+  }
+}

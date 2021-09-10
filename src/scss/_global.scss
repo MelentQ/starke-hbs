@@ -14,6 +14,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
 :root {
   --max-container-width: 168rem;
   --content-padding: 4rem;
@@ -24,10 +34,17 @@ h1, h2, h3, h4, h5, h6 {
 
   --back-color: #828282;
 
-  --link-hover-color: rgba(#FF2204, 0.8);
+  --fs-h1: 5.6rem;
+  --fs-h2: 3.2rem;
+  --fs-h3: 2rem;
 
   @include breakpoint(tablet) {
     --content-padding: 3rem;
+  }
+  @include breakpoint(small-tablet) {
+    --fs-h1: 3.6rem;
+    --fs-h2: 2.4rem;
+    --fs-h3: 1.6rem;
   }
   @include breakpoint(mobile) {
     --content-padding: 2rem;
@@ -88,6 +105,10 @@ textarea {
   width: 100%;
   background-color: transparent;
   display: block;
+}
+
+fieldset {
+  border: none;
 }
 
 input:not([type='checkbox']):not([type='radio']) {
@@ -160,7 +181,7 @@ a {
 
   &:hover,
   &:focus {
-    color: rgba(#FF2204, 0.8);
+    color: #FF2204;
   }
 }
 

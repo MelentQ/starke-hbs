@@ -80,7 +80,7 @@
     display: block;
 
     padding-bottom: 0.2rem;
-    border-bottom: 1px solid rgba(#FF2204, 0.8);
+    border-bottom: 1px solid #FF2204;
 
     color: var(--accent-color) !important;
 
@@ -88,7 +88,7 @@
 
     &:hover,
     &:focus {
-      border-bottom-color: rgba(#FF2204, 1);
+      border-bottom-color: #FF2204;
     }
 
     @include breakpoint (tablet) {

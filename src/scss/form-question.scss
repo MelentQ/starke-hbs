@@ -1,0 +1,87 @@
+.form-question {
+  --inputs-height: 6.8rem;
+
+  padding-top: 10rem;
+  padding-bottom: 4.6rem;
+
+  background-color: #F5F5F5;
+
+  @include breakpoint(tablet) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+
+    font-weight: 600;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: flex-start;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    column-gap: 0.1rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+      row-gap: 0.1rem;
+    }
+  }
+
+  &__input {
+    height: var(--inputs-height);
+
+    background-color: white;
+  }
+
+  &__submit-block {
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--inputs-height);
+    width: 100%;
+    margin-bottom: 1.6rem;
+
+    transition: color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__submit-label {
+    margin-right: 1.4rem;
+
+    font-weight: 600;
+  }
+
+  &__submit-icon {
+    width: 0.9rem;
+    height: 1.6rem;
+
+    fill: var(--accent-color);
+  }
+}

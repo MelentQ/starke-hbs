@@ -1,0 +1,29 @@
+<section class="form form-question">
+  <div class="container">
+    <div class="form-question__inner">
+      <h2 class="form-question__title">У Вас остались вопросы?</h2>
+      <form class="form form-question__form" method="POST" name="question" data-need-validation>
+        <fieldset class="form__inputs form-question__inputs">
+          <label for="name">
+            <input class="form__input form-question__input" placeholder="Как к Вам обращаться?" type="text" name="name" id="name" required>
+          </label>
+          <label for="phone">
+            <input class="form__input form-question__input js-phone-input" placeholder="Укажите номер телефона" type="tel" name="phone" id="phone" required data-parsley-phone>
+          </label>
+          <label for="email">
+            <input class="form__input form-question__input" placeholder="E-mail" type="email" name="email" id="email" required>
+          </label>
+        </fieldset>
+        <div class="form-question__submit-block">
+          <button class="form__submit form-question__submit" type="submit">
+            <span class="form-question__submit-label">Отправить</span>
+            <svg class="form-question__submit-icon">
+              <use xlink:href="#right-arrow">
+            </svg>
+          </button>
+          <span class="form__policy">Нажимая кнопку отправить Вы соглашаетсь с <a href="#" class="form__policy-link">Политикой обработки персональных данных</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

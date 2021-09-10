@@ -1,23 +1,48 @@
 .container {
-    width: 100%;
-    max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
-    margin: 0 auto;
-    padding: 0 var(--content-padding);
-    @supports (width: max(20vw, 100px)) {
-        padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
-        padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
-    }
+  width: 100%;
+  max-width: calc(var(--max-container-width) + 2 * var(--content-padding));
+  margin: 0 auto;
+  padding: 0 var(--content-padding);
+  @supports (width: max(20vw, 100px)) {
+    padding-left: max(env(safe-area-inset-left, 1.4rem), var(--content-padding));
+    padding-right: max(env(safe-area-inset-right, 1.4rem), var(--content-padding));
+  }
 }
 
 .page-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .page-main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main-title {
+  position: relative;
+
+  padding-bottom: 4.3rem;
+  margin-bottom: 6.4rem;
+  margin-top: 4.3rem;
+
+  font-size: var(--fs-h1);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 0.2rem;
+
+    border-radius: 999rem;
+
+    background-color: #E2E2E2;
+  }
 }
