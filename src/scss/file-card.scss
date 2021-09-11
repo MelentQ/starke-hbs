@@ -1,0 +1,66 @@
+.file-card {
+  position: relative;
+
+  display: block;
+
+  padding: 4.8rem 8.4rem 8.4rem 3.2rem;
+  height: 100%;
+
+  background-color: #F6F6F6;
+
+  @include breakpoint(small-tablet) {
+    padding: 2.4rem 6.4rem 6.4rem 2.4rem;
+  }
+
+  &__label {
+    display: inline-block;
+
+    padding: 0.8rem 1.1rem;
+    margin-bottom: 2.4rem;
+
+    background-color: black;
+    color: white;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    border-radius: 0 1.6rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: var(--fs-h3);
+    line-height: 1.1;
+  }
+
+  &__icon-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8rem;
+    height: 8rem;
+
+    background-color: white;
+
+    @include breakpoint(small-tablet) {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    @include breakpoint(small-tablet) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}

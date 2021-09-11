@@ -1,0 +1,28 @@
+<section class="file-cards">
+  <div class="container">
+    <div class="file-cards__inner">
+      <h2 class="file-cards__title">
+        <svg class="file-cards__title-icon">
+          <use xlink:href="#slash">
+        </svg>
+        <span class="file-cards__title-text">Инструкции</span>
+      </h2>
+
+      <ul class="file-cards__list">
+        {{#each file-cards}}
+          <li class="file-cards__list-item">
+            <a class="file-card" href="#" title="Скачать" target="_blank">
+              <span class="file-card__label">Инструкция</span>
+              <h3 class="file-card__name">{{this}}</h3>
+              <div class="file-card__icon-container">
+                <svg class="file-card__icon">
+                  <use xlink:href="#download">
+                </svg>
+              </div>
+            </a>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

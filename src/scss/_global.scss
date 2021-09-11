@@ -48,6 +48,10 @@ h3 {
   }
   @include breakpoint(mobile) {
     --content-padding: 2rem;
+
+    --fs-h1: 2.4rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.4rem;
   }
 }
 
