@@ -19,10 +19,26 @@
 
     <div class="page-content">
         {{> header }}
-        <main class="page-main">
-            {{#block "main"}}
 
-            {{/block}}
+        <main class="page-main">
+            {{!-- Подключение хлебных крошек --}}
+            {{#if hasBreadcrumbs}}
+                {{> breadcrumbs}}
+            {{/if}}
+
+            {{!-- Если есть h1 в начале страницы --}}
+            {{#if hasTitle}}
+                <div class="container">
+                    <h1 class="page__main-title">{{title}}</h1>
+                </div>
+            {{/if}}
+            
+            {{#block "main"}}{{/block}}
+
+            {{!-- Подключение формы --}}
+            {{#if hasForm}}
+                {{> form-question }}
+            {{/if}}
         </main>
         {{> footer }}
         {{> ie-placeholder }}

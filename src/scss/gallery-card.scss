@@ -1,0 +1,50 @@
+.gallery-card {
+
+  &:hover,
+  &:focus {
+    .gallery-card__name {
+      color: var(--accent-color);
+    }
+  }
+
+  &__image-wrapper {
+    height: 42rem;
+    margin-bottom: 2.4rem;
+
+    overflow: hidden;
+
+    @include breakpoint(mobile) {
+      height: 32rem;
+    }
+    @include breakpoint(supersmall-mobile) {
+      height: 24rem;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__place {
+    display: block;
+
+    margin-bottom: 1.2rem;
+
+    font-size: 1.4rem;
+    color: #7B7B7B;
+    transition: color 0.3s ease;
+
+    @include breakpoint(mobile) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__name {
+    font-size: var(--fs-h3);
+    font-weight: 600;
+    color: #171723;
+    transition: color 0.3s ease;
+  }
+}

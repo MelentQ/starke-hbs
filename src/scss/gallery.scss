@@ -1,0 +1,43 @@
+.gallery {
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  @include breakpoint(tablet) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @include breakpoint(mobile) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__inner {
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5.5rem;
+    row-gap: 6.8rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem;
+      row-gap: 3rem;
+    }
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
+
+  &__list-item {
+    &--big {
+      grid-column: span 2;
+      @include breakpoint(tablet) {
+        grid-column: span 1;
+      }
+    }
+  }
+}

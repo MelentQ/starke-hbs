@@ -1,0 +1,59 @@
+{
+  "title": "Галерея объектов",
+  "hasBreadcrumbs": "true",
+  "hasTitle": "true",
+  "cards": [
+    {
+      "image": "gallery-small-1.jpg",
+      "webp": "gallery-small-1.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "image": "gallery-small-2.jpg",
+      "webp": "gallery-small-2.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "big": "true",
+      "image": "gallery-big-1.jpg",
+      "webp": "gallery-big-1.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "big": "true",
+      "image": "gallery-big-1.jpg",
+      "webp": "gallery-big-1.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "image": "gallery-small-1.jpg",
+      "webp": "gallery-small-1.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "image": "gallery-small-3.jpg",
+      "webp": "gallery-small-3.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "big": "true",
+      "image": "gallery-big-1.jpg",
+      "webp": "gallery-big-1.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    },
+    {
+      "big": "true",
+      "image": "gallery-big-2.jpg",
+      "webp": "gallery-big-2.webp",
+      "place": "г.Киров",
+      "name": "Виниловый сайдинг Starke, “фисташка”"
+    }
+  ]
+}
