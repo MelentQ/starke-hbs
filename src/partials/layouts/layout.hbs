@@ -7,6 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/styles.min.css" />
+    {{!-- Подключение Яндекс.Карт --}}
+    {{#if hasMap}}
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=4af5bbbe-a25a-4591-8bd3-670c28bb10a6&lang=ru_RU" type="text/javascript"></script>
+    {{/if}}
     <title>
         {{ title }}
     </title>

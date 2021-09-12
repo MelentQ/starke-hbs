@@ -12,6 +12,8 @@ import datepicker from './datepicker';
 import accordions from './accordions';
 import modals from './modals';
 
+import initMap from './yandexMaps';
+
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
     detectTouch();
@@ -25,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     mediaPlayer();
     modals();
     datepicker();
+    
+    initMap();
 });
 
 window.addEventListener('load', function() {
