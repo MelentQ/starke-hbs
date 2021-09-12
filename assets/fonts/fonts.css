@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'RFDewiExtended';
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Regular.eot');
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Regular.woff2') format('woff2'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Regular.woff') format('woff'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RFDewiExtended';
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Semibold.eot');
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Semibold.woff2') format('woff2'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Semibold.woff') format('woff'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RFDewiExtended';
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Bold.eot');
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Bold.woff2') format('woff2'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Bold.woff') format('woff'),
+      url('./RF-Dewi-Extended/RFDewiExtended-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
