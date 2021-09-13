@@ -19,17 +19,28 @@ function init(){
    * @param {Array} coords - Координаты в виде массива [55.76, 37.56]
    * @param {Object} properties - Параметры: имя, описание и т.д.
    */
-  function addPlace(coords, {name, description}) {
+  function addPlace(coords, {name, address, tel, telFormatted, workingTime}) {
     const balloonContentLayoutClass = ymaps.templateLayoutFactory.createClass(`
-      <div class="my-layout">
-        <h3>{{properties.name}}</h3>
-        <p>{{properties.description}}</p>
+      <div class="map-balloon">
+        <img class="map-balloon__logo" src="img/logo-dark.png" alt="Лого">
+        <h3 class="map-balloon__name">{{properties.name}}</h3>
+        <span class="map-balloon__address">{{properties.address}}</span>
+        <a class="map-balloon__tel" href="tel:{{properties.tel}}" title="Позвонить">
+          <svg class="map-balloon__tel-icon">
+            <use xlink:href="#phone-filled">
+          </svg>
+          <span class="map-balloon__tel-label">{{properties.telFormatted}}</span>
+        </a>
+        <span class="map-balloon__working-time">{{properties.workingTime}}</span>
       </div>
     `);
 
     const placemarkProperties = {
-      name: name,
-      description: description
+      name,
+      address,
+      tel,
+      telFormatted,
+      workingTime
     }
 
     const placemarkOptions = {

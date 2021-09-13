@@ -3,15 +3,21 @@ const places = [
   {
     coords: [55.76, 37.56],
     properties: {
-      name: 'Москва',
-      description: 'Столица. Много людей.'
+      name: 'Строймаркет',
+      address: 'ул. Липовская, 16, павильон Д2',
+      tel: '+78005000600',
+      telFormatted: '8 800 5000 600',
+      workingTime: 'Пн-Пт, с 10:00 до 22:00'
     }
   },
   {
     coords: [55.26, 37.46],
     properties: {
-      name: 'Рядом с Москвой',
-      description: 'Пример'
+      name: 'Кровля и фасады',
+      address: 'ул. Липовская, 16, павильон Д2',
+      tel: '+78005000600',
+      telFormatted: '8 800 5000 600',
+      workingTime: 'Пн-Пт, с 10:00 до 22:00'
     }
   }
 ]

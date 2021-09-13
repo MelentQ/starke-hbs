@@ -1,0 +1,56 @@
+.map-balloon {
+  max-width: 28rem;
+  padding: 1rem 0 1rem 1.8rem;
+
+  font-family: 'RFDewiExtended', sans-serif;
+  line-height: 1.1;
+
+  &__logo {
+    width: 8.6rem;
+    height: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__name {
+    margin-bottom: 2.4rem;
+
+    font-weight: 600;
+    font-size: var(--fs-h3)
+  }
+
+  &__address {
+    display: block;
+
+    margin-bottom: 2.4rem;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+  }
+
+  &__tel-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.8rem;
+
+    fill: var(--accent-color);
+  }
+
+  &__tel-label {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__working-time {
+    display: block;
+
+    font-size: 1.5rem;
+    color: #767676;
+  }
+}

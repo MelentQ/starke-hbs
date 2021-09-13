@@ -1,7 +1,7 @@
-<section class="form form-question">
+<section class="form form-question {{#if lightTheme}}form-question--light{{/if}}">
   <div class="container">
     <div class="form-question__inner">
-      <h2 class="form-question__title">У Вас остались вопросы?</h2>
+      <h2 class="form-question__title">{{text}}</h2>
       <form class="form form-question__form" method="POST" name="question" data-need-validation>
         <fieldset class="form__inputs form-question__inputs">
           <label for="name">

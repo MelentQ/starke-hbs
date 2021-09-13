@@ -11,6 +11,14 @@
     padding-bottom: 4rem;
   }
 
+  &--light {
+    background-color: white;
+
+    .form-question__input {
+      background-color: #F5F5F5;
+    }
+  }
+
   &__inner {
   }
 
@@ -50,6 +58,10 @@
     height: var(--inputs-height);
 
     background-color: white;
+
+    &--light {
+      background-color: #F5F5F5;
+    }
   }
 
   &__submit-block {
