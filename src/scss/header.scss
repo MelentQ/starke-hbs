@@ -80,7 +80,7 @@
     display: block;
 
     padding-bottom: 0.2rem;
-    border-bottom: 1px solid #FF2204;
+    border-bottom: 0.1rem solid #FF2204;
 
     color: var(--accent-color) !important;
 
@@ -134,7 +134,7 @@
     height: 3.6rem;
 
     border-radius: 50%;
-    border: 1px solid #FFC800;
+    border: 0.1rem solid #FFC800;
 
     &:hover,
     &:focus {

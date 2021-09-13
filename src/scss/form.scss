@@ -33,7 +33,7 @@
     display: inline;
 
     padding-bottom: 0.2rem;
-    border-bottom: 1px solid var(--back-color);
+    border-bottom: 0.1rem solid var(--back-color);
     transition: color 0.3s, border-bottom-color 0.3s ease;
 
     &:hover,

@@ -1,12 +1,12 @@
 export default function initMap() {
-  const host = document.querySelector('.contacts');
-  if (!host || !ymaps) return;
+  const container = document.querySelector('.contacts');
+  if (!container || !ymaps) return;
 
   ymaps.ready(init);
 }
 
 function init(){
-  const map = new ymaps.Map("map", {
+  const map = new ymaps.Map("distributorsMap", {
     center: [55.76, 37.64],
     zoom: 7,
     controls: ['zoomControl']

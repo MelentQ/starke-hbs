@@ -2,6 +2,7 @@
   "title": "Галерея объектов",
   "hasBreadcrumbs": "true",
   "hasTitle": "true",
+  "filterLinks": ["ВСЕ", "ВИНИЛОВЫЙ САЙДИНГ", "ВОДОСТОК", "ФАСАДНЫЕ ПАНЕЛИ", "ВЕНТИЛЯЦИЯ", "СНЕГОЗАДЕРЖАТЕЛИ"],
   "cards": [
     {
       "image": "gallery-small-1.jpg",

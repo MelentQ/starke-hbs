@@ -45,4 +45,15 @@
 
     background-color: #E2E2E2;
   }
+
+  @include breakpoint(tablet) {
+    padding-bottom: 3rem;
+    margin-bottom: 0.4rem;
+    margin-top: 3rem;
+  }
+  @include breakpoint(mobile) {
+    padding-bottom: 2rem;
+    margin-bottom: 0.4rem;
+    margin-top: 2rem;
+  }
 }

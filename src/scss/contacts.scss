@@ -1,0 +1,17 @@
+.contacts {
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 45.2rem auto;
+    column-gap: 0.4rem;
+
+    margin-bottom: 0.8rem;
+  }
+
+  &__accordion {
+  }
+
+  &__distributors-map {
+    height: 76.8rem;
+  }
+}

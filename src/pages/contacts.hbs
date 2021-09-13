@@ -1,9 +1,48 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
+<div class="container">
+  {{> form-filter }}
+</div>
+
 <section class="contacts">
   <div class="container">
-    <div id="map" style="height: 500px;"></div>
+    <div class="contacts__inner">
+      <div class="contacts__accordion">
+        {{#each distributors}}
+        <div class="distributors">
+          <div class="distributors__header">
+            <div class="distributors__header-inner">
+              <h3 class="distributors__city">{{this.city}}</h3>
+              <span class="distributors__count">{{this.distributors.length}} дистрибьюторов</span>
+              <svg class="distributors__header-icon">
+                <use xlink:href="#slash">
+              </svg>
+            </div>
+          </div>
+          <ul class="distributors__list">
+            {{#each this.distributors}}
+            <li class="distributors__item">
+              <div class="distributors__btn">
+                <h4 class="distributors__item-name">{{this.name}}</h4>
+                <span class="distributors__item-address">{{this.address}}</span>
+                <a class="distributors__item-tel" href="#" title="Позвонить">
+                  <svg class="distributors__item-tel-icon">
+                    <use xlink:href="#phone-filled">
+                  </svg>
+                  <span class="distributors__item-tel-label">{{this.tel}}</span>
+                </a>
+                <span class="distributors__item-working-time">{{this.workingTime}}</span>
+              </div>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="contacts__distributors-map" id="distributorsMap"></div>
+    </div>
   </div>
 </section>
 

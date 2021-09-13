@@ -29,5 +29,5 @@ function addPlaces(places) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  addPlaces(places)
+  if (document.querySelector('.contacts')) addPlaces(places);
 });

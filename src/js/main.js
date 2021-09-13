@@ -12,7 +12,8 @@ import datepicker from './datepicker';
 import accordions from './accordions';
 import modals from './modals';
 
-import initMap from './yandexMaps';
+import initMap from './components/yandexMaps';
+import formFilter from './components/formFilter';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     datepicker();
     
     initMap();
+    formFilter();
 });
 
 window.addEventListener('load', function() {
