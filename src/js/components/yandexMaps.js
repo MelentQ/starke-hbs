@@ -6,6 +6,11 @@ export default function initMap() {
 }
 
 function init(){
+  initDistributorsMap();
+  initMainOfficeMap();
+}
+
+function initDistributorsMap() {
   const map = new ymaps.Map("distributorsMap", {
     center: [55.76, 37.64],
     zoom: 7,
@@ -48,7 +53,8 @@ function init(){
       iconLayout: 'default#image',
       iconImageHref: 'img/placemark.png',
       iconImageSize: [40, 40],
-      iconImageOffset: [0, 0]
+      iconImageOffset: [0, 0],
+      hideIconOnBalloonOpen: false
     }
 
     const placemark = new ymaps.Placemark(coords, placemarkProperties, placemarkOptions);
@@ -58,4 +64,55 @@ function init(){
 
   // Теперь этой функцией можно воспользоваться из любого файла
   window.addPlace = addPlace;
+}
+
+function initMainOfficeMap() {
+  const mapDOMElement = document.querySelector('#mainOfficeMap');
+  const mapCenterCoords = [mapDOMElement.dataset.mapcenterlongitude, mapDOMElement.dataset.mapcenterlatitude];
+  const officeCoords = [mapDOMElement.dataset.longitude, mapDOMElement.dataset.latitude];
+
+  const map = new ymaps.Map("mainOfficeMap", {
+    center: mapCenterCoords,
+    zoom: 7,
+    controls: ['zoomControl']
+  });
+
+  map.behaviors.disable('scrollZoom');
+
+  const balloonContentLayoutClass = ymaps.templateLayoutFactory.createClass(`
+    <div class="map-balloon">
+      <img class="map-balloon__logo" src="img/logo-dark.png" alt="Лого">
+      <span class="map-balloon__address">{{properties.address}}</span>
+      <a class="map-balloon__tel" href="tel:{{properties.tel}}" title="Позвонить">
+        <svg class="map-balloon__tel-icon">
+          <use xlink:href="#phone-filled">
+        </svg>
+        <span class="map-balloon__tel-label">{{properties.telFormatted}}</span>
+      </a>
+      <span class="map-balloon__working-time">{{properties.workingTime}}</span>
+    </div>
+  `);
+
+  const placemarkProperties = {
+    address: mapDOMElement.dataset.address,
+    tel: mapDOMElement.dataset.tel,
+    telFormatted: mapDOMElement.dataset.telformatted,
+    workingTime: mapDOMElement.dataset.workingtime
+  }
+
+  const placemarkOptions = {
+    balloonContentLayout: balloonContentLayoutClass,
+    iconLayout: 'default#image',
+    iconImageHref: 'img/placemark.png',
+    iconImageSize: [40, 40],
+    iconImageOffset: [0, 0],
+    hideIconOnBalloonOpen: false
+  }
+
+  const placemark = new ymaps.Placemark(officeCoords, placemarkProperties, placemarkOptions);
+
+  map.geoObjects.add(placemark);
+
+  // Открываем балун по умолчанию
+  placemark.balloon.open();
 }

@@ -47,8 +47,21 @@
   </div>
 </section>
 
-{{> form-question lightTheme=true text="Мы всегда открыты
+{{> form-question lightTheme=true text="Мы всегда открыты<br>
 к сотрудничеству"}}
+
+{{!-- Яндекс Карта в футере с центральным офисом. Данные берутся из data-атрибутов --}}
+<div class="container">
+  <div class="contacts__main-office-map" id="mainOfficeMap"
+    data-mapcenterlongitude="55.76"
+    data-mapcenterlatitude="37.64"
+    data-longitude="55.76"
+    data-latitude="37.64"
+    data-address="Беларусь, 225003, Брестская область, Брестский р-н, Тельминский с\с, 7"
+    data-tel="+78005000600"
+    data-telformatted="8 800 5000 600"
+    data-workingtime="Пн-Пт, с 10:00 до 22:00"></div>
+</div>
 
 {{/content}}
 {{/extend}}
