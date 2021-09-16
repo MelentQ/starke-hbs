@@ -1,7 +1,23 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
-<h1>Главная</h1>
+<section class="intro">
+  <div class="container">
+    <div class="intro__inner">
+      <div class="swiper intro__slider">
+        <div class="swiper-wrapper intro__slider-wrapper">
+          {{#each slides}}
+            <div class="swiper-slide">
+              <div class="intro-slide">
+                
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {{/content}}
 {{/extend}}
