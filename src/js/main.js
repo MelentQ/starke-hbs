@@ -14,6 +14,7 @@ import modals from './modals';
 
 import initMap from './components/yandexMaps';
 import formFilter from './components/formFilter';
+import sliderMainPage from './components/sliderMainPage';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     initMap();
     formFilter();
+    sliderMainPage();
 });
 
 window.addEventListener('load', function() {

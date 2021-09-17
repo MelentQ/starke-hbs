@@ -44,7 +44,7 @@
     "parsleyjs": "^2.9.2",
     "plyr": "^3.6.8",
     "smoothscroll-polyfill": "^0.4.4",
-    "swiper": "^6.8.1"
+    "swiper": "^6.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

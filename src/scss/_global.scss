@@ -33,25 +33,57 @@ h3 {
   --content-color: black;
 
   --back-color: #828282;
+  --back-color-2: #7B7B7B;
 
   --fs-h1: 5.6rem;
+  --fs-h1-2: 4.2rem;
   --fs-h2: 3.2rem;
+  --fs-h2-3: 2.4rem;
   --fs-h3: 2rem;
+
+  --fs-t1: 18px;
+  --fs-t2: 16px;
+  --fs-t2-3: 15px;
+  --fs-t3: 14px;
+  --fs-t4: 12px;
+
+  --fs-label: 11px;
+  --fs-sm-label: 8px;
 
   @include breakpoint(tablet) {
     --content-padding: 3rem;
   }
   @include breakpoint(small-tablet) {
     --fs-h1: 3.6rem;
+    --fs-h1-2: 2.8rem;
     --fs-h2: 2.4rem;
+    --fs-h2-3: 2rem;
     --fs-h3: 1.6rem;
+
+    --fs-t1: 16px;
+    --fs-t2: 15px;
+    --fs-t2-3: 14px;
+    --fs-t3: 14px;
+    --fs-t4: 12px;
+
+    --fs-label: 10px;
   }
   @include breakpoint(mobile) {
     --content-padding: 2rem;
 
     --fs-h1: 2.4rem;
+    --fs-h1-2: 2.2rem;
     --fs-h2: 2rem;
+    --fs-h2-3: 1.6rem;
     --fs-h3: 1.4rem;
+
+    --fs-t1: 16px;
+    --fs-t2: 15px;
+    --fs-t2-3: 14px;
+    --fs-t3: 14px;
+    --fs-t4: 12px;
+
+    --fs-label: 10px;
   }
 }
 

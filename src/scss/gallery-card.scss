@@ -33,7 +33,7 @@
     margin-bottom: 1.2rem;
 
     font-size: 1.4rem;
-    color: #7B7B7B;
+    color: var(--back-color-2);
     transition: color 0.3s ease;
 
     @include breakpoint(mobile) {

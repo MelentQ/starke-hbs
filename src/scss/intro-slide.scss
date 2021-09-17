@@ -1,0 +1,146 @@
+.intro-slide {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  column-gap: 5.6rem;
+
+  height: 100vh;
+
+  &__content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image-wrapper {
+    position: relative;
+
+    width: 55%;
+    height: 0;
+    padding-bottom: 55%;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center center;
+
+    user-select: none;
+  }
+
+  &__image-label-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.5rem;
+    width: 14.3rem;
+    height: 14.3rem;
+
+    border-radius: 50%;
+    background-color: #FFF4DF;
+  }
+
+  &__image-label-icon {
+    width: 56%;
+    margin-bottom: 0.8rem;
+  }
+
+  &__image-label {
+    text-align: center;
+    font-size: var(--fs-sm-label);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: calc(1em/20);
+  }
+
+  &__text {
+    max-width: 60rem;
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+
+    font-size: var(--fs-h1-2);
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    display: block;
+
+    margin-bottom: 8.3rem;
+
+    font-size: var(--fs-t1);
+    line-height: 1.5;
+    color: var(--back-color-2);
+  }
+
+  &__big-image-block {
+    position: relative;
+  }
+
+  &__big-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    user-select: none;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 3.2rem;
+
+    background-color: #FBFBFB;
+  }
+
+  &__link-label {
+    display: block;
+
+    margin-bottom: 0.9rem;
+
+    font-size: var(--fs-t3);
+    color: var(--back-color-2);
+  }
+
+  &__link-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link-title {
+    margin-right: 1.2rem;
+    font-size: var(--fs-h2-3);
+    font-weight: 700;
+  }
+
+  &__link-icon {
+    width: 0.9rem;
+    height: 1.6rem;
+
+    fill: var(--accent-color);
+  }
+}

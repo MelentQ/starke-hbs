@@ -2,19 +2,90 @@
 {{#content "main"}}
 
 <section class="intro">
-  <div class="container">
-    <div class="intro__inner">
-      <div class="swiper intro__slider">
-        <div class="swiper-wrapper intro__slider-wrapper">
-          {{#each slides}}
-            <div class="swiper-slide">
-              <div class="intro-slide">
-                
-              </div>
-            </div>
-          {{/each}}
-        </div>
+  <div class="intro__inner">
+    <div class="swiper intro__slider">
+
+      <div class="swiper-pagination intro__slider-pagination"></div>
+
+      <div class="intro__slider-navigation">
+        <button class="intro__slider-btn intro__slider-btn_type_prev" type="button" title="Назад">
+
+        </button>
+        <button class="intro__slider-btn intro__slider-btn_type_next" type="button" title="Вперед">
+          
+        </button>
       </div>
+
+      <div class="swiper-wrapper intro__slider-wrapper">
+        {{#each slides}}
+          <div class="swiper-slide">
+            <div class="intro-slide">
+
+              <div class="intro-slide__content-block">
+                <div class="intro-slide__image-container">
+                  <div class="intro-slide__image-wrapper">
+                    <picture>
+                      {{#if imageWebP}}
+                        <source srcset="img/content/main-slider/{{this.imageWebP}}" type="image/webp">
+                      {{/if}}
+                      <img class="intro-slide__image" src="img/content/main-slider/{{this.image}}" alt="Слайд">
+                    </picture>
+                    <div class="intro-slide__image-label-container">
+                      <img class="intro-slide__image-label-icon" src="img/content/icons/icon-1.svg" alt="{{this.imageLabel}}">
+                      <span class="intro-slide__image-label">{{this.imageLabel}}</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro-slide__text">
+                  <h2 class="intro-slide__title">{{{this.title}}}</h2>
+                  <p class="intro-slide__subtitle">{{{this.subtitle}}}</p>
+                </div>
+              </div>
+
+              <div class="intro-slide__big-image-block">
+                <picture>
+                  {{#if bigImageWebP}}
+                    <source srcset="img/content/main-slider/{{this.bigImageWebP}}" type="image/webp">
+                  {{/if}}
+                  <img class="intro-slide__big-image" src="img/content/main-slider/{{this.bigImage}}" alt="Слайд">
+                </picture>
+                <a href="#" class="intro-slide__link">
+                  <span class="intro-slide__link-label">Коллекция</span>
+                  <div class="intro-slide__link-title-container">
+                    <span class="intro-slide__link-title">{{this.collectionName}}</span>
+                    <svg class="intro-slide__link-icon">
+                      <use xlink:href="#right-arrow">
+                    </svg>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="to-catalog">
+  <div class="container">
+    <div class="to-catalog__inner">
+      <span class="to-catalog__label">Фасадные панели от которых невозможно оторвать взгляд</span>
+
+      {{!-- Костыль, выводим ссылки по 3 шт --}}
+      {{#each catalogLinks}}
+      <ul class="to-catalog__links">
+        {{#each this}}
+        <li class="to-catalog__links-item">
+          <a class="to-catalog__link" href="#">{{this}}</a>
+          <svg class="to-catalog__link-icon">
+            <use xlink:href="#slash">
+          </svg>
+        </li>
+        {{/each}}
+      </ul>
+      {{/each}}
     </div>
   </div>
 </section>
