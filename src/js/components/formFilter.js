@@ -1,5 +1,5 @@
 export default function formFilter() {
-  const container = document.querySelector('.form-filter');
+  const container = document.querySelector('.js-form-filter');
   if (!container) return;
 
   const filterLinks = container.querySelectorAll('.form-filter__link');

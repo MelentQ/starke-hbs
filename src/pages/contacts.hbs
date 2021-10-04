@@ -1,65 +1,96 @@
 {{#extend "layout"}}
 {{#content "main"}}
 
-<div class="container">
-  {{> form-filter }}
-</div>
-
 {{!-- Нейминг говно --}}
+{{!-- Это место генерируется с помощью JS --}}
+{{!-- Вся логика в файле contacts.js --}}
+{{!-- Данные берутся из файла data/contacts.json --}}
 <section class="contacts">
   <div class="container">
+    <ul class="form-filter">
+      <template class="js-map-filter-element-template">
+        <li class="form-filter__item">
+          <button class="form-filter__link" type="button"></button>
+        </li>
+      </template>
+    </ul>
+
     <div class="contacts__inner">
       <div class="contacts__accordion">
-        {{#each distributors}}
-        <div class="distributors">
-          <div class="distributors__header">
-            <div class="distributors__header-inner">
-              <h3 class="distributors__city">{{this.city}}</h3>
-              <span class="distributors__count">{{this.distributors.length}} дистрибьюторов</span>
-              <svg class="distributors__header-icon">
-                <use xlink:href="#slash">
-              </svg>
-            </div>
-          </div>
-          <ul class="distributors__list">
-            {{#each this.distributors}}
-            <li class="distributors__item">
-              <div class="distributors__btn">
-                <h4 class="distributors__item-name">{{this.name}}</h4>
-                <span class="distributors__item-address">{{this.address}}</span>
-                <a class="distributors__item-tel" href="#" title="Позвонить">
-                  <svg class="distributors__item-tel-icon">
-                    <use xlink:href="#phone-filled">
+        <template class="js-distributors-template">
+          <div class="distributors js-accordion" data-close-other>
+            <button class="distributors__header js-accordion-btn">
+              <div class="distributors__header-inner">
+                <div class="distributors__header-content">
+                  <h3 class="distributors__city"></h3>
+                  <span class="distributors__count"></span>
+                  <svg class="distributors__header-icon">
+                    <use xlink:href="#slash">
                   </svg>
-                  <span class="distributors__item-tel-label">{{this.tel}}</span>
-                </a>
-                <span class="distributors__item-working-time">{{this.workingTime}}</span>
+                </div>
+                <svg class="distributors__header-button-icon">
+                  <use xlink:href="#accordion-arrow">
+                </svg>
               </div>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-        {{/each}}
+            </button>
+            <ul class="distributors__list js-accordion-content">
+              <template class="js-distributors-item-template">
+                <li class="distributors__item">
+                  <div class="distributors__btn">
+                    <h4 class="distributors__item-name"></h4>
+                    <span class="distributors__item-address"></span>
+                    <a class="distributors__item-tel" href="#" title="Позвонить">
+                      <svg class="distributors__item-tel-icon">
+                        <use xlink:href="#phone-filled">
+                      </svg>
+                      <span class="distributors__item-tel-label"></span>
+                    </a>
+                    <span class="distributors__item-working-time"></span>
+                  </div>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </template>
       </div>
 
-      <div class="contacts__distributors-map" id="distributorsMap"></div>
+      <div
+        class="contacts__distributors-map"
+        id="distributorsMap"
+
+        data-initial-longitude="55.753215"
+        data-initial-latitude="37.622504"
+        data-initial-zoom="5"
+      >
+        {{!-- Яндекс карта --}}
+        {{!-- Это место генерируется с помощью JS --}}
+        {{!-- Вся логика в файле yandexMaps.js и contacts.js --}}
+        {{!-- Данные берутся из файла data/contacts.json --}}
+        {{!-- По умолчанию центр и зум карты берется из data-атрибутов --}}
+      </div>
     </div>
   </div>
 </section>
 
 {{> form-question lightTheme=true text="Мы всегда открыты<br>к сотрудничеству"}}
 
-{{!-- Яндекс Карта в футере с центральным офисом. Данные берутся из data-атрибутов --}}
 <div class="container">
-  <div class="contacts__main-office-map" id="mainOfficeMap"
-    data-mapcenterlongitude="55.76"
-    data-mapcenterlatitude="37.64"
-    data-longitude="55.76"
-    data-latitude="37.64"
+  <div
+    class="contacts__main-office-map"
+    id="mainOfficeMap"
+
+    data-map-center-longitude="52.117711"
+    data-map-center-latitude="23.876484"
+    data-longitude="52.117711"
+    data-latitude="23.876484"
     data-address="Беларусь, 225003, Брестская область, Брестский р-н, Тельминский с\с, 7"
     data-tel="+78005000600"
-    data-telformatted="8 800 5000 600"
-    data-workingtime="Пн-Пт, с 10:00 до 22:00"></div>
+    data-tel-formatted="8 800 5000 600"
+    data-working-time="Пн-Пт, с 10:00 до 22:00"
+  >
+    {{!-- Яндекс Карта в футере с центральным офисом. --}}
+    {{!-- Данные берутся из data-атрибутов --}}
+  </div>
 </div>
 
 {{/content}}

@@ -135,8 +135,15 @@ gulp.task('assets', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clean', 'images', 'sprite', 'handlebars', gulp.parallel('assets', 'styles', 'scripts')));
+gulp.task('json', function() {
+    return gulp
+    .src('./src/data/**/*')
+    .pipe(gulp.dest('./build/data'))
+    .pipe(browserSync.stream());
+})
 
-gulp.task('build-production', gulp.series('clean', 'images', 'sprite', 'handlebars', gulp.parallel('assets', 'styles', 'scripts-production')));
+gulp.task('build', gulp.series('clean', 'images', 'sprite', 'handlebars', 'json', gulp.parallel('assets', 'styles', 'scripts')));
+
+gulp.task('build-production', gulp.series('clean', 'images', 'sprite', 'handlebars', 'json', gulp.parallel('assets', 'styles', 'scripts-production')));
 
 gulp.task('default', gulp.series('build', 'serve'));

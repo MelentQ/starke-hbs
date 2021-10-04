@@ -9,12 +9,12 @@ import fileUpload from './fileUpload';
 import anchorLinks from './anchorLinks';
 import mediaPlayer from './mediaPlayer';
 import datepicker from './datepicker';
-import accordions from './accordions';
 import modals from './modals';
 
 import initMap from './components/yandexMaps';
 import formFilter from './components/formFilter';
 import sliderMainPage from './components/sliderMainPage';
+import { contacts } from './components/contacts';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     masks();
     fileUpload();
     anchorLinks();
-    accordions();
     mediaPlayer();
     modals();
     datepicker();
@@ -33,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initMap();
     formFilter();
     sliderMainPage();
+    contacts();
 });
 
 window.addEventListener('load', function() {

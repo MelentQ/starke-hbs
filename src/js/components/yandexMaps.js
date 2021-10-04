@@ -11,13 +11,19 @@ function init(){
 }
 
 function initDistributorsMap() {
-  const map = new ymaps.Map("distributorsMap", {
-    center: [55.76, 37.64],
-    zoom: 7,
+  const mapElement = document.querySelector('#distributorsMap');
+  const mapSettings = {
+    center: [mapElement.dataset.initialLongitude, mapElement.dataset.initialLatitude],
+    zoom: mapElement.dataset.initialZoom,
     controls: ['zoomControl']
-  });
+  }
+
+  const map = new ymaps.Map(mapElement, mapSettings);
 
   map.behaviors.disable('scrollZoom');
+
+  // Емае, простите
+  window.contactsMap = map;
 
   /**
    * Добавляет объект на Яндекс Карту
@@ -68,7 +74,7 @@ function initDistributorsMap() {
 
 function initMainOfficeMap() {
   const mapDOMElement = document.querySelector('#mainOfficeMap');
-  const mapCenterCoords = [mapDOMElement.dataset.mapcenterlongitude, mapDOMElement.dataset.mapcenterlatitude];
+  const mapCenterCoords = [mapDOMElement.dataset.mapCenterLongitude, mapDOMElement.dataset.mapCenterLatitude];
   const officeCoords = [mapDOMElement.dataset.longitude, mapDOMElement.dataset.latitude];
 
   const map = new ymaps.Map("mainOfficeMap", {
@@ -96,8 +102,8 @@ function initMainOfficeMap() {
   const placemarkProperties = {
     address: mapDOMElement.dataset.address,
     tel: mapDOMElement.dataset.tel,
-    telFormatted: mapDOMElement.dataset.telformatted,
-    workingTime: mapDOMElement.dataset.workingtime
+    telFormatted: mapDOMElement.dataset.telFormatted,
+    workingTime: mapDOMElement.dataset.workingTime
   }
 
   const placemarkOptions = {
