@@ -227,11 +227,11 @@ function _getTemplate(container = document, selector) {
  * @param {Number} count 
  */
 function _getDistributorsLabel(count) {
-  if (count === 11) return "Дистрибьюторов";
+  if (count === 11) return "дистрибьюторов";
   count = count % 10;
-  if (count === 0 || count === 5 || count === 6 || count === 7 || count === 8 || count === 9) return "Дистрибьюторов";
-  if (count === 1) return "Дистрибьютор";
-  if (count === 2 || count === 3 || count === 4) return "Дистрибьютора";
+  if (count === 0 || count === 5 || count === 6 || count === 7 || count === 8 || count === 9) return "дистрибьюторов";
+  if (count === 1) return "дистрибьютор";
+  if (count === 2 || count === 3 || count === 4) return "дистрибьютора";
 }
 
 export {contacts};

@@ -40,16 +40,37 @@
   }
 
   &__slider-navigation {
+    position: absolute;
+    left: 0;
+    top: 32%;
+    z-index: 10;
 
+    display: flex;
+    flex-direction: column;
   }
 
   &__slider-btn {
 
     &_type {
+      &_prev {
+
+      }
+      &_next {
+        margin-bottom: 4rem;
+      }
     }
 
-    &_type {
+    &.swiper-button-disabled {
+      opacity: 0.1;
+      cursor: default;
     }
+  }
+
+  &__slider-btn-icon {
+    width: 3.6rem;
+    height: 2rem;
+
+    fill: var(--text-color);
   }
 
   &__slider-wrapper {

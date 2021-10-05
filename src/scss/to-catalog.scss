@@ -1,0 +1,99 @@
+.to-catalog {
+
+  padding-top: 23.8rem;
+  padding-bottom: 27.4rem;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__label {
+    display: block;
+
+    margin-bottom: 6.4rem;
+
+    font-size: var(--fs-t1);
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5.6rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__links-item {
+    position: relative;
+
+    margin-right: 6.4rem;
+    &:last-of-type {
+      margin-right: 0;
+
+      .to-catalog__link-icon {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: var(--fs-h1-2);
+    line-height: 1.2;
+  }
+
+  &__link-icon {
+    position: absolute;
+    bottom: 0.6rem;
+    right: -4.1rem;
+
+    width: 2rem;
+    height: 2.6rem;
+
+    fill: none;
+    stroke: #DADADA;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+
+    margin-top: 8rem;
+    padding: 1.8rem 3.2rem;
+
+    background-color: var(--text-color);
+    color: white;
+    border-radius: 0.8rem;
+
+    &:hover,
+    &:focus {
+      .to-catalog__btn-label {
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  &__btn-icon {
+    width: 1.6rem;
+    height: 0.4rem;
+    margin-right: 0.8rem;
+
+    fill: var(--accent-color);
+  }
+
+  &__btn-label {
+    font-weight: 600;
+    font-size: var(--fs-t2-3);
+    line-height: 1.4;
+    color: white;
+    transition: color 0.3s ease;
+  }
+}

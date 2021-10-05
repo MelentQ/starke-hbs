@@ -35,5 +35,46 @@
   "catalogLinks": [
     ["Metallic Wood", "Siver Brick", "Rustic Plywood"],
     ["Metallic Wood", "White Moon"]
+  ],
+  "benefits": [
+    {
+      "link": "true",
+      "icon": "rain",
+      "image": "benefit-1.png",
+      "imageWebP": "benefit-1.webp",
+      "title": "ВОДОСТОК",
+      "subtitle": "Надежные водосточные системы"
+    },
+    {
+      "icon": "main-benefit-1.svg",
+      "title": "ВСЕГДА В НАЛИЧИИ",
+      "subtitle": "отгрузка в короткие сроки, в необходимом количестве"
+    },
+    {
+      "icon": "main-benefit-2.png",
+      "title": "РЕГИОНОВ",
+      "subtitle": "с крытыми складами и надежным хранением"
+    },
+    {
+      "link": "true",
+      "icon": "water",
+      "image": "benefit-2.png",
+      "imageWebP": "benefit-2.webp",
+      "title": "ВЕНТИЛЯЦИЯ",
+      "subtitle": "Дышите свободно с кровельной вентиляцией"
+    },
+    {
+      "link": "true",
+      "icon": "protection",
+      "image": "benefit-3.png",
+      "imageWebP": "benefit-3.webp",
+      "title": "СНЕГОЗАДЕРЖАТЕЛИ",
+      "subtitle": "Сможете остановить даже лавину"
+    },
+    {
+      "icon": "main-benefit-3.svg",
+      "title": "БЫСТРАЯ ДОСТАВКА",
+      "subtitle": "развитая логистическая сеть на территории России"
+    }
   ]
 }

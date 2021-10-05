@@ -24,10 +24,10 @@
     <div class="page-content">
         {{> header }}
 
-        <main class="page-main">
+        <main class="page-main{{#if headerIsOver}} page-main--with-header{{/if}}">
             {{!-- Подключение хлебных крошек --}}
-            {{#if hasBreadcrumbs}}
-                {{> breadcrumbs}}
+            {{#if breadcrumbs}}
+                {{> breadcrumbs links=breadcrumbs}}
             {{/if}}
 
             {{!-- Если есть h1 в начале страницы --}}

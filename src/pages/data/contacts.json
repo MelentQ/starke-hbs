@@ -1,6 +1,7 @@
 {
   "title": "Где купить продукцию",
-  "hasBreadcrumbs": "true",
+  "headerIsOver": "true",
+  "breadcrumbs": ["Главная", "Контакты"],
   "hasTitle": "true",
   "hasMap": "true",
   "filterLinks": ["ВСЕ ГОРОДА", "ЕКАТЕРИНБУРГ", "ПЕРМЬ", "БЕРЕЗНИКИ", "КИРОВ", "УХТА", "ЧЕЛЯБИНСК", "НИЖНИЙ НОВГОРОД"],

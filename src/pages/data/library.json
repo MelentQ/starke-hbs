@@ -1,6 +1,7 @@
 {
   "title": "Библиотека документов",
-  "hasBreadcrumbs": "true",
+  "headerIsOver": "true",
+  "breadcrumbs": ["Главная", "Библиотека документов"],
   "hasTitle": "true",
   "hasForm": "true",
   "fileCards": [

@@ -8,11 +8,15 @@
       <div class="swiper-pagination intro__slider-pagination"></div>
 
       <div class="intro__slider-navigation">
-        <button class="intro__slider-btn intro__slider-btn_type_prev" type="button" title="Назад">
-
-        </button>
         <button class="intro__slider-btn intro__slider-btn_type_next" type="button" title="Вперед">
-          
+          <svg class="intro__slider-btn-icon">
+            <use xlink:href="#slider-nav-up">
+          </svg>
+        </button>
+        <button class="intro__slider-btn intro__slider-btn_type_prev" type="button" title="Назад">
+          <svg class="intro__slider-btn-icon">
+            <use xlink:href="#slider-nav-down">
+          </svg>
         </button>
       </div>
 
@@ -71,21 +75,80 @@
 <section class="to-catalog">
   <div class="container">
     <div class="to-catalog__inner">
-      <span class="to-catalog__label">Фасадные панели от которых невозможно оторвать взгляд</span>
+      <span class="to-catalog__label">Фасадные панели <br/> от которых невозможно оторвать взгляд</span>
 
       {{!-- Костыль, выводим ссылки по 3 шт --}}
       {{#each catalogLinks}}
       <ul class="to-catalog__links">
         {{#each this}}
-        <li class="to-catalog__links-item">
-          <a class="to-catalog__link" href="#">{{this}}</a>
-          <svg class="to-catalog__link-icon">
-            <use xlink:href="#slash">
-          </svg>
-        </li>
+          <li class="to-catalog__links-item">
+            <a class="to-catalog__link" href="#">{{this}}</a>
+            <svg class="to-catalog__link-icon">
+              <use xlink:href="#slash">
+            </svg>
+          </li>
         {{/each}}
       </ul>
       {{/each}}
+
+      <a class="to-catalog__btn" href="#">
+        <svg class="to-catalog__btn-icon">
+          <use xlink:href="#3-dot">
+        </svg>
+        <span class="to-catalog__btn-label">Каталог панелей</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="container">
+    <div class="benefits__inner">
+      <ul class="benefits__list">
+        {{#each benefits}}
+          {{#if this.link}}
+            <li class="benefits__item">
+              <div class="benefit">
+                <a class="benefit__link-block">
+                  <div class="benefit__arrow-link">
+                    <svg class="benefit__arrow-icon">
+                      <use xlink:href="#right-arrow">
+                    </svg>
+                  </div>
+                  <svg class="benefit__icon">
+                    <use xlink:href="#{{this.icon}}">
+                  </svg>
+                  <picture>
+                    {{#if this.imageWebP}}
+                      <source srcset="img/content/benefits/{{this.imageWebP}}" type="image/webp">
+                    {{/if}}
+                    <img class="benefit__image" src="img/content/benefits/{{this.image}}" alt="{{this.subtitle}}">
+                  </picture>
+                  <div class="benefit__description">
+                    <h3 class="benefit__title">{{this.title}}</h3>
+                    <span class="benefit__subtitle">{{this.subtitle}}</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+          {{else}}
+            <li class="benefits__item">
+              <div class="benefit">
+                <div class="benefit__text-block">
+                  <img src="img/content/icons/{{this.icon}}" alt="{{this.title}}">
+                  <h3 class="benefit__text-block-title">
+                    <svg class="benefit__text-block-title-icon">
+                      <use xlink:href="#slash">
+                    </svg>
+                    <span class="benefit__text-block-title-label">{{this.title}}</span>
+                  </h3>
+                  <span class="benefit__text-block-subtitle">{{this.subtitle}}</span>
+                </div>
+              </div>
+            </li>
+          {{/if}}
+        {{/each}}
+      </ul>
     </div>
   </div>
 </section>

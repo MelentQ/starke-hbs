@@ -6,6 +6,13 @@
     column-gap: 0.4rem;
 
     margin-bottom: 0.8rem;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+      column-gap: 0;
+      row-gap: 0.4rem;
+    }
   }
 
   &__accordion {
@@ -13,14 +20,39 @@
     background-color: #f5f5f5;
 
     @include customScrollbar();
+
+    @include breakpoint(tablet) {
+      grid-row: 2/3;
+    }
   }
 
   &__distributors-map {
     height: 76.8rem;
+
+    @include breakpoint(tablet) {
+      height: 60rem;
+      grid-row: 1/2;
+    }
+    @include breakpoint(small-tablet) {
+      height: 54rem;
+    }
+    @include breakpoint(mobile) {
+      height: 48rem;
+    }
   }
 
   &__main-office-map {
     height: 44.4rem;
     margin-bottom: 12.6rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 8rem;
+    }
+    @include breakpoint(small-tablet) {
+      margin-bottom: 6rem;
+    }
+    @include breakpoint(mobile) {
+      margin-bottom: 4rem;
+    }
   }
 }

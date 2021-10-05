@@ -1,13 +1,29 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
   padding-top: 2.3rem;
   padding-bottom: 2.3rem;
 
   color: var(--text-color);
 
-  background-image: url(../img/header-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
+  &--light {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+
+    .header__telephone {
+      color: var(--text-color) !important;
+    }
+
+    .header__write-to-us {
+      color: var(--accent-color) !important;
+    }
+  }
 
   &__inner {
     display: flex;
@@ -68,6 +84,7 @@
 
     letter-spacing: 2%;
     font-weight: 700;
+    color: white !important;
 
     @include breakpoint (tablet) {
       display: none;
@@ -82,7 +99,7 @@
     padding-bottom: 0.2rem;
     border-bottom: 0.1rem solid #FF2204;
 
-    color: var(--accent-color) !important;
+    color: white !important;
 
     transition: border-bottom-color 0.3s ease;
 
