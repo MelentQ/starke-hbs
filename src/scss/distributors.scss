@@ -73,14 +73,14 @@
 
   &__city {
     font-weight: 700;
-    font-size: var(--fs-h3);
+    @extend %fs-h5;
     text-transform: uppercase;
 
     transition: color 0.3s ease;
   }
 
   &__count {
-    font-size: 1.6rem;
+    @extend %fs-t2;
   }
 
   &__header-icon {
@@ -123,7 +123,7 @@
   &__item-name {
     margin-bottom: 1rem;
 
-    font-size: var(--fs-h3);
+    @extend %fs-h5;
     font-weight: 600;
   }
 
@@ -152,7 +152,7 @@
   }
 
   &__item-tel-label {
-    font-size: var(--fs-h3);
+    @extend %fs-h5;
     font-weight: 600;
   }
 

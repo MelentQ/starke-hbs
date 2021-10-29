@@ -22,7 +22,7 @@
     color: white;
     letter-spacing: 5%;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    @extend %fs-s2;
     font-weight: 700;
 
     border-radius: 0 1.6rem;
@@ -30,7 +30,7 @@
 
   &__name {
     font-weight: 600;
-    font-size: var(--fs-h3);
+    @extend %fs-h5;
     line-height: 1.1;
   }
 

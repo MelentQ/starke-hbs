@@ -15,7 +15,7 @@
     margin-bottom: 2.4rem;
 
     font-weight: 600;
-    font-size: var(--fs-h3)
+    @extend %fs-h5
   }
 
   &__address {
@@ -24,7 +24,7 @@
     margin-bottom: 2.4rem;
 
     font-weight: 700;
-    font-size: 1.5rem;
+    @extend %fs-t2;
   }
 
   &__tel {
@@ -43,14 +43,14 @@
   }
 
   &__tel-label {
-    font-size: 2rem;
+    @extend %fs-h5;
     font-weight: 600;
   }
 
   &__working-time {
     display: block;
 
-    font-size: 1.5rem;
+    @extend %fs-t2;
     color: #767676;
   }
 }

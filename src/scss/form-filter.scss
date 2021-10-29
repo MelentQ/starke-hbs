@@ -6,7 +6,7 @@
   margin: 3rem 0;
 
   overflow-x: scroll;
-  @include customScrollbar();
+  @include customHorizontalScrollbar();
 
   @include breakpoint(tablet) {
     justify-content: flex-start;
@@ -42,7 +42,7 @@
     border: 0.1rem solid #C4C4C4;
     border-radius: 0 2rem;
 
-    font-size: 1.8rem;
+    @extend %fs-t1;
     line-height: 1.1;
     font-weight: 700;
     text-transform: uppercase;
@@ -54,13 +54,9 @@
 
     @include breakpoint(tablet) {
       padding: 1.2rem;
-
-      font-size: 1.4rem;
     }
     @include breakpoint(mobile) {
       padding: 0.8rem;
-
-      font-size: 1.2rem;
     }
   }
 }

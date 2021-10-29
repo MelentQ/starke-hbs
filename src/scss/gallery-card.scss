@@ -32,17 +32,13 @@
 
     margin-bottom: 1.2rem;
 
-    font-size: 1.4rem;
+    @extend %fs-t3;
     color: var(--back-color-2);
     transition: color 0.3s ease;
-
-    @include breakpoint(mobile) {
-      font-size: 1.2rem;
-    }
   }
 
   &__name {
-    font-size: var(--fs-h3);
+    @extend %fs-h5;
     font-weight: 600;
     color: #171723;
     transition: color 0.3s ease;

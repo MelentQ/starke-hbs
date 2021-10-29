@@ -4,29 +4,32 @@
 @import '../../node_modules/plyr/dist/plyr';
 
 .swiper-slide {
-    box-sizing: border-box;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .lazyload,
 .lazyloading {
-    opacity: 0;
+  opacity: 0;
 }
 .lazyloaded {
-    opacity: 1;
-    transition: opacity 300ms;
+  opacity: 1;
+  transition: opacity 300ms;
 }
 
 .parsley-errors-list {
-    padding: 0.2rem 2rem;
-    color: var(--accent-color);
-    font-size: 1rem;
+  padding: 0.2rem 2rem;
+  color: var(--accent-color);
+  @extend %fs-s2;
 }
 .parsley-required {
-
 }
 input.parsley-error {
-    background-color: rgba(#FF2204, 0.1) !important;
+  background-color: rgba(#ff2204, 0.1) !important;
+}
+
+[class*='ymaps-2'][class*='-ground-pane'] {
+  filter: grayscale(100%);
 }

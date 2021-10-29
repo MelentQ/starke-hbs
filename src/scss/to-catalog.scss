@@ -14,7 +14,7 @@
 
     margin-bottom: 6.4rem;
 
-    font-size: var(--fs-t1);
+    @extend %fs-t1;
     line-height: 1.4;
     text-align: center;
   }
@@ -46,7 +46,7 @@
 
   &__link {
     font-weight: 700;
-    font-size: var(--fs-h1-2);
+    @extend %fs-h2;
     line-height: 1.2;
   }
 
@@ -91,7 +91,7 @@
 
   &__btn-label {
     font-weight: 600;
-    font-size: var(--fs-t2-3);
+    @extend %fs-t2;
     line-height: 1.4;
     color: white;
     transition: color 0.3s ease;

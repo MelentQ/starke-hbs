@@ -6,6 +6,13 @@
     @return m#{i}n(#{$numbers});
 }
 
+// Адаптивный шрифт
+@mixin clamp($mobile, $desktop) {
+    $diff: $desktop - $mobile;
+    $maxWidth: $maxWidth - $minWidth;
+    font-size: calc(#{$mobile + px} + #{$diff} * ((100vw - #{$minWidth + px}) / #{$maxWidth}));
+}
+
 @mixin noHighlight() {
     -webkit-tap-highlight-color: transparent;
 }
@@ -75,6 +82,27 @@
     &::-webkit-scrollbar {
         background-color: white;
         width: 0.4rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: black;
+        border-radius: 999rem;
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+}
+
+@mixin customHorizontalScrollbar {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        background-color: white;
+        height: 0.4rem;
     }
 
     &::-webkit-scrollbar-thumb {

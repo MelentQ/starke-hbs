@@ -1,4 +1,3 @@
-import data from '../../data/contacts.json';
 import accordions from '../accordions';
 
 const contactsPage = document.querySelector('.contacts');
@@ -11,20 +10,26 @@ function contacts() {
 
   setDistributorsHeight();
 
-  ymaps.ready(() => {
-    renderFilter();
-    renderDistributors();
-    renderPlacemarks();
-    initFilter();
-
-    accordions(contactsPage);
-  })
+  fetch('/data/contacts.json')
+    .then(res => {
+      return res.json()
+    })
+    .then(data => {
+      ymaps.ready(() => {
+        renderFilter(data);
+        renderDistributors(data);
+        renderPlacemarks(data);
+        initFilter();
+    
+        accordions(contactsPage);
+      })
+    })
 }
 
 /**
  * Рендерит фильтр сверху
  */
-function renderFilter() {
+function renderFilter(data) {
   const container = contactsPage.querySelector('.form-filter');
 
   // Массив, в котором будут храниться кнопки.
@@ -87,7 +92,7 @@ function renderFilter() {
 /**
  * Рендерит список дистрибьютеров слева от карты
  */
-function renderDistributors() {
+function renderDistributors(data) {
   const container = contactsPage.querySelector('.contacts__accordion');
   // Проходит по массиву городов, получает шаблон города, заполняет текстовое содержимое и рендерит на страницу
   data.forEach(item => {
@@ -132,7 +137,7 @@ function renderDistributors() {
 /**
  * Рендерит объекты на Яндекс Карте
  */
-function renderPlacemarks() {
+function renderPlacemarks(data) {
   data.forEach(city => {
     city.distributors.forEach(distributor => {
       const placeOptions = {

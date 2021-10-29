@@ -4,7 +4,7 @@
 
   background-color: #202020;
   color: white;
-  font-size: 1.4rem;
+  @extend %fs-t3;
 
   @include breakpoint(tablet) {
     padding-top: 4rem;
@@ -126,7 +126,7 @@
     grid-area: copyright;
 
     color: var(--back-color);
-    font-size: 1.2rem;
+    @extend %fs-t3;
   }
 
   &__links {
@@ -164,7 +164,7 @@
     margin-right: 1.7rem;
 
     color: var(--back-color);
-    font-size: 1.2rem;
+    @extend %fs-t3;
   }
 
   &__made-by-icon {

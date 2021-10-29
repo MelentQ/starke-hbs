@@ -33,7 +33,7 @@
   margin-bottom: 0.4rem;
   margin-top: 4.3rem;
 
-  font-size: var(--fs-h1);
+  @extend %fs-h1;
 
   &::after {
     content: '';

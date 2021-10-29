@@ -7,7 +7,7 @@
     padding: 1rem 2rem;
 
     color: var(--text-color);
-    font-size: 1.4rem;
+    @extend %fs-t3;
 
     &::placeholder {
       color: var(--back-color-2);
@@ -24,7 +24,7 @@
   &__policy {
     display: block;
 
-    font-size: 1rem;
+    @extend %fs-s2;
     color: var(--back-color);
     text-align: center;
   }
