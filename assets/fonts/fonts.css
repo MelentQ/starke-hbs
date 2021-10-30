@@ -1,5 +1,17 @@
 @font-face {
   font-family: 'RFDewiExtended';
+  src: url('./RF-Dewi-Extended/RFDewiExpanded-Light.eot');
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Light.eot?#iefix') format('embedded-opentype'),
+      url('./RF-Dewi-Extended/RFDewiExpanded-Light.woff2') format('woff2'),
+      url('./RF-Dewi-Extended/RFDewiExpanded-Light.woff') format('woff'),
+      url('./RF-Dewi-Extended/RFDewiExpanded-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RFDewiExtended';
   src: url('./RF-Dewi-Extended/RFDewiExtended-Regular.eot');
   src: url('./RF-Dewi-Extended/RFDewiExtended-Regular.eot?#iefix') format('embedded-opentype'),
       url('./RF-Dewi-Extended/RFDewiExtended-Regular.woff2') format('woff2'),
@@ -30,6 +42,18 @@
       url('./RF-Dewi-Extended/RFDewiExtended-Bold.woff') format('woff'),
       url('./RF-Dewi-Extended/RFDewiExtended-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RFDewiExtended';
+  src: url('./RF-Dewi-Extended/RFDewiExpanded-Ultrabold.eot');
+  src: url('./RF-Dewi-Extended/RFDewiExtended-Ultrabold.eot?#iefix') format('embedded-opentype'),
+      url('./RF-Dewi-Extended/RFDewiExpanded-Ultrabold.woff2') format('woff2'),
+      url('./RF-Dewi-Extended/RFDewiExpanded-Light.woff') format('woff'),
+      url('./RF-Dewi-Extended/RFDewiExpanded-Light.ttf') format('truetype');
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
