@@ -5,9 +5,11 @@
 ## GH Pages
 
 * [Главная](https://melentq.github.io/starke-hbs/)
-* [Библиотека документов](https://melentq.github.io/starke-hbs/library.html)
-* [Галерея](https://melentq.github.io/starke-hbs/gallery.html)
-* [Контакты](https://melentq.github.io/starke-hbs/contacts.html)
+* [Библиотека документов](https://melentq.github.io/starke-hbs/library)
+* [Галерея](https://melentq.github.io/starke-hbs/gallery)
+* [Контакты](https://melentq.github.io/starke-hbs/contacts)
+* [Каталог](https://melentq.github.io/starke-hbs/catalog)
+* [Карточка товара](https://melentq.github.io/starke-hbs/product)
 
 ## Библиотеки, плагины и API
 
