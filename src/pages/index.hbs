@@ -20,9 +20,9 @@
         </button>
       </div>
 
-      <div class="swiper-wrapper intro__slider-wrapper">
+      <ul class="swiper-wrapper intro__slider-wrapper">
         {{#each slides}}
-          <div class="swiper-slide">
+          <li class="swiper-slide">
             <div class="intro-slide">
 
               <div class="intro-slide__content-block">
@@ -53,7 +53,7 @@
                   {{/if}}
                   <img class="intro-slide__big-image" src="img/content/main-slider/{{this.bigImage}}" alt="Слайд">
                 </picture>
-                <a href="#" class="intro-slide__link">
+                <a href="product.html" class="intro-slide__link">
                   <span class="intro-slide__link-label">Коллекция</span>
                   <div class="intro-slide__link-title-container">
                     <span class="intro-slide__link-title">{{this.collectionName}}</span>
@@ -65,9 +65,9 @@
               </div>
 
             </div>
-          </div>
+          </li>
         {{/each}}
-      </div>
+      </ul>
     </div>
   </div>
 </section>
@@ -82,7 +82,7 @@
       <ul class="to-catalog__links">
         {{#each this}}
           <li class="to-catalog__links-item">
-            <a class="to-catalog__link" href="#">{{this}}</a>
+            <a class="to-catalog__link" href="product.html">{{this}}</a>
             <svg class="to-catalog__link-icon">
               <use xlink:href="#slash">
             </svg>
@@ -91,7 +91,7 @@
       </ul>
       {{/each}}
 
-      <a class="to-catalog__btn" href="#">
+      <a class="to-catalog__btn" href="catalog.html">
         <svg class="to-catalog__btn-icon">
           <use xlink:href="#3-dot">
         </svg>
@@ -109,7 +109,7 @@
           {{#if this.link}}
             <li class="benefits__item">
               <div class="benefit">
-                <a class="benefit__link-block" title="Открыть каталог" href="#">
+                <a class="benefit__link-block" title="Открыть каталог" href="catalog">
                   <div class="benefit__arrow-link">
                     <svg class="benefit__arrow-icon">
                       <use xlink:href="#right-arrow">
@@ -153,23 +153,7 @@
   </div>
 </section>
 
-<section class="benifits-list">
-  <div class="container">
-    <ul class="benifits-list__container">
-      {{#each benifitsList }}
-      <li class="benifits-list__item">
-        <svg class="benifits-list__item-icon {{this.icon.modClass}}" width="{{this.icon.width}}" height="{{this.icon.height}}">
-          <use xlink:href="#{{this.icon.id}}">
-        </svg>
-        <div class="benifits-list__item-text">
-          <h3 class="benifits-list__item-name">{{{this.name}}}</h3>
-          <p class="benifits-list__item-description">{{{this.description}}}</p>
-        </div>
-      </li>
-      {{/each}}
-    </ul>
-  </div>
-</section>
+{{> benifits-list }}
 
 {{> form-question text="У Вас остались вопросы?"}}
 

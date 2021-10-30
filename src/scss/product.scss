@@ -1,0 +1,198 @@
+.product {
+
+  margin-bottom: 8rem;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__image-container {
+    position: relative;
+
+    height: 0;
+    padding-bottom: 50%;
+
+    background: linear-gradient(290deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 60%), #F5F5F5;
+    border-radius: 0 2rem 0 2rem;
+
+    overflow: hidden;
+
+    @include breakpoint(small-tablet) {
+      padding-bottom: 60%;
+      margin-bottom: 2rem;
+    }
+    @include breakpoint(mobile) {
+      padding-bottom: 80%;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    height: 100%;
+    width: auto;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__specification {
+    position: absolute;
+    bottom: 1.6rem;
+    left: 1.6rem;
+    z-index: 2;
+
+    display: flex;
+
+    @include breakpoint(small-tablet) {
+      position: static;
+      bottom: unset;
+      left: unset;
+
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__specification-item {
+    min-width: 20rem;
+    margin-right: 1.6rem;
+    padding: 2.4rem 1.6rem;
+
+    background-color: white;
+    border-radius: 0 2rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include breakpoint(tablet) {
+      min-width: unset;
+    }
+
+    @include breakpoint(small-tablet) {
+      padding: 1.2rem 1rem;
+
+      border: 0.1rem solid #E1E1E1;
+    }
+  }
+
+  &__specification-name {
+    display: block;
+
+    margin-bottom: 0.8rem;
+
+    color: var(--back-color-2);
+    font-weight: 400;
+    @extend %fs-t3;
+    line-height: 1.2;
+  }
+
+  &__specification-value {
+    display: block;
+
+    font-weight: 800;
+    @extend %fs-t1;
+    line-height: 1.1;
+  }
+
+  &__price-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3.2rem 2.4rem;
+
+    background-color: white;
+
+    @include breakpoint(small-tablet) {
+      position: static;
+      bottom: unset;
+      right: unset;
+
+      padding: 0;
+    }
+  }
+
+  &__price {
+    margin-bottom: 2.4rem;
+
+    @include breakpoint(small-tablet) {
+      display: none;
+    }
+
+    &--only-mobile {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      display: none;
+
+      padding: 0.8rem 1.2rem;
+      margin-bottom: 0;
+
+      background-color: white;
+
+      @include breakpoint(small-tablet) {
+        display: block;
+      }
+    }
+  }
+
+  &__price-value {
+    @extend %fs-h2;
+    font-weight: 700;
+    line-height: 1.8rem;
+  }
+
+  &__price-label {
+    @extend %fs-t1;
+    font-weight: 400;
+    line-height: 1.8rem;
+  }
+
+  &__btn {
+    padding: 1.8rem 4.5rem;
+    border-radius: 0.8rem;
+    width: 100%;
+
+    @extend %fs-t2;
+    font-weight: 600;
+    line-height: 1.4;
+    color: white !important;
+    background-color: var(--text-color);
+    text-align: center;
+  }
+
+  &__calc-btn {
+    margin-bottom: 1.6rem;
+  }
+
+  &__where-btn {
+    background-color: #FC2204;
+  }
+
+  &__files {
+    margin-bottom: 10rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 6rem;
+    }
+    @include breakpoint(small-tablet) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__files-slider {
+    // Так как свайпер мобайл-ферст
+    // При количестве видимых слайдов включаем отступ справа
+    @media screen and (max-width: 1279px) {
+      margin-right: 6rem;
+    }
+  }
+}

@@ -15,6 +15,8 @@ import initMap from './components/yandexMaps';
 import formFilter from './components/formFilter';
 import sliderMainPage from './components/sliderMainPage';
 import { contacts } from './components/contacts';
+import product from './components/product';
+import alignHeights from './components/alignHeights';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -33,9 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
     formFilter();
     sliderMainPage();
     contacts();
+    product();
 });
 
 window.addEventListener('load', function() {
     document.body.classList.add('loaded');
     setTimeout(() => document.body.classList.add('animatable'), 300);
+
+    alignHeights('.benifits-list__container', '.benifits-list__item-name');
 })

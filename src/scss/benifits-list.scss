@@ -18,7 +18,7 @@
       grid-template-columns: repeat(2, 1fr);
       row-gap: 2.4rem;
     }
-    @include breakpoint(mobile) {
+    @include breakpoint(supersmall-mobile) {
       grid-template-columns: 1fr;
       column-gap: 0;
     }
@@ -27,6 +27,11 @@
   &__item {
     display: flex;
     align-items: center;
+
+    @include breakpoint(desktop) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__item-icon {
@@ -37,10 +42,14 @@
     &.red {
       fill: var(--accent-color);
     }
+
+    @include breakpoint(desktop) {
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__item-text {
-    @extend %fs-t1;
   }
 
   &__item-name {
@@ -48,9 +57,11 @@
 
     font-weight: 800;
     line-height: 1.1;
+    @include clamp(14, 18);
   }
 
   &__item-description {
     font-weight: 300;
+    @include clamp(12, 18);
   }
 }

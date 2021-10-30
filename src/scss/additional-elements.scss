@@ -35,7 +35,7 @@
       gap: 3.2rem;
     }
 
-    @include breakpoint(mobile) {
+    @include breakpoint(supersmall-mobile) {
       grid-template-columns: 1fr;
     }
   }
@@ -59,7 +59,7 @@
 
     @include breakpoint(mobile) {
       margin-bottom: 1.2rem;
-      height: 24rem;
+      height: 10rem;
     }
   }
 
@@ -74,6 +74,10 @@
     width: 100%;
 
     object-fit: contain;
+
+    @include breakpoint(mobile) {
+      padding: 0.6rem;
+    }
   }
 
   &__name {

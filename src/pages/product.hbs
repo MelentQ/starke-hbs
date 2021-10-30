@@ -1,0 +1,90 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="colors-list" id="js-colors-list">
+  <div class="container">
+    <div class="swiper colors-list__inner" id="js-colors-list-slider">
+      <ul class="swiper-wrapper">
+        {{#each colors-list }}
+        <li class="swiper-slide color-item {{#if this.selected}}selected{{/if}}">
+          {{!-- Клик по ссылке изменит изображение на слайдере снизу --}}
+          {{!-- Ссылка на изображение берется из data-атрибута --}}
+          <a class="color-item__link" title="Выбрать этот цвет" href="#">
+            <div class="color-item__image-container">
+              <picture>
+                <source srcset="img/content/colors-list/{{this.webp}}" type="image/webp">
+                <img class="color-item__image" src="img/content/colors-list/{{this.image}}" alt="{{this.name}}">
+              </picture>
+              <span class="color-item__dot"></span>
+            </div>
+            <h3 class="color-item__name">{{this.name}}</h3>
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="product">
+  <div class="container">
+    <div class="product__inner">
+      <div class="swiper" id="js-product-slider">
+        <ul class="swiper-wrapper">
+          {{#each colors-list }}
+          <li class="swiper-slide">
+            <div class="product__image-container">
+              <picture>
+                <source srcset="img/content/product/{{this.fullImage.webp}}" type="image/webp">
+                <img class="product__image" src="img/content/product/{{this.fullImage.image}}" alt="{{this.name}}">
+              </picture>
+              <div class="product__price product__price--only-mobile">
+                <span class="product__price-value">544 ₽</span>
+                <span class="product__price-label">/ шт.</span>
+              </div>
+            </div>
+          </li>
+          {{/each }}
+        </ul>
+      </div>
+      <ul class="product__specification">
+        {{#each product.specification}}
+        <li class="product__specification-item">
+          <span class="product__specification-name">{{this.name}}</span>
+          <span class="product__specification-value">{{{this.value}}}</span>
+        </li>
+        {{/each}}
+      </ul>
+      <div class="product__price-block">
+        <div class="product__price">
+          <span class="product__price-value">544 ₽</span>
+          <span class="product__price-label">/ шт.</span>
+        </div>
+
+        <a class="product__btn product__calc-btn" href="#">Расчет количества</a>
+        <a class="product__btn product__where-btn" href="#">Где купить?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> benifits-list }}
+
+<section class="product__files">
+  <div class="container">
+    <div class="swiper product__files-slider" id="js-files-slider">
+      <ul class="swiper-wrapper">
+        {{#each files}}
+        <li class="swiper-slide">
+          {{> file-card }}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{> additional-elements }}
+
+{{/content}}
+{{/extend}}

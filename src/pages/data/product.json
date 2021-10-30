@@ -1,0 +1,219 @@
+{
+  "title": "Карточка товара",
+  "headerIsOver": "true",
+  "breadcrumbs": [
+    "Главная",
+    "Каталог",
+    "Виниловый сайдинг",
+    "Карточка товара"
+  ],
+  "hasTitle": "true",
+  "hasForm": "true",
+  "colors-list": [
+    {
+      "name": "СВЕТЛЫЙ МАХАГОН",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "selected": "true",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "КАШТАНОВЫЙ",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "БИРЮЗОВЫЙ",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "ТЕРРАКОТОВЫЙ",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "WHITE MOON",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "PLYWOOD",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "КОРИЧНЕВЫЙ",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "БЕЖЕВЫЙ",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "ТЕМНЫЙ ОРЕХ",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    },
+    {
+      "name": "ЛИСТВИННИЦА",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "fullImage": {
+        "image": "item-1.png",
+        "webp": "item-1.webp"
+      }
+    }
+  ],
+  "product": {
+    "specification": [
+      {
+        "name": "Толщина",
+        "value": "1.2 мм"
+      },
+      {
+        "name": "Рабочая площадь",
+        "value": "1.08 м&#178;"
+      },
+      {
+        "name": "Размеры",
+        "value": "3600×300 мм"
+      }
+    ]
+  },
+  "benifitsList": [
+    {
+      "icon": {
+        "id": "benefit-1",
+        "width": 69,
+        "height": 72,
+        "modClass": "red"
+      },
+      "name": "ДЕРЖИТ УДАР",
+      "description": "можно не бояться прислонить стремянку"
+    },
+    {
+      "icon": {
+        "id": "benefit-2",
+        "width": 55,
+        "height": 68,
+        "modClass": "red"
+      },
+      "name": "ЛЕГКИЙ МОНТАЖ",
+      "description": "простой монтаж, сродни сборки конструктора"
+    },
+    {
+      "icon": {
+        "id": "benefit-3",
+        "width": 60,
+        "height": 68,
+        "modClass": "red"
+      },
+      "name": "НЕ ТРЕСКАЕТСЯ",
+      "description": "диапазон рабочих температур от -50 до +40"
+    },
+    {
+      "icon": {
+        "id": "benefit-4",
+        "width": 68,
+        "height": 68,
+        "modClass": "red"
+      },
+      "name": "БЕСШУМНЫЙ",
+      "description": "абсолютная тишина даже при ураганном ветре"
+    }
+  ],
+  "files": [
+    {
+      "name": "Протокол экспертизы желобов, сливных труб и арматуры",
+      "label": "СЕРТИФИКАТ"
+    },
+    {
+      "name": "Монтаж сайдинга",
+      "label": "ИНСТРУКЦИЯ"
+    },
+    {
+      "name": "Монтаж сайдинга",
+      "label": "ИНСТРУКЦИЯ"
+    },
+    {
+      "name": "Протокол экспертизы желобов, сливных труб и арматуры",
+      "label": "СЕРТИФИКАТ"
+    }
+  ],
+  "additionalElements": [
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-1.png",
+      "webp": "item-1.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-2.png",
+      "webp": "item-2.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-3.png",
+      "webp": "item-3.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-4.png",
+      "webp": "item-4.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-1.png",
+      "webp": "item-1.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-2.png",
+      "webp": "item-2.webp"
+    }
+  ]
+}
