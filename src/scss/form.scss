@@ -24,7 +24,7 @@
   &__policy {
     display: block;
 
-    @extend %fs-s2;
+    @extend %fs-s1;
     color: var(--back-color);
     text-align: center;
   }

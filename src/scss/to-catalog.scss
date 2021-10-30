@@ -3,6 +3,11 @@
   padding-top: 23.8rem;
   padding-bottom: 27.4rem;
 
+  @include breakpoint(tablet) {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -15,8 +20,13 @@
     margin-bottom: 6.4rem;
 
     @extend %fs-t1;
+    font-weight: 300;
     line-height: 1.4;
     text-align: center;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__links {
@@ -28,6 +38,10 @@
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    @include breakpoint(tablet) {
+      margin-bottom: 3.2rem;
     }
   }
 
@@ -42,9 +56,16 @@
         display: none;
       }
     }
+
+    @include breakpoint(tablet) {
+      margin-right: 3.2rem;
+    }
   }
 
   &__link {
+    display: inline-block;
+    text-align: center;
+
     font-weight: 700;
     @extend %fs-h2;
     line-height: 1.2;
@@ -52,14 +73,19 @@
 
   &__link-icon {
     position: absolute;
-    bottom: 0.6rem;
+    top: 50%;
     right: -4.1rem;
+    transform: translateY(-50%);
 
     width: 2rem;
     height: 2.6rem;
 
     fill: none;
     stroke: #DADADA;
+
+    @include breakpoint(tablet) {
+      right: -2.8rem;
+    }
   }
 
   &__btn {
@@ -78,6 +104,10 @@
       .to-catalog__btn-label {
         color: var(--accent-color);
       }
+    }
+
+    @include breakpoint(tablet) {
+      margin-top: 4rem;
     }
   }
 

@@ -7,13 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/styles.min.css" />
-    {{!-- Подключение Яндекс.Карт --}}
+
+    <meta name="description" content="Работаем так, чтобы Вам не пришлось сомневаться в выборе" />
+    <meta name="keywords" content="Работаем так, чтобы Вам не пришлось сомневаться в выборе" />
+
+    <meta property="og:title" content="Работаем так, чтобы Вам не пришлось сомневаться в выборе" />
+    <meta property="og:description" content="Работаем так, чтобы Вам не пришлось сомневаться в выборе" />
+    <meta property="og:image" content="img/content/gallery/gallery-big-1.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    {{!-- Подключение Яндекс.Картам --}}
     {{#if hasMap}}
     <script src="https://api-maps.yandex.ru/2.1/?apikey=4af5bbbe-a25a-4591-8bd3-670c28bb10a6&lang=ru_RU" type="text/javascript"></script>
     {{/if}}
-    <title>
-        {{ title }}
-    </title>
+    <title>Starke | {{ title }}</title>
 </head>
 
 <body class="no-touch" ontouchstart="">

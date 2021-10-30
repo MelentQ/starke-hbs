@@ -10,7 +10,9 @@ function contacts() {
 
   setDistributorsHeight();
 
-  fetch('/data/contacts.json')
+  
+
+  fetch('data/contacts.json')
     .then(res => {
       return res.json()
     })

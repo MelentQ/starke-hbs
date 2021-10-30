@@ -26,6 +26,7 @@
     margin-bottom: 5rem;
 
     font-weight: 600;
+    @extend %fs-h3;
 
     @include breakpoint(tablet) {
       margin-bottom: 2rem;

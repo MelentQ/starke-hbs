@@ -33,8 +33,15 @@
     }
   ],
   "catalogLinks": [
-    ["Metallic Wood", "Siver Brick", "Rustic Plywood"],
-    ["Metallic Wood", "White Moon"]
+    [
+      "Metallic Wood",
+      "Siver Brick",
+      "Rustic Plywood"
+    ],
+    [
+      "Metallic Wood",
+      "White Moon"
+    ]
   ],
   "benefits": [
     {
@@ -43,7 +50,7 @@
       "image": "benefit-1.png",
       "imageWebP": "benefit-1.webp",
       "title": "ВОДОСТОК",
-      "subtitle": "Надежные водосточные системы"
+      "subtitle": "Надежные <br> водосточные <br> системы"
     },
     {
       "icon": "main-benefit-1.svg",
@@ -61,7 +68,7 @@
       "image": "benefit-2.png",
       "imageWebP": "benefit-2.webp",
       "title": "ВЕНТИЛЯЦИЯ",
-      "subtitle": "Дышите свободно с кровельной вентиляцией"
+      "subtitle": "Дышите свободно <br> с кровельной <br> вентиляцией"
     },
     {
       "link": "true",
@@ -69,12 +76,54 @@
       "image": "benefit-3.png",
       "imageWebP": "benefit-3.webp",
       "title": "СНЕГОЗАДЕРЖАТЕЛИ",
-      "subtitle": "Сможете остановить даже лавину"
+      "subtitle": "Сможете <br> остановить <br> даже лавину"
     },
     {
       "icon": "main-benefit-3.svg",
       "title": "БЫСТРАЯ ДОСТАВКА",
       "subtitle": "развитая логистическая сеть на территории России"
+    }
+  ],
+  "benifitsList": [
+    {
+      "icon": {
+        "id": "main-page-benefit-1",
+        "width": 67,
+        "height": 67,
+        "modClass": "red"
+      },
+      "name": "20&nbsp;ГЕКТАРОВ",
+      "description": "общая площадь производства"
+    },
+    {
+      "icon": {
+        "id": "main-page-benefit-2",
+        "width": 68,
+        "height": 60,
+        "modClass": "red"
+      },
+      "name": "40&nbsp;ДИСТРИБЬЮТОРОВ",
+      "description": "общая площадь производства"
+    },
+    {
+      "icon": {
+        "id": "main-page-benefit-3",
+        "width": 67,
+        "height": 56,
+        "modClass": "red"
+      },
+      "name": "150&nbsp;ПАРТНЕРОВ",
+      "description": "общая площадь производства"
+    },
+    {
+      "icon": {
+        "id": "main-page-benefit-4",
+        "width": 57,
+        "height": 67,
+        "modClass": "red"
+      },
+      "name": "15&nbsp;ЛЕТ&nbsp;ОПЫТА",
+      "description": "общая площадь производства"
     }
   ]
 }

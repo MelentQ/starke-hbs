@@ -1,0 +1,56 @@
+.benifits-list {
+
+  margin-bottom: 12.8rem;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 6rem;
+  }
+  @include breakpoint(small-tablet) {
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.8rem;
+
+    @include breakpoint(desktop) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2.4rem;
+    }
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-icon {
+    flex-shrink: 0;
+    
+    margin-right: 2rem;
+
+    &.red {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__item-text {
+    @extend %fs-t1;
+  }
+
+  &__item-name {
+    margin-bottom: 0.8rem;
+
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  &__item-description {
+    font-weight: 300;
+  }
+}
