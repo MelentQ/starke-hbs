@@ -1,0 +1,21 @@
+<section class="additional-elements">
+  <div class="container">
+    <h2 class="additional-elements__title">Доборные элементы</h2>
+    <ul class="additional-elements__list">
+      {{#each additionalElements}}
+      <li class="additional-element">
+        <a class="additional-element__link" title="Перейти на страницу товара" href="#">
+          <div class="additional-element__image-container">
+            <picture>
+              <source srcset="img/content/additional-elements/{{this.webp}}" type="image/webp">
+              <img class="additional-element__image" src="img/content/additional-elements/{{this.image}}" alt="{{this.name}}">
+            </picture>
+          </div>
+          <h3 class="additional-element__name">{{this.name}}</h3>
+          <span class="additional-element__specification">{{this.specification}}</span>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>

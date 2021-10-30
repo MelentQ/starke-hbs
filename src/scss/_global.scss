@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 
   --back-color: #828282;
   --back-color-2: #7B7B7B;
+  --back-color-3: #f5f5f5;
 
   @include breakpoint(tablet) {
     --content-padding: 2.4rem;

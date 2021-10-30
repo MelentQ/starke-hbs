@@ -36,17 +36,27 @@
         {{> header }}
 
         <main class="page-main{{#if headerIsOver}} page-main--with-header{{/if}}">
-            {{!-- Подключение хлебных крошек --}}
-            {{#if breadcrumbs}}
-                {{> breadcrumbs links=breadcrumbs}}
-            {{/if}}
+            <div class="container">
+                <div class="page__title-block {{#if banner}}page__title-block--with-banner{{/if}}">
+                    {{!-- Подключаем фоновое изображение --}}
+                    {{#if banner}}
+                    <picture>
+                        <source srcset="img/content/banners/{{banner.webp}}" type="image/webp">
+                        <img class="page__banner" src="img/content/banners/{{banner.image}}" alt="{{title}}">
+                    </picture>
+                    <div class="page__banner-overlay"></div>
+                    {{/if}}
+                    {{!-- Подключение хлебных крошек --}}
+                    {{#if breadcrumbs}}
+                    {{> breadcrumbs links=breadcrumbs}}
+                    {{/if}}
 
-            {{!-- Если есть h1 в начале страницы --}}
-            {{#if hasTitle}}
-                <div class="container">
+                    {{#if hasTitle}}
+                    {{!-- Если есть h1 в начале страницы --}}
                     <h1 class="page__main-title">{{title}}</h1>
+                    {{/if}}
                 </div>
-            {{/if}}
+            </div>
             
             {{#block "main"}}{{/block}}
 

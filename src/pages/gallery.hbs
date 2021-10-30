@@ -11,7 +11,7 @@
       <ul class="gallery__list">
         {{!-- Данные из json --}}
         {{#each cards}}
-          <li class="gallery__list-item {{#if this.big}}gallery__list-item--big{{/if}}">
+          <li class="gallery__list-item">
             <a class="gallery-card" href="#" title="Перейти на страницу объекта">
               <div class="gallery-card__image-wrapper">
                 <picture>
@@ -29,20 +29,12 @@
           </li>
         {{/each}}
       </ul>
+
+      {{> load-more-btn }}
+
     </div>
   </div>
 </section>
-
-<div class="container">
-  <form class="form-load-more" name="loadMore" method="GET">
-    <button class="form-load-more__submit" type="submit">
-      <svg class="form-load-more__submit-icon">
-        <use xlink:href="#loading">
-      </svg>
-      <span class="form-load-more__submit-label">Показать еще</span>
-    </button>
-  </form>
-</div>
 
 {{/content}}
 {{/extend}}

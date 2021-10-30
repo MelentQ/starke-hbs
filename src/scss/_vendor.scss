@@ -30,6 +30,7 @@ input.parsley-error {
   background-color: rgba(#ff2204, 0.1) !important;
 }
 
-[class*='ymaps-2'][class*='-ground-pane'] {
-  filter: grayscale(100%);
-}
+// Ч/б карта:
+// [class*='ymaps-2'][class*='-ground-pane'] {
+//   filter: grayscale(100%);
+// }

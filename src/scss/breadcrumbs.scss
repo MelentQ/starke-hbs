@@ -6,10 +6,18 @@
     display: flex;
 
     color: var(--back-color);
+
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__list-item {
     position: relative;
+
+    display: flex;
+    align-items: center;
 
     margin-right: 2.2rem;
 
@@ -28,8 +36,13 @@
       background-color: var(--back-color);
     }
 
+    @include breakpoint(mobile) {
+      margin-bottom: 0.4rem;
+    }
+
     &:last-of-type {
       margin-right: 0;
+      margin-bottom: 0;
 
       pointer-events: none;
 
@@ -40,5 +53,15 @@
   }
 
   &__link {
+  }
+}
+
+.page__title-block--with-banner {
+  .breadcrumbs__list {
+    color: white;
+  }
+
+  .breadcrumbs__list-item::after {
+    background-color: white;
   }
 }

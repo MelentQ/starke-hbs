@@ -1,9 +1,19 @@
 {
   "title": "Галерея объектов",
   "headerIsOver": "true",
-  "breadcrumbs": ["Главная", "Галерея объектов"],
+  "breadcrumbs": [
+    "Главная",
+    "Галерея объектов"
+  ],
   "hasTitle": "true",
-  "filterLinks": ["ВСЕ", "ВИНИЛОВЫЙ САЙДИНГ", "ВОДОСТОК", "ФАСАДНЫЕ ПАНЕЛИ", "ВЕНТИЛЯЦИЯ", "СНЕГОЗАДЕРЖАТЕЛИ"],
+  "filterLinks": [
+    "ВСЕ",
+    "ВИНИЛОВЫЙ САЙДИНГ",
+    "ВОДОСТОК",
+    "ФАСАДНЫЕ ПАНЕЛИ",
+    "ВЕНТИЛЯЦИЯ",
+    "СНЕГОЗАДЕРЖАТЕЛИ"
+  ],
   "cards": [
     {
       "image": "gallery-small-1.jpg",
@@ -18,14 +28,12 @@
       "name": "Виниловый сайдинг Starke, “фисташка”"
     },
     {
-      "big": "true",
       "image": "gallery-big-1.jpg",
       "webp": "gallery-big-1.webp",
       "place": "г.Киров",
       "name": "Виниловый сайдинг Starke, “фисташка”"
     },
     {
-      "big": "true",
       "image": "gallery-big-1.jpg",
       "webp": "gallery-big-1.webp",
       "place": "г.Киров",
@@ -44,14 +52,12 @@
       "name": "Виниловый сайдинг Starke, “фисташка”"
     },
     {
-      "big": "true",
       "image": "gallery-big-1.jpg",
       "webp": "gallery-big-1.webp",
       "place": "г.Киров",
       "name": "Виниловый сайдинг Starke, “фисташка”"
     },
     {
-      "big": "true",
       "image": "gallery-big-2.jpg",
       "webp": "gallery-big-2.webp",
       "place": "г.Киров",

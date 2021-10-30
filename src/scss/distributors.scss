@@ -1,7 +1,7 @@
 .distributors {
   --content-padding: 3rem;
 
-  background-color: #F5F5F5;
+  background-color: var(--back-color-3);
   overflow: hidden;
 
   &.hidden {

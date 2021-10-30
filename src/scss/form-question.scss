@@ -4,7 +4,7 @@
   padding-top: 10rem;
   padding-bottom: 4.6rem;
 
-  background-color: #F5F5F5;
+  background-color: var(--back-color-3);
 
   @include breakpoint(tablet) {
     padding-top: 4rem;
@@ -15,7 +15,7 @@
     background-color: white;
 
     .form-question__input {
-      background-color: #F5F5F5;
+      background-color: var(--back-color-3);
     }
   }
 
@@ -61,7 +61,7 @@
     background-color: white;
 
     &--light {
-      background-color: #F5F5F5;
+      background-color: var(--back-color-3);
     }
   }
 

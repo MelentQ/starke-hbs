@@ -1,0 +1,125 @@
+{
+  "title": "Виниловый сайдинг",
+  "headerIsOver": "true",
+  "banner": {
+    "image": "catalog-banner.jpg",
+    "webp": "catalog-banner.webp"
+  },
+  "breadcrumbs": [
+    "Главная",
+    "Каталог",
+    "Виниловый сайдинг"
+  ],
+  "hasTitle": "true",
+  "hasForm": "true",
+  "catalogItems": [
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "texture": {
+        "image": "texture-natural.svg",
+        "label": "НАТУРАЛЬНАЯ ТЕКСТУРА"
+      }
+    },
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-2.png",
+      "webp": "item-2.webp",
+      "texture": {
+        "image": "texture-brush.svg",
+        "label": "ЭФФЕКТ КИСТИ"
+      }
+    },
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-3.png",
+      "webp": "item-3.webp",
+      "texture": {
+        "image": "texture-natural.svg",
+        "label": "НАТУРАЛЬНАЯ ТЕКСТУРА"
+      }
+    },
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-4.png",
+      "webp": "item-4.webp",
+      "texture": {
+        "image": "texture-brush.svg",
+        "label": "ЭФФЕКТ КИСТИ"
+      }
+    },
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-1.png",
+      "webp": "item-1.webp",
+      "texture": {
+        "image": "texture-natural.svg",
+        "label": "НАТУРАЛЬНАЯ ТЕКСТУРА"
+      }
+    },
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-2.png",
+      "webp": "item-2.webp",
+      "texture": {
+        "image": "texture-brush.svg",
+        "label": "ЭФФЕКТ КИСТИ"
+      }
+    },
+    {
+      "name": "Виниловый сайдинг Starke 3.0",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-3.png",
+      "webp": "item-3.webp",
+      "texture": {
+        "image": "texture-natural.svg",
+        "label": "НАТУРАЛЬНАЯ ТЕКСТУРА"
+      }
+    }
+  ],
+  "additionalElements": [
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-1.png",
+      "webp": "item-1.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-2.png",
+      "webp": "item-2.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-3.png",
+      "webp": "item-3.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-4.png",
+      "webp": "item-4.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-1.png",
+      "webp": "item-1.webp"
+    },
+    {
+      "name": "Внешний угол",
+      "specification": "0,6 м2 / 20шт.",
+      "image": "item-2.png",
+      "webp": "item-2.webp"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="catalog">
+  <div class="container">
+    <ul class="catalog__list">
+      {{#each catalogItems }}
+      <li class="catalog-item">
+        <a class="catalog-item__link" title="Перейти на страницу товара" href="#">
+          <picture>
+            <source srcset="img/content/catalog/{{this.webp}}" type="image/webp">
+            <img class="catalog-item__image" src="img/content/catalog/{{this.image}}" alt="{{this.name}}">
+          </picture>
+          <div class="catalog-item__texture-block">
+            <img class="catalog-item__texture-icon" src="img/content/icons/{{this.texture.image}}" alt="{{this.texture.label}}">
+            <span class="catalog-item__texture-label">{{{this.texture.label}}}</span>
+          </div>
+          <div class="catalog-item__text-block">
+            <h3 class="catalog-item__name">{{this.name}}</h3>
+            <span class="catalog-item__specification">{{this.specification}}</span>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+
+    {{> load-more-btn }}
+
+  </div>
+</section>
+
+{{> additional-elements }}
+
+{{/content}}
+{{/extend}}

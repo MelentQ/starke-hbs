@@ -1,0 +1,142 @@
+.catalog {
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4.8rem;
+
+    margin-bottom: 5rem;
+
+    @include breakpoint(tablet) {
+      gap: 3.2rem;
+    }
+
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
+  }
+}
+
+.catalog-item {
+  &:nth-child(7n + 1),
+  &:nth-child(7n + 2),
+  &:nth-child(7n + 6),
+  &:nth-child(7n + 7) {
+    grid-column: span 3;
+
+    @include breakpoint(mobile) {
+      grid-column: span 1;
+    }
+
+    .catalog-item__image {
+      top: 4.4rem;
+      left: 20rem;
+
+      @include breakpoint(tablet) {
+        left: 12rem;
+      }
+      @include breakpoint(mobile) {
+        top: 3.2rem;
+        left: 8rem;
+      }
+    }
+  }
+
+  &:nth-child(7n + 3),
+  &:nth-child(7n + 4),
+  &:nth-child(7n + 5) {
+    grid-column: span 2;
+
+    @include breakpoint(tablet) {
+      grid-column: span 3;
+    }
+
+    @include breakpoint(mobile) {
+      grid-column: span 1;
+    }
+
+    .catalog-item__image {
+      top: 4.4rem;
+      left: 12rem;
+
+      @include breakpoint(mobile) {
+        top: 3.2rem;
+        left: 8rem;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    display: block;
+
+    height: 53.6rem;
+
+    background-color: var(--back-color-3);
+    border-radius: 0 2rem 0 2rem;
+
+    overflow: hidden;
+
+    @include breakpoint(tablet) {
+      height: 36rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+  }
+
+  &__texture-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    padding-top: 3.2rem;
+    padding-left: 3.2rem;
+
+    @include breakpoint(mobile) {
+      padding-top: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+  &__texture-icon {
+    margin-bottom: 0.8rem;
+  }
+
+  &__texture-label {
+    display: block;
+    width: min-content;
+
+    @extend %fs-s1;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+
+  &__text-block {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    padding: 2rem;
+    
+    background-color: white;
+
+    @extend %fs-t1;
+    line-height: 1.2;
+  }
+
+  &__name {
+    margin-bottom: 0.5rem;
+
+    font-weight: 600;
+  }
+
+  &__specification {
+    font-weight: 400;
+  }
+}

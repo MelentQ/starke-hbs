@@ -1,0 +1,88 @@
+.additional-elements {
+
+  margin-bottom: 12.8rem;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 6rem;
+  }
+  @include breakpoint(small-tablet) {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 6.4rem;
+
+    @extend %fs-h3;
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 4rem;
+    }
+    @include breakpoint(mobile) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.8rem;
+    grid-auto-rows: 1fr;
+
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3.2rem;
+    }
+
+    @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.additional-element {
+
+  &__link {
+    @extend %fs-t1;
+    line-height: 1.2;
+  }
+
+  &__image-container {
+    position: relative;
+
+    height: 30rem;
+    margin-bottom: 2.4rem;
+
+    background: linear-gradient(290deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 60%), #F5F5F5;
+    border-radius: 0 2rem 0 2rem;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1.2rem;
+      height: 24rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+  }
+
+  &__name {
+    margin-bottom: 0.5rem;
+
+    font-weight: 600;
+  }
+
+  &__specification {
+    font-weight: 400;
+  }
+}
