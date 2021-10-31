@@ -10,6 +10,7 @@
 * [Контакты](https://melentq.github.io/starke-hbs/contacts)
 * [Каталог](https://melentq.github.io/starke-hbs/catalog)
 * [Карточка товара](https://melentq.github.io/starke-hbs/product)
+* [О компании](https://melentq.github.io/starke-hbs/about)
 
 ## Библиотеки, плагины и API
 
