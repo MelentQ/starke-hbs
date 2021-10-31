@@ -167,14 +167,26 @@
     color: white !important;
     background-color: var(--text-color);
     text-align: center;
+
+    transition: color 0.3s ease;
   }
 
   &__calc-btn {
     margin-bottom: 1.6rem;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color) !important;
+    }
   }
 
   &__where-btn {
     background-color: #FC2204;
+
+    &:hover,
+    &:focus {
+      color: var(--text-color) !important;
+    }
   }
 
   &__files {

@@ -72,6 +72,7 @@
   }
 
   &__menu-link {
+    @extend %fs-t2;
   }
 
   &__contacts {
@@ -84,10 +85,16 @@
 
     letter-spacing: 2%;
     font-weight: 700;
+    @extend %fs-t2;
     color: white !important;
 
     @include breakpoint (tablet) {
       display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color) !important;
     }
   }
 
@@ -100,12 +107,14 @@
     border-bottom: 0.1rem solid #FF2204;
 
     color: white !important;
+    @extend %fs-t2;
 
-    transition: border-bottom-color 0.3s ease;
+    transition: color 0.3s, border-bottom-color 0.3s ease;
 
     &:hover,
     &:focus {
       border-bottom-color: #FF2204;
+      color: var(--accent-color) !important;
     }
 
     @include breakpoint (tablet) {

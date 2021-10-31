@@ -36,6 +36,8 @@
   }
 
   &__btn-label {
+    @extend %fs-t2;
+    
     transition: color 0.3s ease;
   }
 }

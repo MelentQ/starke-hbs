@@ -12,14 +12,14 @@
       "collectionName": "Graphite tree"
     },
     {
-      "title": "Виниловый сайдинг немецкого качества",
-      "subtitle": "Состав сайдинга Starke уникален и выполнен по европейским технологиям. Устойчив к вредителям и&nbsp;разложению.",
-      "image": "image-1.jpg",
-      "imageWebP": "image-1.webp",
+      "title": "Lorem ipsum dolor sit amet consectetur.",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id quia vero quam assumenda doloremque veritatis recusandae soluta ut incidunt!",
+      "image": "item-1.jpg",
+      "imageWebP": "item-1.webp",
       "imageLabel": "натуральная текстура",
-      "bigImage": "big-image-1.jpg",
-      "bigImageWebP": "big-image-1.webp",
-      "collectionName": "Graphite tree"
+      "bigImage": "about-intro.jpg",
+      "bigImageWebP": "about-intro.webp",
+      "collectionName": "Lorem, ipsum."
     },
     {
       "title": "Виниловый сайдинг немецкого качества",
@@ -30,6 +30,16 @@
       "bigImage": "big-image-1.jpg",
       "bigImageWebP": "big-image-1.webp",
       "collectionName": "Graphite tree"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet consectetur.",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id quia vero quam assumenda doloremque veritatis recusandae soluta ut incidunt!",
+      "image": "item-3.jpg",
+      "imageWebP": "item-3.webp",
+      "imageLabel": "натуральная текстура",
+      "bigImage": "about-intro.jpg",
+      "bigImageWebP": "about-intro.webp",
+      "collectionName": "Lorem, ipsum."
     }
   ],
   "catalogLinks": [

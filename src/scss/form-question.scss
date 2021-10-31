@@ -60,8 +60,20 @@
 
     background-color: white;
 
+    transition: background-color 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: var(--back-color-3);
+    }
+
     &--light {
       background-color: var(--back-color-3);
+
+      &:hover,
+      &:focus {
+        background-color: white;
+      }
     }
   }
 

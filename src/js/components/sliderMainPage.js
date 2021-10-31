@@ -1,6 +1,6 @@
-import {Swiper, Pagination, Navigation, EffectFade} from "swiper";
+import {Swiper, Pagination, Navigation, EffectFade, Autoplay} from "swiper";
 
-Swiper.use([Pagination, Navigation, EffectFade]);
+Swiper.use([Pagination, Navigation, EffectFade, Autoplay]);
 
 export default function sliderMainPage() {
   const container = document.querySelector('.intro__slider');
@@ -10,6 +10,10 @@ export default function sliderMainPage() {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
+    },
+    autoplay: {
+      delay: 6000,
+      pauseOnMouseEnter: true
     },
     navigation: {
       nextEl: '.intro__slider-btn_type_next',
