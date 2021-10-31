@@ -20,7 +20,7 @@
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <title>Starke | Главная</title>
+    <title>Starke | О компании</title>
 </head>
 
 <body class="no-touch" ontouchstart="">
@@ -95,424 +95,253 @@
             </div>
             
             
-<section class="intro">
-  <div class="intro__inner">
-    <div class="swiper intro__slider">
+<section class="about-intro">
+  <div class="about-intro__inner">
+    <div class="about-intro__text-block">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__link" href="#">О компании</a>
+            </li>
+        </ul>
+      </nav>      <h1 class="about-intro__title">Работаем так, <br> чтобы Вам не пришлось <br> сомневаться в выборе</h1>
+      <p class="about-intro__subtitle">Производим материалы для загородного домостроения на трёх производственных комплексах общей площадью 20 гектаров. Не экономим на качестве сырья и вкладываемв развитие производства</p>
 
-      <div class="swiper-pagination intro__slider-pagination"></div>
+      <ul class="benifits-list__container narrow">
+        <li class="benifits-list__item">
+          <svg class="benifits-list__item-icon red" width="67" height="67">
+            <use xlink:href="#main-page-benefit-1">
+          </svg>
+          <div class="benifits-list__item-text">
+            <h3 class="benifits-list__item-name">20&nbsp;ГЕКТАРОВ</h3>
+            <p class="benifits-list__item-description">общая площадь производства</p>
+          </div>
+        </li>
+        <li class="benifits-list__item">
+          <svg class="benifits-list__item-icon red" width="68" height="60">
+            <use xlink:href="#main-page-benefit-2">
+          </svg>
+          <div class="benifits-list__item-text">
+            <h3 class="benifits-list__item-name">40&nbsp;ДИСТРИБЬЮТОРОВ</h3>
+            <p class="benifits-list__item-description">общая площадь производства</p>
+          </div>
+        </li>
+        <li class="benifits-list__item">
+          <svg class="benifits-list__item-icon red" width="67" height="56">
+            <use xlink:href="#main-page-benefit-3">
+          </svg>
+          <div class="benifits-list__item-text">
+            <h3 class="benifits-list__item-name">150&nbsp;ПАРТНЕРОВ</h3>
+            <p class="benifits-list__item-description">общая площадь производства</p>
+          </div>
+        </li>
+        <li class="benifits-list__item">
+          <svg class="benifits-list__item-icon red" width="57" height="67">
+            <use xlink:href="#main-page-benefit-4">
+          </svg>
+          <div class="benifits-list__item-text">
+            <h3 class="benifits-list__item-name">15&nbsp;ЛЕТ&nbsp;ОПЫТА</h3>
+            <p class="benifits-list__item-description">общая площадь производства</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="about-intro__image-block">
+      <picture>
+        <source srcset="img/content/about/about-intro.webp" type="image/webp">
+        <img class="about-intro__image" src="img/content/about/about-intro.jpg" alt="Работаем так, чтобы Вам не пришлось сомневаться в выборе">
+      </picture>
+    </div>
+  </div>
+</section>
 
-      <div class="intro__slider-navigation">
-        <button class="intro__slider-btn intro__slider-btn_type_next" type="button" title="Вперед">
-          <svg class="intro__slider-btn-icon">
-            <use xlink:href="#slider-nav-up">
+<section class="about-benifits">
+  <picture>
+    <source srcset="img/content/about/topographic-line.webp" type="image/webp">
+    <img class="about-benifits__image" src="img/content/about/topographic-line.png" alt="Фоновое изображение">
+  </picture>
+
+  <div class="container">
+    <div class="about-benifits__inner">
+      <div class="about-benifits__icon-block">
+        <h2 class="about-benifits__icon-title">Производственные комплексы оснащены <b>современным оборудованием</b></h2>
+        <svg class="about-benifits__icon">
+          <use xlink:href="#modern-machines">
+        </svg>
+      </div>
+      <div class="about-benifits__text-block">
+        <h2 class="page__title about-benifits__title">
+          <svg class="page__title-icon">
+            <use xlink:href="#slash">
+          </svg>
+          <span>УНИКАЛЬНЫЕ ТЕХНОЛОГИИ</span>
+        </h2>
+        <p class="about-benifits__subtitle">Представляем вашему вниманию виниловый сайдинг от лучшего европейского производителя. Состав Starke уникален, а сам сайдинг выполнен по особым технологиям. Сайдинг Starke полностью соответствует требованиям эксплуатации винилового сайдинга, но при этом отличается довольно малым весом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-slider">
+  <div class="container">
+    <div class="swiper about-slider__inner" id="js-init-about-slider">
+      <ul class="swiper-wrapper about-slider__wrapper">
+        <li class="swiper-slide about-slide">
+          <div class="about-slide__image-wrapper">
+            <picture>
+              <source srcset="img/content/about/slide-1.webp" type="image/webp">
+              <img class="about-slide__image" src="img/content/about/slide-1.jpg" alt="&lt;b&gt;Высокие стандарты&lt;/b&gt; качества и экономия бюджета заказчика">
+            </picture>
+          </div>
+
+          <div class="about-slide__description-block">
+            <h3 class="about-slide__title"><b>Высокие стандарты</b> качества и экономия бюджета заказчика</h3>
+            <p class="about-slide__description">Представляем вашему вниманию виниловый сайдинг от лучшего европейского производителя. Состав Starke уникален, а сам сайдинг выполнен по особым технологиям. Сайдинг Starke полностью соответствует требованиям эксплуатации винилового сайдинга, но при этом отличается довольно малым весом.</p>
+          </div>
+        </li>
+        <li class="swiper-slide about-slide">
+          <div class="about-slide__image-wrapper">
+            <picture>
+              <source srcset="img/content/about/about-intro.webp" type="image/webp">
+              <img class="about-slide__image" src="img/content/about/about-intro.jpg" alt="&lt;b&gt;Lorem, ipsum dolor&lt;/b&gt; sit amet consectetur adipisicing.">
+            </picture>
+          </div>
+
+          <div class="about-slide__description-block">
+            <h3 class="about-slide__title"><b>Lorem, ipsum dolor</b> sit amet consectetur adipisicing.</h3>
+            <p class="about-slide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, id aspernatur sit voluptates voluptate fugiat, omnis error veniam aperiam molestiae beatae, illum et architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, id aspernatur sit voluptates voluptate fugiat, omnis error veniam aperiam molestiae beatae, illum et architecto.</p>
+          </div>
+        </li>
+        <li class="swiper-slide about-slide">
+          <div class="about-slide__image-wrapper">
+            <picture>
+              <source srcset="img/content/about/slide-1.webp" type="image/webp">
+              <img class="about-slide__image" src="img/content/about/slide-1.jpg" alt="&lt;b&gt;Высокие стандарты&lt;/b&gt; качества и экономия бюджета заказчика">
+            </picture>
+          </div>
+
+          <div class="about-slide__description-block">
+            <h3 class="about-slide__title"><b>Высокие стандарты</b> качества и экономия бюджета заказчика</h3>
+            <p class="about-slide__description">Представляем вашему вниманию виниловый сайдинг от лучшего европейского производителя. Состав Starke уникален, а сам сайдинг выполнен по особым технологиям. Сайдинг Starke полностью соответствует требованиям эксплуатации винилового сайдинга, но при этом отличается довольно малым весом.</p>
+          </div>
+        </li>
+        <li class="swiper-slide about-slide">
+          <div class="about-slide__image-wrapper">
+            <picture>
+              <source srcset="img/content/about/about-intro.webp" type="image/webp">
+              <img class="about-slide__image" src="img/content/about/about-intro.jpg" alt="&lt;b&gt;Lorem, ipsum dolor&lt;/b&gt; sit amet consectetur adipisicing.">
+            </picture>
+          </div>
+
+          <div class="about-slide__description-block">
+            <h3 class="about-slide__title"><b>Lorem, ipsum dolor</b> sit amet consectetur adipisicing.</h3>
+            <p class="about-slide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, id aspernatur sit voluptates voluptate fugiat, omnis error veniam aperiam molestiae beatae, illum et architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, id aspernatur sit voluptates voluptate fugiat, omnis error veniam aperiam molestiae beatae, illum et architecto.</p>
+          </div>
+        </li>
+        <li class="swiper-slide about-slide">
+          <div class="about-slide__image-wrapper">
+            <picture>
+              <source srcset="img/content/about/slide-1.webp" type="image/webp">
+              <img class="about-slide__image" src="img/content/about/slide-1.jpg" alt="&lt;b&gt;Высокие стандарты&lt;/b&gt; качества и экономия бюджета заказчика">
+            </picture>
+          </div>
+
+          <div class="about-slide__description-block">
+            <h3 class="about-slide__title"><b>Высокие стандарты</b> качества и экономия бюджета заказчика</h3>
+            <p class="about-slide__description">Представляем вашему вниманию виниловый сайдинг от лучшего европейского производителя. Состав Starke уникален, а сам сайдинг выполнен по особым технологиям. Сайдинг Starke полностью соответствует требованиям эксплуатации винилового сайдинга, но при этом отличается довольно малым весом.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="about-slider__navigation">
+        <button class="about-slider__btn about-slider__btn_type_prev" type="button" title="Назад">
+          <svg class="about-slider__btn-icon">
+            <use xlink:href="#slider-nav-left">
           </svg>
         </button>
-        <button class="intro__slider-btn intro__slider-btn_type_prev" type="button" title="Назад">
-          <svg class="intro__slider-btn-icon">
-            <use xlink:href="#slider-nav-down">
+
+        <div class="about-slider__pagination">
+          <span class="about-slider__current-slide"></span>
+          <span class="about-slider__slides-count"></span>
+        </div>
+
+        <button class="about-slider__btn about-slider__btn_type_next" type="button" title="Вперед">
+          <svg class="about-slider__btn-icon">
+            <use xlink:href="#slider-nav-right">
           </svg>
         </button>
       </div>
-
-      <ul class="swiper-wrapper intro__slider-wrapper">
-          <li class="swiper-slide">
-            <div class="intro-slide">
-
-              <div class="intro-slide__content-block">
-                <div class="intro-slide__image-container">
-                  <div class="intro-slide__image-wrapper">
-                    <picture>
-                        <source srcset="img/content/main-slider/image-1.webp" type="image/webp">
-                      <img class="intro-slide__image" src="img/content/main-slider/image-1.jpg" alt="Слайд">
-                    </picture>
-                    <div class="intro-slide__image-label-container">
-                      <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
-                      <span class="intro-slide__image-label">натуральная текстура</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="intro-slide__text">
-                  <h2 class="intro-slide__title">Виниловый сайдинг немецкого качества</h2>
-                  <p class="intro-slide__subtitle">Состав сайдинга Starke уникален и выполнен по европейским технологиям. Устойчив к вредителям и&nbsp;разложению.</p>
-                </div>
-              </div>
-
-              <div class="intro-slide__big-image-block">
-                <picture>
-                    <source srcset="img/content/main-slider/big-image-1.webp" type="image/webp">
-                  <img class="intro-slide__big-image" src="img/content/main-slider/big-image-1.jpg" alt="Слайд">
-                </picture>
-                <a href="product.html" class="intro-slide__link">
-                  <span class="intro-slide__link-label">Коллекция</span>
-                  <div class="intro-slide__link-title-container">
-                    <span class="intro-slide__link-title">Graphite tree</span>
-                    <svg class="intro-slide__link-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </li>
-          <li class="swiper-slide">
-            <div class="intro-slide">
-
-              <div class="intro-slide__content-block">
-                <div class="intro-slide__image-container">
-                  <div class="intro-slide__image-wrapper">
-                    <picture>
-                        <source srcset="img/content/main-slider/item-1.webp" type="image/webp">
-                      <img class="intro-slide__image" src="img/content/main-slider/item-1.jpg" alt="Слайд">
-                    </picture>
-                    <div class="intro-slide__image-label-container">
-                      <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
-                      <span class="intro-slide__image-label">натуральная текстура</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="intro-slide__text">
-                  <h2 class="intro-slide__title">Lorem ipsum dolor sit amet consectetur.</h2>
-                  <p class="intro-slide__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id quia vero quam assumenda doloremque veritatis recusandae soluta ut incidunt!</p>
-                </div>
-              </div>
-
-              <div class="intro-slide__big-image-block">
-                <picture>
-                    <source srcset="img/content/main-slider/about-intro.webp" type="image/webp">
-                  <img class="intro-slide__big-image" src="img/content/main-slider/about-intro.jpg" alt="Слайд">
-                </picture>
-                <a href="product.html" class="intro-slide__link">
-                  <span class="intro-slide__link-label">Коллекция</span>
-                  <div class="intro-slide__link-title-container">
-                    <span class="intro-slide__link-title">Lorem, ipsum.</span>
-                    <svg class="intro-slide__link-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </li>
-          <li class="swiper-slide">
-            <div class="intro-slide">
-
-              <div class="intro-slide__content-block">
-                <div class="intro-slide__image-container">
-                  <div class="intro-slide__image-wrapper">
-                    <picture>
-                        <source srcset="img/content/main-slider/image-1.webp" type="image/webp">
-                      <img class="intro-slide__image" src="img/content/main-slider/image-1.jpg" alt="Слайд">
-                    </picture>
-                    <div class="intro-slide__image-label-container">
-                      <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
-                      <span class="intro-slide__image-label">натуральная текстура</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="intro-slide__text">
-                  <h2 class="intro-slide__title">Виниловый сайдинг немецкого качества</h2>
-                  <p class="intro-slide__subtitle">Состав сайдинга Starke уникален и выполнен по европейским технологиям. Устойчив к вредителям и&nbsp;разложению.</p>
-                </div>
-              </div>
-
-              <div class="intro-slide__big-image-block">
-                <picture>
-                    <source srcset="img/content/main-slider/big-image-1.webp" type="image/webp">
-                  <img class="intro-slide__big-image" src="img/content/main-slider/big-image-1.jpg" alt="Слайд">
-                </picture>
-                <a href="product.html" class="intro-slide__link">
-                  <span class="intro-slide__link-label">Коллекция</span>
-                  <div class="intro-slide__link-title-container">
-                    <span class="intro-slide__link-title">Graphite tree</span>
-                    <svg class="intro-slide__link-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </li>
-          <li class="swiper-slide">
-            <div class="intro-slide">
-
-              <div class="intro-slide__content-block">
-                <div class="intro-slide__image-container">
-                  <div class="intro-slide__image-wrapper">
-                    <picture>
-                        <source srcset="img/content/main-slider/item-3.webp" type="image/webp">
-                      <img class="intro-slide__image" src="img/content/main-slider/item-3.jpg" alt="Слайд">
-                    </picture>
-                    <div class="intro-slide__image-label-container">
-                      <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
-                      <span class="intro-slide__image-label">натуральная текстура</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="intro-slide__text">
-                  <h2 class="intro-slide__title">Lorem ipsum dolor sit amet consectetur.</h2>
-                  <p class="intro-slide__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum id quia vero quam assumenda doloremque veritatis recusandae soluta ut incidunt!</p>
-                </div>
-              </div>
-
-              <div class="intro-slide__big-image-block">
-                <picture>
-                    <source srcset="img/content/main-slider/about-intro.webp" type="image/webp">
-                  <img class="intro-slide__big-image" src="img/content/main-slider/about-intro.jpg" alt="Слайд">
-                </picture>
-                <a href="product.html" class="intro-slide__link">
-                  <span class="intro-slide__link-label">Коллекция</span>
-                  <div class="intro-slide__link-title-container">
-                    <span class="intro-slide__link-title">Lorem, ipsum.</span>
-                    <svg class="intro-slide__link-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                </a>
-              </div>
-
-            </div>
-          </li>
-      </ul>
     </div>
   </div>
 </section>
 
-<section class="to-catalog">
+<section class="about-awards">
   <div class="container">
-    <div class="to-catalog__inner">
-      <span class="to-catalog__label">Фасадные панели <br/> от которых невозможно оторвать взгляд</span>
-
-      <ul class="to-catalog__links">
-          <li class="to-catalog__links-item">
-            <a class="to-catalog__link" href="product.html">Metallic Wood</a>
-            <svg class="to-catalog__link-icon">
-              <use xlink:href="#slash">
-            </svg>
-          </li>
-          <li class="to-catalog__links-item">
-            <a class="to-catalog__link" href="product.html">Siver Brick</a>
-            <svg class="to-catalog__link-icon">
-              <use xlink:href="#slash">
-            </svg>
-          </li>
-          <li class="to-catalog__links-item">
-            <a class="to-catalog__link" href="product.html">Rustic Plywood</a>
-            <svg class="to-catalog__link-icon">
-              <use xlink:href="#slash">
-            </svg>
-          </li>
-      </ul>
-      <ul class="to-catalog__links">
-          <li class="to-catalog__links-item">
-            <a class="to-catalog__link" href="product.html">Metallic Wood</a>
-            <svg class="to-catalog__link-icon">
-              <use xlink:href="#slash">
-            </svg>
-          </li>
-          <li class="to-catalog__links-item">
-            <a class="to-catalog__link" href="product.html">White Moon</a>
-            <svg class="to-catalog__link-icon">
-              <use xlink:href="#slash">
-            </svg>
-          </li>
-      </ul>
-
-      <a class="to-catalog__btn" href="catalog.html">
-        <svg class="to-catalog__btn-icon">
-          <use xlink:href="#3-dot">
+    <div class="about-awards__inner">
+      <h2 class="page__title about-awards__title">
+        <svg class="page__title-icon">
+          <use xlink:href="#slash">
         </svg>
-        <span class="to-catalog__btn-label">Каталог панелей</span>
-      </a>
-    </div>
-  </div>
-</section>
+        <span>ДОСТИЖЕНИЯ И НАГРАДЫ</span>
+      </h2>
+      <p class="about-awards__subtitle">За 15 лет успешной работы собрали множество наград в области бизнеса и технологий</p>
 
-<section class="benefits">
-  <div class="benefits__container">
-    <div class="benefits__inner">
-      <ul class="benefits__list">
-            <li class="benefits__item">
-              <div class="benefit">
-                <a class="benefit__link-block" title="Открыть каталог" href="catalog.html">
-                  <div class="benefit__arrow-link">
-                    <svg class="benefit__arrow-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                  <svg class="benefit__icon">
-                    <use xlink:href="#rain">
-                  </svg>
-                  <picture>
-                      <source srcset="img/content/benefits/benefit-1.webp" type="image/webp">
-                    <img class="benefit__image" src="img/content/benefits/benefit-1.png" alt="Надежные &lt;br&gt; водосточные &lt;br&gt; системы">
-                  </picture>
-                  <div class="benefit__description">
-                    <h3 class="benefit__title">ВОДОСТОК</h3>
-                    <span class="benefit__subtitle">Надежные <br> водосточные <br> системы</span>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefit">
-                <div class="benefit__text-block">
-                  <img class="benefit__text-block-image" src="img/content/icons/main-benefit-1.svg" alt="ВСЕГДА В НАЛИЧИИ">
-                  <h3 class="benefit__text-block-title">
-                    <svg class="benefit__text-block-title-icon">
-                      <use xlink:href="#slash">
-                    </svg>
-                    <span class="benefit__text-block-title-label">ВСЕГДА В НАЛИЧИИ</span>
-                  </h3>
-                  <span class="benefit__text-block-subtitle">отгрузка в короткие сроки, в необходимом количестве</span>
-                </div>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefit">
-                <div class="benefit__text-block">
-                  <img class="benefit__text-block-image" src="img/content/icons/main-benefit-2.png" alt="РЕГИОНОВ">
-                  <h3 class="benefit__text-block-title">
-                    <svg class="benefit__text-block-title-icon">
-                      <use xlink:href="#slash">
-                    </svg>
-                    <span class="benefit__text-block-title-label">РЕГИОНОВ</span>
-                  </h3>
-                  <span class="benefit__text-block-subtitle">с крытыми складами и надежным хранением</span>
-                </div>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefit">
-                <a class="benefit__link-block" title="Открыть каталог" href="catalog.html">
-                  <div class="benefit__arrow-link">
-                    <svg class="benefit__arrow-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                  <svg class="benefit__icon">
-                    <use xlink:href="#water">
-                  </svg>
-                  <picture>
-                      <source srcset="img/content/benefits/benefit-2.webp" type="image/webp">
-                    <img class="benefit__image" src="img/content/benefits/benefit-2.png" alt="Дышите свободно &lt;br&gt; с кровельной &lt;br&gt; вентиляцией">
-                  </picture>
-                  <div class="benefit__description">
-                    <h3 class="benefit__title">ВЕНТИЛЯЦИЯ</h3>
-                    <span class="benefit__subtitle">Дышите свободно <br> с кровельной <br> вентиляцией</span>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefit">
-                <a class="benefit__link-block" title="Открыть каталог" href="catalog.html">
-                  <div class="benefit__arrow-link">
-                    <svg class="benefit__arrow-icon">
-                      <use xlink:href="#right-arrow">
-                    </svg>
-                  </div>
-                  <svg class="benefit__icon">
-                    <use xlink:href="#protection">
-                  </svg>
-                  <picture>
-                      <source srcset="img/content/benefits/benefit-3.webp" type="image/webp">
-                    <img class="benefit__image" src="img/content/benefits/benefit-3.png" alt="Сможете &lt;br&gt; остановить &lt;br&gt; даже лавину">
-                  </picture>
-                  <div class="benefit__description">
-                    <h3 class="benefit__title">СНЕГОЗАДЕРЖАТЕЛИ</h3>
-                    <span class="benefit__subtitle">Сможете <br> остановить <br> даже лавину</span>
-                  </div>
-                </a>
-              </div>
-            </li>
-            <li class="benefits__item">
-              <div class="benefit">
-                <div class="benefit__text-block">
-                  <img class="benefit__text-block-image" src="img/content/icons/main-benefit-3.svg" alt="БЫСТРАЯ ДОСТАВКА">
-                  <h3 class="benefit__text-block-title">
-                    <svg class="benefit__text-block-title-icon">
-                      <use xlink:href="#slash">
-                    </svg>
-                    <span class="benefit__text-block-title-label">БЫСТРАЯ ДОСТАВКА</span>
-                  </h3>
-                  <span class="benefit__text-block-subtitle">развитая логистическая сеть на территории России</span>
-                </div>
-              </div>
-            </li>
+      <ul class="about-awards__list">
+        <li class="about-awards__item">
+          <img class="about-awards__image" src="img/content/about/avard-1.png" alt="Национальный конкурс «Брэнд года/EFFIE — 2006»">
+          <h3 class="about-awards__name">Национальный конкурс «Брэнд года/EFFIE — 2006»</h3>
+        </li>
+        <li class="about-awards__item">
+          <img class="about-awards__image" src="img/content/about/avard-2.jpg" alt="Национальный конкурс «Брэнд года/EFFIE — 2006»">
+          <h3 class="about-awards__name">Национальный конкурс «Брэнд года/EFFIE — 2006»</h3>
+        </li>
+        <li class="about-awards__item">
+          <img class="about-awards__image" src="img/content/about/avard-3.svg" alt="Национальный конкурс «Брэнд года/EFFIE — 2006»">
+          <h3 class="about-awards__name">Национальный конкурс «Брэнд года/EFFIE — 2006»</h3>
+        </li>
+        <li class="about-awards__item">
+          <img class="about-awards__image" src="img/content/about/avard-1.png" alt="Национальный конкурс «Брэнд года/EFFIE — 2006»">
+          <h3 class="about-awards__name">Национальный конкурс «Брэнд года/EFFIE — 2006»</h3>
+        </li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="benifits-list">
-  <div class="container">
-    <ul class="benifits-list__container">
-      <li class="benifits-list__item">
-        <svg class="benifits-list__item-icon red" width="67" height="67">
-          <use xlink:href="#main-page-benefit-1">
-        </svg>
-        <h3 class="benifits-list__item-name">20&nbsp;ГЕКТАРОВ</h3>
-        <p class="benifits-list__item-description">общая площадь производства</p>
-      </li>
-      <li class="benifits-list__item">
-        <svg class="benifits-list__item-icon red" width="68" height="60">
-          <use xlink:href="#main-page-benefit-2">
-        </svg>
-        <h3 class="benifits-list__item-name">40&nbsp;ДИСТРИБЬЮТОРОВ</h3>
-        <p class="benifits-list__item-description">общая площадь производства</p>
-      </li>
-      <li class="benifits-list__item">
-        <svg class="benifits-list__item-icon red" width="67" height="56">
-          <use xlink:href="#main-page-benefit-3">
-        </svg>
-        <h3 class="benifits-list__item-name">150&nbsp;ПАРТНЕРОВ</h3>
-        <p class="benifits-list__item-description">общая площадь производства</p>
-      </li>
-      <li class="benifits-list__item">
-        <svg class="benifits-list__item-icon red" width="57" height="67">
-          <use xlink:href="#main-page-benefit-4">
-        </svg>
-        <h3 class="benifits-list__item-name">15&nbsp;ЛЕТ&nbsp;ОПЫТА</h3>
-        <p class="benifits-list__item-description">общая площадь производства</p>
-      </li>
-    </ul>
-  </div>
-</section>
-<section class="form form-question ">
-  <div class="container">
-    <div class="form-question__inner">
-      <h2 class="form-question__title">У Вас остались вопросы?</h2>
-      <form class="form form-question__form" method="POST" name="question" data-need-validation>
-        <fieldset class="form__inputs form-question__inputs">
-          <label for="name">
-            <input class="form__input form-question__input" placeholder="Как к Вам обращаться?" type="text" name="name" id="name" required>
-          </label>
-          <label for="phone">
-            <input class="form__input form-question__input js-phone-input" placeholder="Укажите номер телефона" type="tel" name="phone" id="phone" required data-parsley-phone>
-          </label>
-          <label for="email">
-            <input class="form__input form-question__input" placeholder="E-mail" type="email" name="email" id="email" required>
-          </label>
-        </fieldset>
-        <div class="form-question__submit-block">
-          <button class="form__submit form-question__submit" type="submit">
-            <span class="form-question__submit-label">Отправить</span>
-            <svg class="form-question__submit-icon">
-              <use xlink:href="#right-arrow">
-            </svg>
-          </button>
-          <span class="form__policy">Нажимая кнопку отправить Вы соглашаетсь с <a href="#" class="form__policy-link">Политикой обработки персональных данных</a></span>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
 
 
-        </main>
+                <section class="form form-question ">
+                  <div class="container">
+                    <div class="form-question__inner">
+                      <h2 class="form-question__title">У Вас остались вопросы?</h2>
+                      <form class="form form-question__form" method="POST" name="question" data-need-validation>
+                        <fieldset class="form__inputs form-question__inputs">
+                          <label for="name">
+                            <input class="form__input form-question__input" placeholder="Как к Вам обращаться?" type="text" name="name" id="name" required>
+                          </label>
+                          <label for="phone">
+                            <input class="form__input form-question__input js-phone-input" placeholder="Укажите номер телефона" type="tel" name="phone" id="phone" required data-parsley-phone>
+                          </label>
+                          <label for="email">
+                            <input class="form__input form-question__input" placeholder="E-mail" type="email" name="email" id="email" required>
+                          </label>
+                        </fieldset>
+                        <div class="form-question__submit-block">
+                          <button class="form__submit form-question__submit" type="submit">
+                            <span class="form-question__submit-label">Отправить</span>
+                            <svg class="form-question__submit-icon">
+                              <use xlink:href="#right-arrow">
+                            </svg>
+                          </button>
+                          <span class="form__policy">Нажимая кнопку отправить Вы соглашаетсь с <a href="#" class="form__policy-link">Политикой обработки персональных данных</a></span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </section>        </main>
         <footer class="page-footer footer">
             <div class="container">
                 <div class="footer__inner">
