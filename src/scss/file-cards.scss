@@ -12,33 +12,11 @@
   }
 
   &__title {
-    display: flex;
-    align-items: center;
-
     margin-bottom: 3.2rem;
-
-    font-weight: 700;
-    @extend %fs-h3;
-    line-height: 1;
-    text-transform: uppercase;
 
     @include breakpoint(small-tablet) {
       margin-bottom: 2.4rem;
     }
-  }
-
-  &__title-icon {
-    margin-right: 0.8rem;
-    width: 1.7rem;
-    height: 2.4rem;
-
-    stroke: var(--accent-color);
-    fill: none;
-    stroke-width: 3;
-  }
-
-  &__title-text {
-
   }
 
   &__list {

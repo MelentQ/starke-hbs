@@ -1,7 +1,8 @@
 .intro {
   padding-left: var(--content-padding);
 
-  &__inner {
+  @include breakpoint(small-tablet) {
+    padding-left: 0;
   }
 
   &__slider {
@@ -11,6 +12,10 @@
       left: 0;
       bottom: 3.2rem;
       width: unset;
+
+      @include breakpoint(small-tablet) {
+        display: none;
+      }
 
       .swiper-pagination-bullet {
         margin-left: 0;
@@ -35,10 +40,6 @@
     }
   }
 
-  &__slider-pagination {
-    
-  }
-
   &__slider-navigation {
     position: absolute;
     left: 0;
@@ -47,16 +48,24 @@
 
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(small-tablet) {
+      display: none;
+    }
   }
 
   &__slider-btn {
 
     &_type {
-      &_prev {
-
-      }
       &_next {
         margin-bottom: 4rem;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      .intro__slider-btn-icon {
+        fill: var(--accent-color);
       }
     }
 
@@ -71,9 +80,6 @@
     height: 2rem;
 
     fill: var(--text-color);
-  }
-
-  &__slider-wrapper {
-    
+    transition: fill 0.3s ease;
   }
 }

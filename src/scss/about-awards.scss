@@ -1,0 +1,75 @@
+.about-awards {
+
+  margin-bottom: 12rem;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 8rem;
+  }
+  @include breakpoint(small-tablet) {
+    margin-bottom: 6rem;
+  }
+  @include breakpoint(mobile) {
+    margin-bottom: 4rem;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 5rem;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__subtitle {
+    max-width: 84rem;
+    margin-bottom: 10rem;
+
+    @include clamp(24,36);
+    font-weight: 400;
+    line-height: 1.2;
+
+    @include breakpoint(tablet) {
+      margin-bottom: 4.4rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    column-gap: 9.6rem;
+
+    @include breakpoint(tablet) {
+      column-gap: 2.4rem;
+    }
+    @include breakpoint(small-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2.4rem;
+    }
+    @include breakpoint(supersmall-mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    max-width: 20rem;
+  }
+
+  &__image {
+    margin-bottom: 2.4rem;
+    max-height: 12.8rem;
+
+    @include breakpoint(mobile) {
+      max-height: 10rem;
+    }
+  }
+
+  &__name {
+    @extend %fs-h5;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+}

@@ -22,20 +22,20 @@
     },
     {
       "name": "КАШТАНОВЫЙ",
-      "image": "item-1.png",
-      "webp": "item-1.webp",
+      "image": "item-2.png",
+      "webp": "item-2.webp",
       "fullImage": {
-        "image": "item-1.png",
-        "webp": "item-1.webp"
+        "image": "item-2.png",
+        "webp": "item-2.webp"
       }
     },
     {
       "name": "БИРЮЗОВЫЙ",
-      "image": "item-1.png",
-      "webp": "item-1.webp",
+      "image": "item-3.png",
+      "webp": "item-3.webp",
       "fullImage": {
-        "image": "item-1.png",
-        "webp": "item-1.webp"
+        "image": "item-3.png",
+        "webp": "item-3.webp"
       }
     },
     {
@@ -49,20 +49,20 @@
     },
     {
       "name": "WHITE MOON",
-      "image": "item-1.png",
-      "webp": "item-1.webp",
+      "image": "item-2.png",
+      "webp": "item-2.webp",
       "fullImage": {
-        "image": "item-1.png",
-        "webp": "item-1.webp"
+        "image": "item-2.png",
+        "webp": "item-2.webp"
       }
     },
     {
       "name": "PLYWOOD",
-      "image": "item-1.png",
-      "webp": "item-1.webp",
+      "image": "item-3.png",
+      "webp": "item-3.webp",
       "fullImage": {
-        "image": "item-1.png",
-        "webp": "item-1.webp"
+        "image": "item-3.png",
+        "webp": "item-3.webp"
       }
     },
     {
@@ -76,20 +76,20 @@
     },
     {
       "name": "БЕЖЕВЫЙ",
-      "image": "item-1.png",
-      "webp": "item-1.webp",
+      "image": "item-2.png",
+      "webp": "item-2.webp",
       "fullImage": {
-        "image": "item-1.png",
-        "webp": "item-1.webp"
+        "image": "item-2.png",
+        "webp": "item-2.webp"
       }
     },
     {
       "name": "ТЕМНЫЙ ОРЕХ",
-      "image": "item-1.png",
-      "webp": "item-1.webp",
+      "image": "item-3.png",
+      "webp": "item-3.webp",
       "fullImage": {
-        "image": "item-1.png",
-        "webp": "item-1.webp"
+        "image": "item-3.png",
+        "webp": "item-3.webp"
       }
     },
     {

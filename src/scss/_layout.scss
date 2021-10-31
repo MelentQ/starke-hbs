@@ -117,3 +117,23 @@
 
   background-color: rgba(0,0,0,0.4);
 }
+
+.page__title {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  @extend %fs-h4;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.page__title-icon {
+  margin-right: 0.8rem;
+  width: 1.7rem;
+  height: 2.4rem;
+
+  stroke: var(--accent-color);
+  fill: none;
+  stroke-width: 3;
+}

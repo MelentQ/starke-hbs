@@ -1,0 +1,130 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="about-intro">
+  <div class="about-intro__inner">
+    <div class="about-intro__text-block">
+      {{> breadcrumbs links=outside-layout-breadcrumbs}}
+      <h1 class="about-intro__title">Работаем так, <br> чтобы Вам не пришлось <br> сомневаться в выборе</h1>
+      <p class="about-intro__subtitle">Производим материалы для загородного домостроения на трёх производственных комплексах общей площадью 20 гектаров. Не экономим на качестве сырья и вкладываемв развитие производства</p>
+
+      {{!-- Вообще есть компонент, но он внутри секции с контейнером --}}
+      <ul class="benifits-list__container narrow">
+        {{#each benifitsList }}
+        <li class="benifits-list__item">
+          <svg class="benifits-list__item-icon {{this.icon.modClass}}" width="{{this.icon.width}}" height="{{this.icon.height}}">
+            <use xlink:href="#{{this.icon.id}}">
+          </svg>
+          <div class="benifits-list__item-text">
+            <h3 class="benifits-list__item-name">{{{this.name}}}</h3>
+            <p class="benifits-list__item-description">{{{this.description}}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+      {{!-- ### --}}
+    </div>
+    <div class="about-intro__image-block">
+      <picture>
+        <source srcset="img/content/about/{{this.intro.webp}}" type="image/webp">
+        <img class="about-intro__image" src="img/content/about/{{this.intro.image}}" alt="Работаем так, чтобы Вам не пришлось сомневаться в выборе">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="about-benifits">
+  <picture>
+    <source srcset="img/content/about/topographic-line.webp" type="image/webp">
+    <img class="about-benifits__image" src="img/content/about/topographic-line.png" alt="Фоновое изображение">
+  </picture>
+
+  <div class="container">
+    <div class="about-benifits__inner">
+      <div class="about-benifits__icon-block">
+        <h2 class="about-benifits__icon-title">Производственные комплексы оснащены <b>современным оборудованием</b></h2>
+        <svg class="about-benifits__icon">
+          <use xlink:href="#modern-machines">
+        </svg>
+      </div>
+      <div class="about-benifits__text-block">
+        <h2 class="page__title about-benifits__title">
+          <svg class="page__title-icon">
+            <use xlink:href="#slash">
+          </svg>
+          <span>УНИКАЛЬНЫЕ ТЕХНОЛОГИИ</span>
+        </h2>
+        <p class="about-benifits__subtitle">Представляем вашему вниманию виниловый сайдинг от лучшего европейского производителя. Состав Starke уникален, а сам сайдинг выполнен по особым технологиям. Сайдинг Starke полностью соответствует требованиям эксплуатации винилового сайдинга, но при этом отличается довольно малым весом.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-slider">
+  <div class="container">
+    <div class="swiper about-slider__inner" id="js-init-about-slider">
+      <ul class="swiper-wrapper about-slider__wrapper">
+        {{#each slides }}
+        <li class="swiper-slide about-slide">
+          <div class="about-slide__image-wrapper">
+            <picture>
+              <source srcset="img/content/about/{{this.webp}}" type="image/webp">
+              <img class="about-slide__image" src="img/content/about/{{this.image}}" alt="{{this.title}}">
+            </picture>
+          </div>
+
+          <div class="about-slide__description-block">
+            <h3 class="about-slide__title">{{{this.title}}}</h3>
+            <p class="about-slide__description">{{{this.description}}}</p>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+
+      <div class="about-slider__navigation">
+        <button class="about-slider__btn about-slider__btn_type_prev" type="button" title="Назад">
+          <svg class="about-slider__btn-icon">
+            <use xlink:href="#slider-nav-left">
+          </svg>
+        </button>
+
+        <div class="about-slider__pagination">
+          <span class="about-slider__current-slide"></span>
+          <span class="about-slider__slides-count"></span>
+        </div>
+
+        <button class="about-slider__btn about-slider__btn_type_next" type="button" title="Вперед">
+          <svg class="about-slider__btn-icon">
+            <use xlink:href="#slider-nav-right">
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-awards">
+  <div class="container">
+    <div class="about-awards__inner">
+      <h2 class="page__title about-awards__title">
+        <svg class="page__title-icon">
+          <use xlink:href="#slash">
+        </svg>
+        <span>ДОСТИЖЕНИЯ И НАГРАДЫ</span>
+      </h2>
+      <p class="about-awards__subtitle">За 15 лет успешной работы собрали множество наград в области бизнеса и технологий</p>
+
+      <ul class="about-awards__list">
+        {{#each awards }}
+        <li class="about-awards__item">
+          <img class="about-awards__image" src="img/content/about/{{this.image}}" alt="{{this.name}}">
+          <h3 class="about-awards__name">{{this.name}}</h3>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{/content}}
+{{/extend}}

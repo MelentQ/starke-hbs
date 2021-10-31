@@ -14,42 +14,52 @@
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.8rem;
 
+    &.narrow {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 4.2rem;
+
+      @include breakpoint(small-mobile) {
+        grid-template-columns: 1fr;
+        row-gap: 2.4rem;
+        column-gap: 0;
+      }
+    }
+
     @include breakpoint(desktop) {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 2.4rem;
     }
-    @include breakpoint(supersmall-mobile) {
+    @include breakpoint(small-mobile) {
       grid-template-columns: 1fr;
       column-gap: 0;
     }
   }
 
   &__item {
-    display: flex;
-    align-items: center;
+    position: relative;
+
+    padding-left: 8.8rem;
 
     @include breakpoint(desktop) {
-      flex-direction: column;
-      align-items: flex-start;
+      padding-left: 0;
+      padding-top: 8.8rem;
     }
   }
 
   &__item-icon {
-    flex-shrink: 0;
-    
-    margin-right: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 
     &.red {
       fill: var(--accent-color);
     }
 
     @include breakpoint(desktop) {
-      margin-right: 0;
-      margin-bottom: 1.6rem;
+      transform: translateY(0);
+      top: 0;
     }
-  }
-
-  &__item-text {
   }
 
   &__item-name {

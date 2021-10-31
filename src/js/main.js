@@ -17,6 +17,8 @@ import sliderMainPage from './components/sliderMainPage';
 import { contacts } from './components/contacts';
 import product from './components/product';
 import alignHeights from './components/alignHeights';
+import mainPage from './components/mainPage';
+import sliderAboutPage from './components/sliderAboutPage';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -36,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
     sliderMainPage();
     contacts();
     product();
+
+    mainPage();
+    sliderAboutPage();
 });
 
 window.addEventListener('load', function() {
@@ -43,4 +48,5 @@ window.addEventListener('load', function() {
     setTimeout(() => document.body.classList.add('animatable'), 300);
 
     alignHeights('.benifits-list__container', '.benifits-list__item-name');
+    alignHeights('.about-awards__list', '.about-awards__image');
 })

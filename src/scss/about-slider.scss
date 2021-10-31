@@ -1,0 +1,161 @@
+.about-slider {
+  margin-top: 4rem;
+  margin-bottom: 12rem;
+
+  @include breakpoint(tablet) {
+    margin-bottom: 8rem;
+  }
+  @include breakpoint(small-tablet) {
+    margin-bottom: 6rem;
+  }
+  @include breakpoint(mobile) {
+    margin-bottom: 4rem;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__wrapper {
+  }
+
+  &__navigation {
+    position: absolute;
+    bottom: 5.2rem;
+    left: 7.2rem;
+    z-index: 3;
+    
+    display: flex;
+
+    @include breakpoint(tablet) {
+      bottom: 3.2rem;
+      left: 2.2rem;
+    }
+    @include breakpoint(small-tablet) {
+      left: 0;
+    }
+  }
+
+  &__btn {
+    &:hover,
+    &:focus {
+      .about-slider__btn-icon {
+        fill: var(--accent-color);
+      }
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.1;
+      cursor: default;
+    }
+  }
+
+  &__btn-icon {
+    width: 2rem;
+    height: 3.6rem;
+
+    fill: var(--text-color);
+    transition: fill 0.3s ease;
+  }
+
+  &__pagination {
+    margin: 0 4rem;
+
+    @include breakpoint(tablet) {
+      margin: 0 2.4rem;
+    }
+  }
+
+  &__current-slide {
+    @include clamp(24, 36);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  &__slides-count {
+    color: #BABABA;
+    @extend %fs-h4;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+.about-slide {
+  position: relative;
+
+  &__image-wrapper {
+    position: relative;
+
+    height: calc(90vh - 14rem);
+
+    margin-bottom: 14rem;
+
+    @include breakpoint(tablet) {
+      height: calc(80vh - 10rem);
+
+      margin-bottom: 10rem;
+    }
+
+    @include breakpoint(small-tablet) {
+      height: 0;
+      padding-bottom: 56.25%;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+  }
+
+  &__description-block {
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+
+    max-width: 64rem;
+    padding: 4.2rem 2rem 0 5.6rem;
+
+    background-color: white;
+
+    @include breakpoint(tablet) {
+      padding: 3.2rem 2rem 0 3.2rem;
+    }
+    @include breakpoint(small-tablet) {
+      position: static;
+
+      margin-bottom: 10rem;
+      padding: 0;
+      max-width: unset;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+
+    @include clamp(24, 36);
+    font-weight: 400;
+    line-height: 1.2;
+
+    b {
+      color: var(--accent-color);
+      font-weight: 400;
+    }
+
+    @include breakpoint(tablet) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__description {
+    @extend %fs-t2;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}
