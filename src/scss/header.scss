@@ -11,10 +11,10 @@
   color: var(--text-color);
 
   &--light {
-    background-image: url(../img/header-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
+    // background-image: url(../img/header-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: 100% 100%;
 
     .header__telephone {
       color: var(--text-color) !important;
@@ -92,8 +92,7 @@
       display: none;
     }
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       color: var(--accent-color) !important;
     }
   }
@@ -111,8 +110,7 @@
 
     transition: color 0.3s, border-bottom-color 0.3s ease;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       border-bottom-color: #FF2204;
       color: var(--accent-color) !important;
     }
@@ -128,8 +126,7 @@
 
     margin-right: 1rem;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       .header__burger-label {
         color: var(--accent-color);
       }
@@ -162,8 +159,7 @@
     border-radius: 50%;
     border: 0.1rem solid #FFC800;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       .header__telephone-mobile-icon {
         fill: var(--accent-color);
       }

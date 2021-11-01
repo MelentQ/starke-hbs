@@ -44,6 +44,8 @@
 .additional-element {
 
   &__link {
+    display: block;
+    
     @extend %fs-t1;
     line-height: 1.2;
   }

@@ -79,6 +79,7 @@
   &__telephone {
     display: block;
 
+    width: fit-content;
     margin-bottom: 1rem;
 
     font-weight: 700;
@@ -95,6 +96,8 @@
   &__email {
     display: block;
 
+    width: fit-content;
+    
     font-weight: 700;
 
     color: var(--accent-color) !important;

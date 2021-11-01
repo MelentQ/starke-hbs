@@ -19,6 +19,7 @@ import product from './components/product';
 import alignHeights from './components/alignHeights';
 import mainPage from './components/mainPage';
 import sliderAboutPage from './components/sliderAboutPage';
+import sliderGalleryFilter from './components/sliderGalleryFilter';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mainPage();
     sliderAboutPage();
+    sliderGalleryFilter();
 });
 
 window.addEventListener('load', function() {

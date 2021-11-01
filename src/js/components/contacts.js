@@ -1,3 +1,4 @@
+import {Swiper} from 'swiper';
 import accordions from '../accordions';
 
 const contactsPage = document.querySelector('.contacts');
@@ -32,7 +33,7 @@ function contacts() {
  * Рендерит фильтр сверху
  */
 function renderFilter(data) {
-  const container = contactsPage.querySelector('.form-filter');
+  const container = contactsPage.querySelector('#js-filter-container');
 
   // Массив, в котором будут храниться кнопки.
   // Нужен для добавления событий.
@@ -70,6 +71,13 @@ function renderFilter(data) {
 
     container.append(element);
   });
+
+  // Подключаем свайпер
+  const slider = new Swiper('#js-init-form-filter-slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    freeMode: true,
+  })
 
   _setAsActive();
 

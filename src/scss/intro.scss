@@ -62,8 +62,7 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       .intro__slider-btn-icon {
         fill: var(--accent-color);
       }

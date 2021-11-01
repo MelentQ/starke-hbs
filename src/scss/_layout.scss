@@ -26,6 +26,18 @@
   }
 }
 
+.page__bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
 .page__main-title {
   position: relative;
 

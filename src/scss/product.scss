@@ -174,8 +174,7 @@
   &__calc-btn {
     margin-bottom: 1.6rem;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       color: var(--accent-color) !important;
     }
   }
@@ -183,8 +182,7 @@
   &__where-btn {
     background-color: #FC2204;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       color: var(--text-color) !important;
     }
   }

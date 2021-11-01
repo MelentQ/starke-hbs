@@ -99,8 +99,7 @@
     color: white;
     border-radius: 0.8rem;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       .to-catalog__btn-label {
         color: var(--accent-color);
       }

@@ -62,17 +62,15 @@
 
     transition: background-color 0.3s ease;
 
-    &:hover,
-    &:focus {
-      background-color: var(--back-color-3);
+    &:hover, &:focus {
+      background-color: var(--back-color-3) !important;
     }
 
     &--light {
       background-color: var(--back-color-3);
 
-      &:hover,
-      &:focus {
-        background-color: white;
+      &:hover, &:focus {
+        background-color: white !important;
       }
     }
   }
@@ -91,8 +89,7 @@
 
     transition: color 0.3s ease;
 
-    &:hover,
-    &:focus {
+    &:hover, &:focus {
       color: var(--accent-color);
     }
   }

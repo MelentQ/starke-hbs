@@ -1,18 +1,8 @@
 .form-filter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   margin: 3rem 0;
 
-  overflow-x: scroll;
-  @include customHorizontalScrollbar();
-
   @include breakpoint(tablet) {
-    justify-content: flex-start;
-
     margin: 2rem 0;
-    padding-bottom: 0.8rem;
   }
   @include breakpoint(mobile) {
     margin: 1rem 0;
@@ -21,17 +11,7 @@
   &__item {
     flex-shrink: 0;
 
-    margin-right: 2.9rem;
-    &:last-of-type {
-      margin-right: 0;
-    }
-
-    @include breakpoint(tablet) {
-      margin-right: 2rem;
-    }
-    @include breakpoint(mobile) {
-      margin-right: 1.4rem;
-    }
+    width:auto!important;
   }
 
   &__link {
@@ -47,9 +27,17 @@
     font-weight: 700;
     text-transform: uppercase;
 
+    &:hover, &:focus {
+      color: var(--accent-color);
+    }
+
     &--active {
       background-color: black;
       color: white !important;
+
+      &:hover, &:focus {
+        color: var(--accent-color) !important;
+      }
     }
 
     @include breakpoint(tablet) {
