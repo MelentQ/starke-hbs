@@ -20,6 +20,7 @@ import alignHeights from './components/alignHeights';
 import mainPage from './components/mainPage';
 import sliderAboutPage from './components/sliderAboutPage';
 import sliderGalleryFilter from './components/sliderGalleryFilter';
+import mainPageAnimations from './components/mainPageAnimations';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     mainPage();
     sliderAboutPage();
     sliderGalleryFilter();
+    mainPageAnimations();
 });
 
 window.addEventListener('load', function() {

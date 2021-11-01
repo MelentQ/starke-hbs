@@ -13,6 +13,10 @@
     background-color: rgba(255,34,4,1);
   }
 
+  &.selected .color-item__name {
+    color: var(--accent-color);
+  }
+
   &__link {
   }
 

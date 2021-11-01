@@ -1,16 +1,10 @@
 .intro-slide {
-  display: grid;
-  grid-template-columns: 7fr 5fr;
-  column-gap: 5.6rem;
-
-  @include breakpoint(small-tablet) {
-    grid-template-columns: 1fr;
-  }
-
   &__content-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    height: 100%;
 
     @include breakpoint(small-tablet) {
       padding-left: var(--content-padding);
@@ -97,6 +91,12 @@
 
   &__text {
     max-width: 60rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10%);
+
+    transition: opacity 0.3s 0.3s, visibility 0.3s 0.3s, transform 0.3s 0.3s ease;
   }
 
   &__title {

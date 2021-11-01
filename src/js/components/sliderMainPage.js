@@ -1,16 +1,16 @@
-import {Swiper, Pagination, Navigation, EffectFade, Autoplay} from "swiper";
+import Swiper, {Pagination, Navigation, Autoplay, Controller, EffectCreative} from "swiper";
 
-Swiper.use([Pagination, Navigation, EffectFade, Autoplay]);
+Swiper.use([Pagination, Navigation, Autoplay, Controller, EffectCreative]);
 
 export default function sliderMainPage() {
-  const container = document.querySelector('.intro__slider');
+  const container = document.querySelector('.intro__inner');
   if (!container) return;
 
-  new Swiper(container, {
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
+  const contentSliderContainer = container.querySelector('#js-content-slider');
+
+  const contentSlider = new Swiper(contentSliderContainer, {
+    slidesPerView: 1,
+    resistanceRatio: 0,
     autoplay: {
       delay: 6000,
       pauseOnMouseEnter: true
@@ -24,4 +24,24 @@ export default function sliderMainPage() {
       type: 'bullets',
     }
   });
+
+  const bigImageSliderContainer = container.querySelector('#js-big-image-slider');
+
+  const bigImageSlider = new Swiper(bigImageSliderContainer, {
+    slidesPerView: 1,
+    resistanceRatio: 0,
+    delayBetweenSlides: 700,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        translate: ["0%", 0, -1],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    }
+  })
+
+  bigImageSlider.controller.control = contentSlider;
+  contentSlider.controller.control = bigImageSlider;
 }

@@ -83,6 +83,11 @@
     margin-bottom: 1rem;
 
     font-weight: 700;
+
+    @include breakpoint(mobile) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   &__working-time {
     display: block;
@@ -101,6 +106,11 @@
     font-weight: 700;
 
     color: var(--accent-color) !important;
+    
+    @include breakpoint(mobile) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__menu {
