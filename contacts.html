@@ -109,13 +109,15 @@
             
 <section class="contacts">
   <div class="container">
-    <ul class="form-filter">
-      <template class="js-map-filter-element-template">
-        <li class="form-filter__item">
-          <button class="form-filter__link" type="button"></button>
-        </li>
-      </template>
-    </ul>
+    <div class="swiper form-filter" id="js-init-form-filter-slider">
+      <ul class="swiper-wrapper" id="js-filter-container">
+        <template class="js-map-filter-element-template">
+          <li class="swiper-slide form-filter__item">
+            <button class="form-filter__link" type="button"></button>
+          </li>
+        </template>
+      </ul>
+    </div>
 
     <div class="contacts__inner">
       <div class="contacts__accordion">
