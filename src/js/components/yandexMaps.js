@@ -7,7 +7,7 @@ export default function initMap() {
 
 function init(){
   initDistributorsMap();
-  initMainOfficeMap();
+  // initMainOfficeMap();
 }
 
 function initDistributorsMap() {

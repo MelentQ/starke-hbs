@@ -2,8 +2,36 @@
   margin-top: 4.8rem;
   margin-bottom: 4.8rem;
 
+  @include breakpoint(mobile) {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
   &__inner {
     margin-right: 2rem;
+  }
+
+  &__slider {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 5.6rem;
+    row-gap: 3rem;
+  
+    @include breakpoint(tablet) {
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 2.4rem;
+      row-gap: 2.4rem;
+    }
+  
+    @include breakpoint(small-tablet) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    @include breakpoint(mobile) {
+      display: flex;
+      column-gap: 0;
+      row-gap: 0;
+    }
   }
 }
 
@@ -33,6 +61,9 @@
 
     @include breakpoint(mobile) {
       margin-bottom: 1.2rem;
+      height: 6rem;
+
+      border-radius: 0 0.9rem 0 0.9rem;
     }
   }
 
@@ -43,6 +74,11 @@
 
     width: 100%;
     height: auto;
+
+    @include breakpoint(mobile) {
+      top: 0.4rem;
+      left: 1.2rem;
+    }
   }
 
   &__dot {
@@ -60,8 +96,19 @@
     background-color: rgba(255,34,4,0);
 
     transition: background-color 0.3s ease;
+
+    @include breakpoint(mobile) {
+      top: 0.6rem;
+      right: 0.6rem;
+
+      width: 0.6rem;
+      height: 0.6rem;
+    }
   }
 
   &__name {
+    @include clamp(8, 14);
+    font-weight: 800;
+    line-height: 1.4;
   }
 }

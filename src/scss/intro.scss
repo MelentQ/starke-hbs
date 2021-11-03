@@ -30,7 +30,8 @@
       width: unset;
 
       @include breakpoint(small-tablet) {
-        display: none;
+        left: var(--content-padding);
+        bottom: 2rem;
       }
 
       .swiper-pagination-bullet {
@@ -47,7 +48,7 @@
       height: 2rem;
 
       background-color: transparent;
-      border: 0.2rem solid #E3E3E3;
+      border: 0.2rem solid #b8b8b8;
     }
     
     .swiper-pagination-bullet-active {

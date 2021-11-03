@@ -11,9 +11,9 @@ export default function sliderMainPage() {
   const contentSlider = new Swiper(contentSliderContainer, {
     slidesPerView: 1,
     resistanceRatio: 0,
+    speed: 800,
     autoplay: {
-      delay: 6000,
-      pauseOnMouseEnter: true
+      delay: 6000
     },
     navigation: {
       nextEl: '.intro__slider-btn_type_next',
@@ -30,6 +30,7 @@ export default function sliderMainPage() {
   const bigImageSlider = new Swiper(bigImageSliderContainer, {
     slidesPerView: 1,
     resistanceRatio: 0,
+    speed: 800,
     delayBetweenSlides: 700,
     effect: "creative",
     creativeEffect: {

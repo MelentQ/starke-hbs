@@ -26,9 +26,9 @@
   &__image-wrapper {
     position: relative;
 
-    width: 50%;
+    width: 50vh;
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 50vh;
 
     @include breakpoint(small-tablet) {
       width: 70%;
@@ -91,12 +91,17 @@
 
   &__text {
     max-width: 60rem;
+    margin-bottom: 8.3rem;
 
     opacity: 0;
     visibility: hidden;
     transform: translateX(10%);
 
-    transition: opacity 0.3s 0.3s, visibility 0.3s 0.3s, transform 0.3s 0.3s ease;
+    transition: opacity 0.3s 0.8s, visibility 0.3s 0.8s, transform 0.3s 0.8s ease;
+
+    @include breakpoint(small-tablet) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__title {
@@ -109,15 +114,9 @@
   &__subtitle {
     display: block;
 
-    margin-bottom: 8.3rem;
-
     @extend %fs-t1;
     line-height: 1.5;
     color: var(--back-color-2);
-
-    @include breakpoint(small-tablet) {
-      margin-bottom: 4rem;
-    }
   }
 
   &__big-image-block {

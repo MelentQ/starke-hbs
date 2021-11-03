@@ -72,6 +72,7 @@
 
     @include breakpoint(small-tablet) {
       padding: 1.2rem 1rem;
+      margin-right: 0.8rem;
 
       border: 0.1rem solid #E1E1E1;
     }
@@ -84,7 +85,7 @@
 
     color: var(--back-color-2);
     font-weight: 400;
-    @extend %fs-t3;
+    @include clamp(10, 14);
     line-height: 1.2;
   }
 
@@ -92,7 +93,7 @@
     display: block;
 
     font-weight: 800;
-    @extend %fs-t1;
+    @include clamp(12, 18);
     line-height: 1.1;
   }
 

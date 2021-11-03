@@ -6,6 +6,8 @@ export default function product() {
   const container = document.querySelector('#js-colors-list');
   if (!container) return;
 
+  const isMobileResolution = document.documentElement.clientWidth < 640;
+
   const productSlider = new Swiper('#js-product-slider', {
     effect: 'fade',
     fadeEffect: {
@@ -29,28 +31,32 @@ export default function product() {
     })
   })
 
-  const colorSlider = new Swiper('#js-colors-list-slider', {
-    slidesPerView: 1.5,
-    spaceBetween: 16,
-    breakpoints: {
-      375: {
-        slidesPerView: 2,
-        spaceBetween: 16
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 30
-      },
-      1024: {
-        slidesPerView: 5,
-        spaceBetween: 40
-      },
-      1280: {
-        slidesPerView: 6,
-        spaceBetween: 56
+  if (isMobileResolution) {
+    new Swiper('#js-colors-list-slider', {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      breakpoints: {
+        375: {
+          slidesPerView: 3,
+          spaceBetween: 16
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 40
+        },
+        1280: {
+          slidesPerView: 6,
+          spaceBetween: 56
+        }
       }
-    }
-  });
+    });
+  } else {
+
+  }
 
   productSlider.on('slideChange', (swiper) => {
     colorLinks.forEach((link, i) => {
