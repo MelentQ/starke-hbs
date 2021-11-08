@@ -32,56 +32,56 @@
 
 $anim-duration: 10s;
 
-.atrain-path-1 {
+.rain-path-1 {
   stroke-dasharray: 100;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.atrain-path-2 {
+.rain-path-2 {
   stroke-dasharray: 200;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.atrain-path-3 {
+.rain-path-3 {
   stroke-dasharray: 50;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.atrain-path-4 {
+.rain-path-4 {
   stroke-dasharray: 80;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.bawater-path-1 {
+.water-path-1 {
   stroke-dasharray: 80;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.bawater-path-2 {
+.water-path-2 {
   stroke-dasharray: 50;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.bawater-path-3 {
+.water-path-3 {
   stroke-dasharray: 100;
   animation: dash $anim-duration linear;
   animation-iteration-count: infinite;
 }
 
-.asprotection-path-1 {
+.protection-path-1 {
   transform-origin: 50% 50% 0;
   transform-style: preserve-3d;
   /* Подключаем анимацию для вращения и обзора */
   animation: rotatiton-1 5s infinite ease-in-out;
 }
 
-.asprotection-path-2 {
+.protection-path-2 {
   transform-origin: 50% 50% 0;
   transform-style: preserve-3d;
   /* Подключаем анимацию для вращения и обзора */

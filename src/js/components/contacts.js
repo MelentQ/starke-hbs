@@ -23,6 +23,7 @@ function contacts() {
         renderDistributors(data);
         renderPlacemarks(data);
         initFilter();
+        initMapOverlay();
     
         accordions(contactsPage);
       })
@@ -73,11 +74,11 @@ function renderFilter(data) {
   });
 
   // Подключаем свайпер
-  const slider = new Swiper('#js-init-form-filter-slider', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    freeMode: true,
-  })
+  // const slider = new Swiper('#js-init-form-filter-slider', {
+  //   slidesPerView: 'auto',
+  //   spaceBetween: 16,
+  //   freeMode: true,
+  // })
 
   _setAsActive();
 
@@ -247,6 +248,42 @@ function _getDistributorsLabel(count) {
   if (count === 0 || count === 5 || count === 6 || count === 7 || count === 8 || count === 9) return "дистрибьюторов";
   if (count === 1) return "дистрибьютор";
   if (count === 2 || count === 3 || count === 4) return "дистрибьютора";
+}
+
+/**
+ * Включает оверлей на карту на мобилках
+ * Чтоб можно было нормально пользоваться
+ */
+function initMapOverlay() {
+  const overlayElement = contactsPage.querySelector('.contacts__distributors-map-overlay');
+  if (!overlayElement) return;
+
+  function hide() {
+    overlayElement.classList.add('hidden');
+  }
+  function show() {
+    overlayElement.classList.remove('hidden');
+  }
+
+  window.addEventListener('scroll', () => {
+    show();
+  })
+
+  window.addEventListener('click', (e) => {
+    if (!e) e = window.event;
+
+    const clickOnMap = findparentClass(e.target.parentNode,'contacts__distributors-map');
+    
+    clickOnMap ? hide() : show();
+  })
+
+  function findparentClass(node, clsName) {           
+    if(node.className != clsName && node.className!=null){
+        return findparentClass(node.parentNode,clsName);                    
+    }else if(node.className!=null){
+        return true;    
+    }
+  }
 }
 
 export {contacts};

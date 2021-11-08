@@ -8,10 +8,25 @@
     margin: 1rem 0;
   }
 
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -0.4rem -1.5rem;
+
+    @include breakpoint(mobile) {
+      margin: -0.4rem -0.4rem;
+    }
+  }
+
   &__item {
     flex-shrink: 0;
 
-    width:auto!important;
+    margin: 0.4rem 1.5rem;
+
+    @include breakpoint(mobile) {
+      margin: 0.4rem 0.4rem;
+    }
   }
 
   &__link {
@@ -22,7 +37,7 @@
     border: 0.1rem solid #C4C4C4;
     border-radius: 0 2rem;
 
-    @extend %fs-t1;
+    @include clamp(14, 18);
     line-height: 1.1;
     font-weight: 700;
     text-transform: uppercase;

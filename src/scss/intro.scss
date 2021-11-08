@@ -94,22 +94,40 @@
   &__slider-navigation {
     position: absolute;
     left: 0;
-    top: 32%;
+    top: 40%;
     z-index: 10;
 
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
 
     @include breakpoint(small-tablet) {
-      display: none;
+      top: 45%;
     }
   }
 
   &__slider-btn {
 
+    pointer-events: all;
+
     &_type {
       &_next {
-        margin-bottom: 4rem;
+        margin-right: 4rem;
+
+        @include breakpoint(small-tablet) {
+          margin-right: var(--content-padding);
+        }
+      }
+
+      &_prev {
+        @include breakpoint(small-tablet) {
+          margin-left: var(--content-padding);
+        }
       }
     }
 
@@ -126,8 +144,13 @@
   }
 
   &__slider-btn-icon {
-    width: 3.6rem;
-    height: 2rem;
+    width: 2rem;
+    height: 3.6rem;
+
+    @include breakpoint(small-tablet) {
+      width: 1.5rem;
+      height: 2.7rem;
+    }
 
     fill: var(--text-color);
     transition: fill 0.3s ease;

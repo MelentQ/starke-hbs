@@ -6,10 +6,10 @@
 {{!-- Данные берутся из файла data/contacts.json --}}
 <section class="contacts">
   <div class="container">
-    <div class="swiper form-filter" id="js-init-form-filter-slider">
-      <ul class="swiper-wrapper" id="js-filter-container">
+    <div class="form-filter">
+      <ul class="form-filter__list" id="js-filter-container">
         <template class="js-map-filter-element-template">
-          <li class="swiper-slide form-filter__item">
+          <li class="form-filter__item">
             <button class="form-filter__link" type="button"></button>
           </li>
         </template>
@@ -68,6 +68,11 @@
         {{!-- Вся логика в файле yandexMaps.js и contacts.js --}}
         {{!-- Данные берутся из файла data/contacts.json --}}
         {{!-- По умолчанию центр и зум карты берется из data-атрибутов --}}
+        <div class="contacts__distributors-map-overlay">
+          <svg class="contacts__distributors-map-overlay-icon">
+            <use xlink:href="#touch">
+          </svg>
+        </div>
       </div>
     </div>
   </div>

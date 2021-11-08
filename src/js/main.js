@@ -19,8 +19,9 @@ import product from './components/product';
 import alignHeights from './components/alignHeights';
 import mainPage from './components/mainPage';
 import sliderAboutPage from './components/sliderAboutPage';
-import sliderGalleryFilter from './components/sliderGalleryFilter';
+// import sliderGalleryFilter from './components/sliderGalleryFilter';
 import mainPageAnimations from './components/mainPageAnimations';
+import burgerMenu from './components/burgerMenu';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -43,8 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     mainPage();
     sliderAboutPage();
-    sliderGalleryFilter();
+    // sliderGalleryFilter();
     mainPageAnimations();
+    burgerMenu();
 });
 
 window.addEventListener('load', function() {

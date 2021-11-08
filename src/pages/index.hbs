@@ -8,14 +8,14 @@
       <div class="swiper-pagination intro__slider-pagination"></div>
 
       <div class="intro__slider-navigation">
-        <button class="intro__slider-btn intro__slider-btn_type_next" type="button" title="Вперед">
-          <svg class="intro__slider-btn-icon">
-            <use xlink:href="#slider-nav-up">
-          </svg>
-        </button>
         <button class="intro__slider-btn intro__slider-btn_type_prev" type="button" title="Назад">
           <svg class="intro__slider-btn-icon">
-            <use xlink:href="#slider-nav-down">
+            <use xlink:href="#slider-nav-left">
+          </svg>
+        </button>
+        <button class="intro__slider-btn intro__slider-btn_type_next" type="button" title="Вперед">
+          <svg class="intro__slider-btn-icon">
+            <use xlink:href="#slider-nav-right">
           </svg>
         </button>
       </div>
@@ -121,15 +121,15 @@
                       <use xlink:href="#right-arrow">
                     </svg>
                   </div>
-                  <svg class="benefit__icon">
-                    <use xlink:href="#{{this.icon}}">
-                  </svg>
-                  <picture>
-                    {{#if this.imageWebP}}
-                      <source srcset="img/content/benefits/{{this.imageWebP}}" type="image/webp">
-                    {{/if}}
-                    <img class="benefit__image" src="img/content/benefits/{{this.image}}" alt="{{this.subtitle}}">
-                  </picture>
+                  {{{this.icon}}}
+                  <div class="benefit__image-wrapper">
+                    <picture>
+                      {{#if this.imageWebP}}
+                        <source srcset="img/content/benefits/{{this.imageWebP}}" type="image/webp">
+                      {{/if}}
+                      <img class="benefit__image" src="img/content/benefits/{{this.image}}" alt="{{this.subtitle}}">
+                    </picture>
+                  </div>
                   <div class="benefit__description">
                     <h3 class="benefit__title">{{this.title}}</h3>
                     <span class="benefit__subtitle">{{{this.subtitle}}}</span>

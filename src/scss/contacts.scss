@@ -27,6 +27,8 @@
   }
 
   &__distributors-map {
+    position: relative;
+
     height: 76.8rem;
 
     @include breakpoint(tablet) {
@@ -37,8 +39,43 @@
       height: 54rem;
     }
     @include breakpoint(mobile) {
-      height: 48rem;
+      height: 60vh;
     }
+  }
+
+  &__distributors-map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.5);
+
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.3s ease;
+
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+
+    &.hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &__distributors-map-overlay-icon {
+    width: 4rem;
+    height: 4rem;
+
+    fill: white;
   }
 
   &__main-office-map {

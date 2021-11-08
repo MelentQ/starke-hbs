@@ -44,22 +44,19 @@
   &__item {
     width: 100%;
 
-    // со ссылкой (1, 4, 5)
+    // со ссылкой (1, 4, 5, 8, 9)
+
     &:nth-child(1) {
-
-      @include breakpoint(mobile) {
-        grid-row: 1/2;
-      }
-
       .benefit__link-block {
-        height: 53rem;
+        height: 45.6rem;
 
         @include breakpoint(tablet) {
-          height: calc(0.66 * 54rem);
+          height: calc(0.66 * 45.6rem);
         }
-
         @include breakpoint(mobile) {
-          margin-right: 6rem;
+          margin-right: 3rem;
+          margin-left: 0;
+          height: calc(0.9 * 45.6rem);
         }
       }
 
@@ -69,63 +66,63 @@
       }
 
       .benefit__icon {
-        top: -12.8rem;
-        left: 12.8rem;
+        top: -5.6rem;
+        left: 11.8rem;
 
-        width: 16.1rem;
-        height: 26.1rem;
+        width: 10rem;
+        height: 10rem;
 
         @include breakpoint(tablet) {
-          top: -8.8rem;
-          left: 12.8rem;
+          top: -2rem;
+          left: 10rem;
 
-          width: calc(0.66 * 16.1rem);
-          height: calc(0.66 * 26.1rem);
+          width: calc(0.66 * 10rem);
+          height: calc(0.66 * 10rem);
+        }
+        @include breakpoint(mobile) {
+          top: -2.4rem;
+          left: 8rem;
         }
       }
 
-      .benefit__image {
-        top: 6.4rem;
-        right: -12.8rem;
-
-        width: 35.4rem;
-        height: 37.2rem;
+      .benefit__image-wrapper {
+        bottom: 14rem;
+        right: -5.6rem;
 
         @include breakpoint(tablet) {
-          top: 4rem;
-          right: -6rem;
+          bottom: 10rem;
+          right: -2rem;
 
-          width: calc(0.66 * 35.4rem);
-          height: auto;
+          width: 24rem;
+          height: 24rem;
         }
       }
 
       .benefit__description {
-        bottom: -4.8rem;
         left: 7.2rem;
+        bottom: -4.7rem;
 
         @include breakpoint(tablet) {
-          bottom: -2.4rem;
-          left: 4rem;
+          left: 4.2rem;
+          bottom: -4.7rem;
+        }
+        @include breakpoint(mobile) {
+          
         }
       }
     }
-  
+
     &:nth-child(4) {
-
-      @include breakpoint(mobile) {
-        grid-row: 3/4;
-      }
-
       .benefit__link-block {
-        height: 50rem;
+        height: 46.7rem;
 
         @include breakpoint(tablet) {
-          height: calc(0.66 * 50rem);
+          height: calc(0.66 * 38.4rem);
         }
-
         @include breakpoint(mobile) {
+          margin-right: 0;
           margin-left: 4rem;
+          height: calc(0.9 * 38.4rem);
         }
       }
 
@@ -135,56 +132,67 @@
       }
 
       .benefit__icon {
-        top: 26rem;
-        left: -6rem;
+        top: 25.2rem;
+        left: -4.3rem;
 
-        width: 12rem;
-        height: 12rem;
+        width: 8.7rem;
+        height: 7.6rem;
 
         @include breakpoint(tablet) {
-          top: 17rem;
-          left: -3rem;
+          top: 15.2rem;
+          left: -4.3rem;
 
-          width: calc(0.66 * 12rem);
-          height: calc(0.66 * 12rem);
+          width: calc(0.66 * 8.7rem);
+          height: calc(0.66 * 7.6rem);
+        }
+        @include breakpoint(mobile) {
+          top: 15.2rem;
+          left: -4.3rem;
         }
       }
 
-      .benefit__image {
-        bottom: 0.8rem;
-        right: -12.2rem;
+      .benefit__image-wrapper {
+        bottom: -7.2rem;
+        right: -5.2rem;
 
-        width: 37.4rem;
-        height: 27.2rem;
+        width: 25rem;
+        height: 32rem;
 
         @include breakpoint(tablet) {
-          bottom: 0.8rem;
-          right: -1.2rem;
+          bottom: -12rem;
+          right: -1rem;
 
-          width: calc(0.66 * 37.4rem);
-          height: calc(0.66 * 27.2rem);
+          width: 24rem;
+          height: 24rem;
+        }
+
+        @include breakpoint(mobile) {
+          bottom: -4rem;
+          right: -1rem;
+
+          width: 18rem;
+          height: 18rem;
         }
       }
 
       .benefit__description {
         top: 4.8rem;
-        left: 3.2rem;
+        left: 3.4rem;
 
         @include breakpoint(tablet) {
           top: 2.4rem;
           left: 2.4rem;
         }
+        @include breakpoint(mobile) {
+          
+        }
       }
     }
-  
+
     &:nth-child(5) {
 
-      @include breakpoint(mobile) {
-        grid-row: 5/6;
-      }
-
       .benefit__link-block {
-        height: 38.8rem;
+        height: 32.8rem;
 
         @include breakpoint(tablet) {
           height: calc(0.66 * 38.8rem);
@@ -221,28 +229,21 @@
         }
       }
 
-      .benefit__image {
-        bottom: 3rem;
-        left: -7.8rem;
-
-        width: 43.2rem;
-        height: 30.4rem;
+      .benefit__image-wrapper {
+        bottom: 10rem;
+        left: -6.8rem;
 
         @include breakpoint(tablet) {
-          bottom: 3rem;
+          bottom: 8rem;
           left: -1.2rem;
 
-          width: calc(0.66 * 43.2rem);
-          height: calc(0.66 * 30.4rem);
-        }
-        @include breakpoint(mobile) {
-          width: calc(0.5 * 43.2rem);
-          height: calc(0.5 * 30.4rem);
+          width: 24rem;
+          height: 24rem;
         }
       }
 
       .benefit__description {
-        top: 8.8rem;
+        top: 5.8rem;
         right: -15.2rem;
 
         @include breakpoint(tablet) {
@@ -254,39 +255,145 @@
         }
       }
     }
+  
+    &:nth-child(8) {
 
-    // текстовые (2, 3, 6)
+      .benefit__link-block {
+        height: 50rem;
+
+        @include breakpoint(tablet) {
+          height: calc(0.66 * 50rem);
+        }
+
+        @include breakpoint(mobile) {
+          margin-left: 4rem;
+        }
+      }
+
+      .benefit__arrow-link {
+        bottom: 0;
+        left: 0;
+      }
+
+      .benefit__icon {
+        top: 26rem;
+        left: -6rem;
+
+        width: 12rem;
+        height: 12rem;
+
+        @include breakpoint(tablet) {
+          top: 17rem;
+          left: -3rem;
+
+          width: calc(0.66 * 12rem);
+          height: calc(0.66 * 12rem);
+        }
+      }
+
+      .benefit__image-wrapper {
+        bottom: 0.8rem;
+        right: -12.2rem;
+
+        @include breakpoint(tablet) {
+          bottom: 0.8rem;
+          right: -1.2rem;
+        }
+      }
+
+      .benefit__description {
+        top: 4.8rem;
+        left: 3.2rem;
+
+        @include breakpoint(tablet) {
+          top: 2.4rem;
+          left: 2.4rem;
+        }
+      }
+    }
+
+    &:nth-child(9) {
+      .benefit__link-block {
+        height: 53rem;
+
+        @include breakpoint(tablet) {
+          height: calc(0.66 * 54rem);
+        }
+
+        @include breakpoint(mobile) {
+          margin-right: 6rem;
+        }
+      }
+
+      .benefit__arrow-link {
+        top: 0;
+        left: 0;
+      }
+
+      .benefit__icon {
+        top: -12.8rem;
+        left: 12.8rem;
+
+        width: 16.1rem;
+        height: 26.1rem;
+
+        @include breakpoint(tablet) {
+          top: -3.8rem;
+          left: 8rem;
+
+          width: calc(0.66 * 16.1rem);
+          height: calc(0.66 * 26.1rem);
+        }
+      }
+
+      .benefit__image-wrapper {
+        top: 6.4rem;
+        right: -12.8rem;
+
+        @include breakpoint(tablet) {
+          top: 4rem;
+          right: -6rem;
+        }
+      }
+
+      .benefit__description {
+        bottom: -4.8rem;
+        left: 7.2rem;
+
+        @include breakpoint(tablet) {
+          bottom: -2.4rem;
+          left: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .benefits__item {
+    &:nth-child(1) {
+      grid-row: 1/2;
+    }
     &:nth-child(2) {
-      @include breakpoint(mobile) {
-        grid-row: 2/3;
-      }
-
-      .benefit__text-block-image {
-        width: 8rem;
-        height: 8rem;
-      }
+      grid-row: 2/3;
     }
-
     &:nth-child(3) {
-      @include breakpoint(mobile) {
-        grid-row: 4/5;
-      }
-
-      .benefit__text-block-image {
-        width: 6.8rem;
-        height: 8.2rem;
-      }
+      grid-row: 4/5;
     }
-
+    &:nth-child(4) {
+      grid-row: 3/4;
+    }
+    &:nth-child(5) {
+      grid-row: 5/6;
+    }
     &:nth-child(6) {
-      @include breakpoint(mobile) {
-        grid-row: 6/7;
-      }
-
-      .benefit__text-block-image {
-        width: 8rem;
-        height: 4.5rem;
-      }
+      grid-row: 6/7;
+    }
+    &:nth-child(7) {
+      grid-row: 8/9;
+    }
+    &:nth-child(8) {
+      grid-row: 7/8;
     }
   }
 }
@@ -297,7 +404,7 @@
 
     display: block;
 
-    height: 0;
+    min-height: 32rem;
     
     background-color: #F6F6F6;
 
@@ -329,10 +436,36 @@
 
   &__icon {
     position: absolute;
+
+    fill: none;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+
+    width: 38rem;
+    height: 38rem;
+
+    @include breakpoint(tablet) {
+      width: 24rem;
+      height: 24rem;
+    }
+    @include breakpoint(mobile) {
+      width: 20rem;
+      height: 20rem;
+    }
   }
 
   &__image {
     position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    height: auto;
+    
+    object-fit: contain;
   }
 
   &__description {
@@ -377,6 +510,11 @@
 
   &__text-block-image {
     margin-bottom: 2.4rem;
+
+    width: 8rem;
+    height: 8rem;
+    
+    object-fit: contain;
   }
 
   &__text-block-title {

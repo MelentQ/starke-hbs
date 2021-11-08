@@ -64,6 +64,8 @@
   }
 
   &__logo {
+    width: 13.8rem;
+    height: 5.7rem;
   }
 
   &__contacts {
@@ -129,6 +131,7 @@
     }
   }
   &__list-item {
+    flex-shrink: 0;
   }
   &__menu-link {
     text-transform: uppercase;

@@ -86,7 +86,7 @@
     text-align: center;
 
     font-weight: 700;
-    @extend %fs-h2;
+    @include clamp(16, 42);
     line-height: 1.2;
   }
 
