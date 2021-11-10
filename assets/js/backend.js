@@ -34,6 +34,7 @@ function handleSubmit({containerSelector, formSelector, submitBlockSelector, ope
     e.preventDefault();
 
     form.classList.add(hiddenFormClass);
+    form.reset();
     successBlock.classList.add(openedSuccessBlockClass);
   })
 
