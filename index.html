@@ -45,12 +45,32 @@
                         </a>
         
                         <div class="catalog-menu">
-                          <a class="catalog-menu__btn" href="catalog.html">
+                          <button class="catalog-menu__btn" type="button">
                             <svg class="catalog-menu__btn-icon">
                               <use xlink:href="#burger">
                             </svg>
                             <span class="catalog-menu__btn-label">Каталог</span>
-                          </a>
+                          </button>
+                          <ul class="catalog-menu__list">
+                            <li class="catalog-menu__item">
+                              <a class="catalog-menu__link" href="catalog.html">Сайдинг</a>
+                            </li>
+                            <li class="catalog-menu__item">
+                              <a class="catalog-menu__link" href="catalog.html">Фасадные панели</a>
+                            </li>
+                            <li class="catalog-menu__item">
+                              <a class="catalog-menu__link" href="catalog.html">Водосток</a>
+                            </li>
+                            <li class="catalog-menu__item">
+                              <a class="catalog-menu__link" href="catalog.html">Вентиляция</a>
+                            </li>
+                            <li class="catalog-menu__item">
+                              <a class="catalog-menu__link" href="catalog.html">Снегозадержатели</a>
+                            </li>
+                            <li class="catalog-menu__item">
+                              <a class="catalog-menu__link" href="catalog.html">Доборные элементы</a>
+                            </li>
+                          </ul>
                         </div>
                         <nav class="header__menu">
                             <ul class="header__list">
@@ -98,6 +118,30 @@
                         </a>
             
                         <ul class="burger-menu__list">
+                            <li class="burger-menu__list-item">
+                                <span class="burger-menu__catalog-header">Каталог</span>
+                                <ul class="burger-menu__catalog-list">
+                                    <li class="burger-menu__catalog-item">
+                                        <a class="burger-menu__catalog-link" href="catalog.html">Сайдинг</a>
+                                    </li>
+                                    <li class="burger-menu__catalog-item">
+                                        <a class="burger-menu__catalog-link" href="catalog.html">Фасадные панели</a>
+                                    </li>
+                                    <li class="burger-menu__catalog-item">
+                                        <a class="burger-menu__catalog-link" href="catalog.html">Водосток</a>
+                                    </li>
+                                    <li class="burger-menu__catalog-item">
+                                        <a class="burger-menu__catalog-link" href="catalog.html">Вентиляция</a>
+                                    </li>
+                                    <li class="burger-menu__catalog-item">
+                                        <a class="burger-menu__catalog-link" href="catalog.html">Снегозадержатели</a>
+                                    </li>
+                                    <li class="burger-menu__catalog-item">
+                                        <a class="burger-menu__catalog-link" href="catalog.html">Доборные элементы</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
                             <li class="burger-menu__list-item">
                                 <a class="burger-menu__link" href="gallery.html">Галерея</a>
                             </li>
@@ -155,7 +199,7 @@
                   <img class="intro-slide__image" src="img/content/main-slider/image-1.jpg" alt="Слайд">
                 </picture>
                 <div class="intro-slide__image-label-container">
-                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
+                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-natural.svg" alt="натуральная текстура">
                   <span class="intro-slide__image-label">натуральная текстура</span>
                 </div>
               </div>
@@ -175,7 +219,7 @@
                   <img class="intro-slide__image" src="img/content/main-slider/item-1.jpg" alt="Слайд">
                 </picture>
                 <div class="intro-slide__image-label-container">
-                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
+                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-natural.svg" alt="натуральная текстура">
                   <span class="intro-slide__image-label">натуральная текстура</span>
                 </div>
               </div>
@@ -195,7 +239,7 @@
                   <img class="intro-slide__image" src="img/content/main-slider/image-1.jpg" alt="Слайд">
                 </picture>
                 <div class="intro-slide__image-label-container">
-                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
+                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-natural.svg" alt="натуральная текстура">
                   <span class="intro-slide__image-label">натуральная текстура</span>
                 </div>
               </div>
@@ -215,7 +259,7 @@
                   <img class="intro-slide__image" src="img/content/main-slider/item-3.jpg" alt="Слайд">
                 </picture>
                 <div class="intro-slide__image-label-container">
-                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-brush.svg" alt="натуральная текстура">
+                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-natural.svg" alt="натуральная текстура">
                   <span class="intro-slide__image-label">натуральная текстура</span>
                 </div>
               </div>
@@ -625,6 +669,10 @@
           <span class="form__policy">Нажимая кнопку отправить Вы соглашаетсь с <a href="#" class="form__policy-link">Политикой обработки персональных данных</a></span>
         </div>
       </form>
+      <div class="form__success-block">
+        <span class="form__success-block-label">Спасибо, ваша заявка принята! <br> Мы свяжемся с вами в ближайшее время.</span>
+        <button class="form__success-block-again-btn" type="button">Отправить снова</button>
+      </div>
     </div>
   </div>
 </section>
