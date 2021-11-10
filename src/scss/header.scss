@@ -11,11 +11,6 @@
   color: var(--text-color);
 
   &--light {
-    // background-image: url(../img/header-bg.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-size: 100% 100%;
-
     .header__telephone {
       color: var(--text-color) !important;
     }
@@ -72,7 +67,8 @@
   }
 
   &__menu-link {
-    @extend %fs-t2;
+    @include clamp(12, 17);
+    font-weight: 600;
   }
 
   &__contacts {
@@ -85,7 +81,7 @@
 
     letter-spacing: 2%;
     font-weight: 700;
-    @extend %fs-t2;
+    @include clamp(12, 17);
     color: white !important;
 
     @include breakpoint (tablet) {

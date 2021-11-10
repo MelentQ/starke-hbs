@@ -18,8 +18,8 @@ export default function mainPageAnimations() {
       scrollTrigger: {
         scrub: 1,
         trigger: card,
-        start: "center center",
-        end: "+=200"
+        start: "center bottom",
+        end: "+=400"
       }
     })
 

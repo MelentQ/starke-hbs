@@ -1,4 +1,7 @@
 .form {
+  &.send {
+    display: none;
+  }
 
   &__inputs {
   }
@@ -19,6 +22,12 @@
 
     background-color: black;
     color: white;
+
+    &.disabled {
+      background-color: rgba(0,0,0,0.8);
+      cursor: default;
+      pointer-events: none;
+    }
   }
 
   &__policy {
@@ -38,6 +47,42 @@
 
     &:hover, &:focus {
       border-bottom-color: #FF2204;
+    }
+  }
+
+  &__success-block {
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__success-block-label {
+    display: block;
+
+    margin-bottom: 2rem;
+
+    font-weight: 600;
+    line-height: 1.4;
+    @include clamp(15, 24);
+  }
+
+  &__success-block-again-btn {
+    display: block;
+
+    @extend %fs-t2;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    border-bottom: dotted 0.1rem var(--text-color);
+
+    transition: border-color 0.3s, color 0.3s ease;
+
+    &:hover, &:focus {
+      color: var(--accent-color);
+      border-bottom-color: var(--accent-color);
     }
   }
 }

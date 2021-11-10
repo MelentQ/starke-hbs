@@ -48,15 +48,15 @@
 
     &:nth-child(1) {
       .benefit__link-block {
-        height: 45.6rem;
+        height: 53.6rem;
 
         @include breakpoint(tablet) {
-          height: calc(0.66 * 45.6rem);
+          height: calc(0.66 * 53.6rem);
         }
         @include breakpoint(mobile) {
           margin-right: 3rem;
           margin-left: 0;
-          height: calc(0.9 * 45.6rem);
+          height: calc(0.7 * 53.6rem);
         }
       }
 
@@ -67,30 +67,32 @@
 
       .benefit__icon {
         top: -5.6rem;
-        left: 11.8rem;
+        right: 8rem;
 
         width: 10rem;
         height: 10rem;
 
         @include breakpoint(tablet) {
           top: -2rem;
-          left: 10rem;
+          right: 6rem;
 
           width: calc(0.66 * 10rem);
           height: calc(0.66 * 10rem);
         }
         @include breakpoint(mobile) {
           top: -2.4rem;
-          left: 8rem;
         }
       }
 
       .benefit__image-wrapper {
-        bottom: 14rem;
-        right: -5.6rem;
+        top: 5.2rem;
+        right: -6.9rem;
+
+        width: 39rem;
+        height: 39rem;
 
         @include breakpoint(tablet) {
-          bottom: 10rem;
+          top: 8rem;
           right: -2rem;
 
           width: 24rem;
@@ -152,14 +154,14 @@
       }
 
       .benefit__image-wrapper {
-        bottom: -7.2rem;
-        right: -5.2rem;
+        bottom: -7.4rem;
+        right: -8.8rem;
 
-        width: 25rem;
+        width: 32rem;
         height: 32rem;
 
         @include breakpoint(tablet) {
-          bottom: -12rem;
+          bottom: -6rem;
           right: -1rem;
 
           width: 24rem;
@@ -169,9 +171,6 @@
         @include breakpoint(mobile) {
           bottom: -4rem;
           right: -1rem;
-
-          width: 18rem;
-          height: 18rem;
         }
       }
 

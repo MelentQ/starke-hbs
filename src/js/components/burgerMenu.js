@@ -5,6 +5,7 @@ export default function burgerMenu() {
   if (!container) return;
 
   const menu = document.querySelector('.burger-menu');
+  const menuContent = menu.querySelector('.burger-menu__inner');
   const openMenuBtn = document.querySelector('.header__burger');
   const closeMenuBtn = document.querySelector('.burger-menu__close-btn');
 
@@ -19,12 +20,14 @@ export default function burgerMenu() {
         reserveScrollBarGap: true,
     });
     menu.classList.add('menu-shown');
+    menuContent.classList.add('menu-shown');
   };
 
   const closeMenu = () => {
     isMenuOpen = false;
     clearAllBodyScrollLocks();
     menu.classList.remove('menu-shown');
+    menuContent.classList.remove('menu-shown');
   };
 
   openMenuBtn.addEventListener('click', () => {

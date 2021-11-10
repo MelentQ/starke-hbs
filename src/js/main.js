@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     datepicker();
     
     initMap();
-    formFilter();
+    // formFilter();
     sliderMainPage();
     contacts();
     product();

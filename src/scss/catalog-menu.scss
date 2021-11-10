@@ -1,14 +1,24 @@
 .catalog-menu {
+  position: relative;
+
+  margin-left: 3.6rem;
+  margin-right: 8rem;
+
   @include breakpoint (tablet) {
     display: none;
+  }
+
+  &:hover {
+    .catalog-menu__list {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &__btn {
     display: flex;
     align-items: center;
 
-    margin-left: 3.6rem;
-    margin-right: 8rem;
     border-radius: 0.6rem;
     padding: 1.3rem 2.9rem;
 
@@ -35,8 +45,38 @@
   }
 
   &__btn-label {
-    @extend %fs-t2;
+    @include clamp(12, 17);
+    font-weight: 600;
     
     transition: color 0.3s ease;
+  }
+
+  &__list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    padding: 1.3rem 2.9rem;
+
+    background-color: #fff4df;
+    border-radius: 0.6rem;
+
+    @include clamp(12, 17);
+    font-weight: 600;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s, visibility 0.3s ease;
+  }
+
+  &__item {
+    margin-bottom: 1.4rem;
+  }
+
+  &__link {
+    display: block;
+
+    width: max-content;
   }
 }

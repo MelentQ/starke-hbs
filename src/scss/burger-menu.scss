@@ -5,6 +5,7 @@
   z-index: 11;
 
   width: 100%;
+  height: 100vh;
   padding-top: 2.3rem;
   padding-bottom: 6rem;
 
@@ -13,8 +14,9 @@
 
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   transform: translateY(-100%);
-  transition: visibility 0.3s, opacity 0.3s, transform 0.5s ease;
+  transition: visibility 0.3s, opacity 0.3s, transform 0.5s linear;
 
   @include breakpoint(tablet) {
     opacity: 1;
@@ -31,6 +33,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    opacity: 0;
+
+    transition: opacity 0.3s 0.5s ease;
+
+    &.menu-shown {
+      opacity: 1;
+    }
   }
 
   &__close-btn {
@@ -47,6 +57,11 @@
   &__logo {
     width: 13.8rem;
     height: 5.7rem;
+
+    @include breakpoint(supersmall-mobile) {
+      width: calc(0.6 * 13.8rem);
+      height: calc(0.6 * 5.7rem);
+    }
   }
 
   &__list {
@@ -55,10 +70,14 @@
     align-items: center;
 
     margin-top: 4rem;
+
+    @include breakpoint(supersmall-mobile) {
+      margin-top: 2rem;
+    }
   }
 
   &__list-item {
-    
+    border-bottom: solid 0.1rem rgba(255,255,255,0.5);
   }
 
   &__link {
@@ -66,6 +85,44 @@
 
     padding: 1.6rem;
 
-    @extend %fs-h4;
+    @include clamp(16, 24);
+
+    @include breakpoint(supersmall-mobile) {
+      padding: 1.2rem;
+    }
+  }
+
+  &__catalog-header {
+    display: block;
+
+    padding: 1.6rem;
+
+    @include clamp(16, 24);
+    text-align: center;
+    opacity: 0.9;
+
+    @include breakpoint(supersmall-mobile) {
+      padding: 1.2rem;
+    }
+  }
+
+  &__catalog-list {
+    padding-bottom: 1.6rem;
+
+    @include clamp(14, 18);
+    text-align: center;
+
+    @include breakpoint(supersmall-mobile) {
+      padding-bottom: 1.2rem;
+    }
+  }
+
+  &__catalog-item {
+  }
+
+  &__catalog-link {
+    display: block;
+
+    padding: 0.8rem;
   }
 }

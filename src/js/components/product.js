@@ -16,6 +16,7 @@ export default function product() {
   });
 
   const colorLinks = container.querySelectorAll('.color-item__link');
+  colorLinks[0].parentElement.classList.add("selected");
 
   colorLinks.forEach((link, i) => {
     link.addEventListener('click', (e) => {

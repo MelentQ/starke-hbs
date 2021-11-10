@@ -16,13 +16,16 @@
   }
 
   &__text-block {
-    padding-top: 9rem;
+    padding-top: 17.2rem;
     padding-left: var(--content-padding);
     padding-bottom: 10rem;
 
     @include breakpoint(tablet) {
       padding-bottom: 6rem;
       padding-right: var(--content-padding);
+    }
+    @include breakpoint(mobile) {
+      padding-top: 9rem;
     }
   }
 

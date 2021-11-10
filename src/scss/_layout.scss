@@ -24,7 +24,11 @@
   flex-direction: column;
 
   &--with-header {
-    padding-top: 9rem;
+    padding-top: 17.2rem;
+
+    @include breakpoint(mobile) {
+      padding-top: 9rem;
+    }
   }
 }
 
@@ -35,10 +39,14 @@
   z-index: -1;
 
   width: 100%;
-  height: 15.6rem;
+  height: 32rem;
 
   object-fit: cover;
   mask-image: linear-gradient(to top, rgba(255,255,255,0) 0%, #fff 50%);
+
+  @include breakpoint(mobile) {
+    height: 17.2rem;
+  }
 }
 
 .page__main-title {
@@ -46,7 +54,7 @@
 
   padding-bottom: 4.3rem;
   margin-bottom: 0.4rem;
-  margin-top: 4.3rem;
+  margin-top: 2.3rem;
 
   @extend %fs-h1;
 
