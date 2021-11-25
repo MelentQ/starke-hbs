@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
     hiddenFormClass: "send",
     openedSuccessBlockClass: "visible"
   })
+
+  handleSubmit({
+    containerSelector: ".modal-form-question",
+    formSelector: ".form",
+    submitBlockSelector: ".form__success-block",
+    openFormBtnSelector: ".form__success-block-again-btn"
+  }, {
+    hiddenFormClass: "send",
+    openedSuccessBlockClass: "visible"
+  })
 });
 
 /**

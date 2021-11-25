@@ -1,18 +1,7 @@
-import polyfills from './polyfills';
-import './lazyload';
-import detectTouch from './detectTouch';
-import setScrollbarWidth from './setScrollbarWidth';
 import validation from './validation';
-import customSelects from './customSelects';
 import masks from './masks';
-import fileUpload from './fileUpload';
-import anchorLinks from './anchorLinks';
-import mediaPlayer from './mediaPlayer';
-import datepicker from './datepicker';
-import modals from './modals';
 
 import initMap from './components/yandexMaps';
-import formFilter from './components/formFilter';
 import sliderMainPage from './components/sliderMainPage';
 import { contacts } from './components/contacts';
 import product from './components/product';
@@ -22,19 +11,11 @@ import sliderAboutPage from './components/sliderAboutPage';
 // import sliderGalleryFilter from './components/sliderGalleryFilter';
 import mainPageAnimations from './components/mainPageAnimations';
 import burgerMenu from './components/burgerMenu';
+import modalFormQuestion from './components/modal-form-question';
 
 document.addEventListener('DOMContentLoaded', function() {
-    polyfills();
-    detectTouch();
-    setScrollbarWidth();
     validation();
-    customSelects();
     masks();
-    fileUpload();
-    anchorLinks();
-    mediaPlayer();
-    modals();
-    datepicker();
     
     initMap();
     // formFilter();
@@ -47,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // sliderGalleryFilter();
     mainPageAnimations();
     burgerMenu();
+
+    modalFormQuestion();
 });
 
 window.addEventListener('load', function() {

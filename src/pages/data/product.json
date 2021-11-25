@@ -17,7 +17,8 @@
       "fullImage": {
         "image": "item-1.png",
         "webp": "item-1.webp"
-      }
+      },
+      "hash": "item1"
     },
     {
       "name": "КАШТАНОВЫЙ",
@@ -26,7 +27,8 @@
       "fullImage": {
         "image": "item-2.png",
         "webp": "item-2.webp"
-      }
+      },
+      "hash": "item2"
     },
     {
       "name": "БИРЮЗОВЫЙ",
@@ -35,7 +37,8 @@
       "fullImage": {
         "image": "item-3.png",
         "webp": "item-3.webp"
-      }
+      },
+      "hash": "item3"
     },
     {
       "name": "ТЕРРАКОТОВЫЙ",
@@ -44,7 +47,8 @@
       "fullImage": {
         "image": "item-1.png",
         "webp": "item-1.webp"
-      }
+      },
+      "hash": "item4"
     },
     {
       "name": "WHITE MOON",
@@ -53,7 +57,8 @@
       "fullImage": {
         "image": "item-2.png",
         "webp": "item-2.webp"
-      }
+      },
+      "hash": "item5"
     },
     {
       "name": "PLYWOOD",
@@ -62,7 +67,8 @@
       "fullImage": {
         "image": "item-3.png",
         "webp": "item-3.webp"
-      }
+      },
+      "hash": "item6"
     },
     {
       "name": "КОРИЧНЕВЫЙ",
@@ -71,7 +77,8 @@
       "fullImage": {
         "image": "item-1.png",
         "webp": "item-1.webp"
-      }
+      },
+      "hash": "item7"
     },
     {
       "name": "БЕЖЕВЫЙ",
@@ -80,7 +87,8 @@
       "fullImage": {
         "image": "item-2.png",
         "webp": "item-2.webp"
-      }
+      },
+      "hash": "item8"
     },
     {
       "name": "ТЕМНЫЙ ОРЕХ",
@@ -89,7 +97,8 @@
       "fullImage": {
         "image": "item-3.png",
         "webp": "item-3.webp"
-      }
+      },
+      "hash": "item9"
     },
     {
       "name": "ЛИСТВИННИЦА",
@@ -98,7 +107,8 @@
       "fullImage": {
         "image": "item-1.png",
         "webp": "item-1.webp"
-      }
+      },
+      "hash": "item10"
     }
   ],
   "product": {

@@ -10,7 +10,7 @@ export default function mainPageAnimations() {
   const animatedCards = container.querySelectorAll('.benefit__link-block');
   animatedCards.forEach((card, i) => {
     // Анимируемые объекты:
-    const image = card.querySelector('.benefit__image');
+    const image = card.querySelector('.benefit__image-wrapper');
     const description = card.querySelector('.benefit__description');
     const icon = card.querySelector('.benefit__icon');
 

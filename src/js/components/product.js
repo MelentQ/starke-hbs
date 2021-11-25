@@ -1,6 +1,6 @@
-import {Swiper, EffectFade} from "swiper";
+import {Swiper, EffectFade, HashNavigation} from "swiper";
 
-Swiper.use([EffectFade]);
+Swiper.use([EffectFade, HashNavigation]);
 
 export default function product() {
   const container = document.querySelector('#js-colors-list');
@@ -9,6 +9,7 @@ export default function product() {
   const isMobileResolution = document.documentElement.clientWidth < 640;
 
   const productSlider = new Swiper('#js-product-slider', {
+    hashNavigation: true,
     effect: 'fade',
     fadeEffect: {
       crossFade: true
@@ -16,7 +17,8 @@ export default function product() {
   });
 
   const colorLinks = container.querySelectorAll('.color-item__link');
-  colorLinks[0].parentElement.classList.add("selected");
+  const currentIndex = productSlider.activeIndex;
+  colorLinks[currentIndex].parentElement.classList.add("selected");
 
   colorLinks.forEach((link, i) => {
     link.addEventListener('click', (e) => {

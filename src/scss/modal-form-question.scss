@@ -1,0 +1,66 @@
+.modal-form-question {
+  padding: 4rem;
+
+  &__form {
+
+  }
+
+  &__inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    row-gap: 1rem;
+
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    height: var(--inputs-height);
+
+    background-color: var(--back-color-3);
+    border-color: var(--back-color-3);
+
+    transition: border-color 0.3s ease;
+
+    &:hover, &:focus {
+      border-color: var(--text-color);
+    }
+  }
+
+  &__submit-block {
+
+  }
+
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--inputs-height);
+    width: 100%;
+    margin-bottom: 1.6rem;
+
+    transition: color 0.3s ease;
+
+    &:hover, &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__submit-label {
+    margin-right: 1.4rem;
+
+    font-weight: 600;
+  }
+
+  &__submit-icon {
+    width: 0.9rem;
+    height: 1.6rem;
+
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form-question .parsley-errors-list {
+  display: none;
+}

@@ -32,7 +32,7 @@
       <div class="swiper" id="js-product-slider">
         <ul class="swiper-wrapper">
           {{#each colors-list }}
-          <li class="swiper-slide">
+          <li class="swiper-slide" data-hash="{{this.hash}}">
             <div class="product__image-container">
               <picture>
                 <source srcset="img/content/product/{{this.fullImage.webp}}" type="image/webp">

@@ -60,18 +60,17 @@
 
     background-color: white;
 
-    transition: background-color 0.3s ease;
+    border-color: white;
+
+    transition: border-color 0.3s ease;
 
     &:hover, &:focus {
-      background-color: var(--back-color-3) !important;
+      border-color: var(--text-color);
     }
 
     &--light {
       background-color: var(--back-color-3);
-
-      &:hover, &:focus {
-        background-color: white !important;
-      }
+      border-color: var(--back-color-3);
     }
   }
 
