@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="assets/libs/HystModal/hystmodal.min.css">
 
     <meta name="description" content="Работаем так, чтобы Вам не пришлось сомневаться в выборе" />
     <meta name="keywords" content="Работаем так, чтобы Вам не пришлось сомневаться в выборе" />
@@ -102,7 +103,7 @@
         
                         <a class="header__telephone" href="tel:+79865647678" title="Позвонить">+7 986 564 76 78</a>
         
-                        <a class="header__write-to-us" href="#">Написать нам</a>
+                        <a class="header__write-to-us" href="#" data-hystmodal="#myModal">Написать нам</a>
                     </div>
                 </div>
             </div>
@@ -407,7 +408,7 @@
                   <div class="container">
                     <div class="form-question__inner">
                       <h2 class="form-question__title">У Вас остались вопросы?</h2>
-                      <form class="form form-question__form" method="POST" name="question" data-need-validation>
+                      <form class="form form-question__form" name="question" data-need-validation>
                         <fieldset class="form__inputs form-question__inputs">
                           <label for="name">
                             <input class="form__input form-question__input" placeholder="Как к Вам обращаться?" type="text" name="name" id="name" required>
@@ -499,7 +500,41 @@
                     </a>
                 </div>
             </div>
-        </footer>        <style>
+        </footer>        <div class="hystmodal" id="myModal" aria-hidden="true">
+            <div class="hystmodal__wrap">
+                <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">Закрыть</button>
+                    <div class="modal-form-question">
+                      <form class="form modal-form-question__form" name="modal-form-question" data-need-validation>
+                        <fieldset class="form__inputs modal-form-question__inputs">
+                          <label for="name">
+                            <input class="form__input modal-form-question__input" placeholder="Как к Вам обращаться?" type="text" name="name" id="name" required>
+                          </label>
+                          <label for="phone">
+                            <input class="form__input modal-form-question__input js-phone-input" placeholder="Укажите номер телефона" type="tel" name="phone" id="phone" required data-parsley-phone>
+                          </label>
+                          <label for="email">
+                            <input class="form__input modal-form-question__input" placeholder="E-mail" type="email" name="email" id="email" required>
+                          </label>
+                        </fieldset>
+                        <div class="modal-form-question__submit-block">
+                          <button class="form__submit modal-form-question__submit" type="submit">
+                            <span class="modal-form-question__submit-label">Отправить</span>
+                            <svg class="modal-form-question__submit-icon">
+                              <use xlink:href="#right-arrow">
+                            </svg>
+                          </button>
+                          <span class="form__policy">Нажимая кнопку отправить Вы соглашаетсь с <a href="#" class="form__policy-link">Политикой обработки персональных данных</a></span>
+                        </div>
+                      </form>
+                      <div class="form__success-block">
+                        <span class="form__success-block-label">Спасибо, ваша заявка принята! <br> Мы свяжемся с вами в ближайшее время.</span>
+                        <button class="form__success-block-again-btn" type="button">Отправить снова</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <style>
             .ie-placeholder {
                 z-index: 4000;
                 position: fixed;
@@ -531,6 +566,7 @@
                 Извините, ваш браузер не поддерживается
             </div>
         </div>        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/libs/HystModal/hystmodal.min.js"></script>
         <script src="js/app.js"></script>
         <script src="assets/js/backend.js"></script>
     </div>
