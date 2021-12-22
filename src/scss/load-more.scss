@@ -18,7 +18,7 @@
   border-radius: 0.8rem;
   transition: background-color 0.3s, visibility 0.3s, opacity 0.3s ease;
 
-  &:hover, &:focus {
+  &:hover {
     background-color: rgba(#EFEFEF, 0.8);
 
     .form-load-more__submit-label {

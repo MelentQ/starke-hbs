@@ -42,17 +42,13 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    &:hover, &:focus {
+    &:hover {
       color: var(--accent-color);
     }
 
     &--active {
       background-color: black;
       color: white !important;
-
-      &:hover, &:focus {
-        color: var(--accent-color) !important;
-      }
     }
 
     @include breakpoint(tablet) {

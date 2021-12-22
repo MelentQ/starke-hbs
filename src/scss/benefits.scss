@@ -69,15 +69,15 @@
         top: -5.6rem;
         right: 8rem;
 
-        width: 10rem;
-        height: 10rem;
+        width: 11.8rem;
+        height: 13.4rem;
 
         @include breakpoint(tablet) {
           top: -2rem;
           right: 6rem;
 
-          width: calc(0.66 * 10rem);
-          height: calc(0.66 * 10rem);
+          width: calc(0.66 * 11.8rem);
+          height: calc(0.66 * 13.4rem);
         }
         @include breakpoint(mobile) {
           top: -2.4rem;
@@ -137,15 +137,15 @@
         top: 25.2rem;
         left: -4.3rem;
 
-        width: 8.7rem;
-        height: 7.6rem;
+        width: 13rem;
+        height: 11.4rem;
 
         @include breakpoint(tablet) {
           top: 15.2rem;
           left: -4.3rem;
 
-          width: calc(0.66 * 8.7rem);
-          height: calc(0.66 * 7.6rem);
+          width: calc(0.66 * 13rem);
+          height: calc(0.66 * 11.4rem);
         }
         @include breakpoint(mobile) {
           top: 15.2rem;
@@ -212,14 +212,14 @@
         top: -6rem;
         left: 4.8rem;
 
-        width: 12rem;
+        width: 10rem;
         height: 12rem;
 
         @include breakpoint(tablet) {
           top: -3rem;
           left: 4.8rem;
 
-          width: calc(0.66 * 12rem);
+          width: calc(0.66 * 10rem);
           height: calc(0.66 * 12rem);
         }
         @include breakpoint(mobile) {
@@ -279,14 +279,14 @@
         left: -6rem;
 
         width: 12rem;
-        height: 12rem;
+        height: 8.4rem;
 
         @include breakpoint(tablet) {
           top: 17rem;
           left: -3rem;
 
           width: calc(0.66 * 12rem);
-          height: calc(0.66 * 12rem);
+          height: calc(0.66 * 8.4rem);
         }
       }
 

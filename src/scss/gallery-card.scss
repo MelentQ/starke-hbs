@@ -1,7 +1,7 @@
 .gallery-card {
   display: block;
 
-  &:hover, &:focus {
+  &:hover {
     .gallery-card__name {
       color: var(--accent-color);
     }

@@ -30,6 +30,12 @@
   }
 }
 
+@keyframes diamond-path-1 {
+  0% {
+    transform: translate(10px, 10px);
+  }
+}
+
 $anim-duration: 10s;
 
 .rain-path-1 {
@@ -86,4 +92,50 @@ $anim-duration: 10s;
   transform-style: preserve-3d;
   /* Подключаем анимацию для вращения и обзора */
   animation: rotatiton-2 5s infinite ease-in-out;
+}
+
+.diamond-path-1 {
+
+}
+
+.diamond-path-2 {
+
+}
+
+.diamond-path-3 {
+
+}
+
+.diamond-path-4 {
+
+}
+
+.brush-path-1 {
+
+}
+
+.brush-path-2 {
+
+}
+
+.brush-path-3 {
+
+}
+
+#efHeFJ56aRG2_tr {
+  animation: efHeFJ56aRG2_tr__tr 1600ms linear infinite normal forwards;
+}
+@keyframes efHeFJ56aRG2_tr__tr {
+  0% {
+      transform: translate(49.313438px, 69.37315px) rotate(0.108207deg);
+  }
+  31.25% {
+      transform: translate(49.313438px, 69.37315px) rotate(-2.04555deg);
+  }
+  68.75% {
+      transform: translate(49.313438px, 69.37315px) rotate(2.948836deg);
+  }
+  100% {
+      transform: translate(49.313438px, 69.37315px) rotate(0.145514deg);
+  }
 }

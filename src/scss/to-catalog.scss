@@ -118,7 +118,7 @@
     color: white;
     border-radius: 0.8rem;
 
-    &:hover, &:focus {
+    &:hover {
       .to-catalog__btn-label {
         color: var(--accent-color);
       }

@@ -37,7 +37,7 @@
   }
 
   &__btn {
-    &:hover, &:focus {
+    &:hover {
       .about-slider__btn-icon {
         fill: var(--accent-color);
       }

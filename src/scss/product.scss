@@ -175,15 +175,27 @@
   &__calc-btn {
     margin-bottom: 1.6rem;
 
-    &:hover, &:focus {
+    &:hover {
       color: var(--accent-color) !important;
+    }
+
+    &.disabled {
+      opacity: 0.8;
+      cursor: default;
+
+      &:hover {
+        color: white !important;
+      }
+      &:focus {
+        outline: none;
+      }
     }
   }
 
   &__where-btn {
     background-color: #FC2204;
 
-    &:hover, &:focus {
+    &:hover {
       color: var(--text-color) !important;
     }
   }

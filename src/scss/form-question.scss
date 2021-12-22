@@ -64,7 +64,7 @@
 
     transition: border-color 0.3s ease;
 
-    &:hover, &:focus {
+    &:hover {
       border-color: var(--text-color);
     }
 
@@ -88,7 +88,7 @@
 
     transition: color 0.3s ease;
 
-    &:hover, &:focus {
+    &:hover {
       color: var(--accent-color);
     }
   }

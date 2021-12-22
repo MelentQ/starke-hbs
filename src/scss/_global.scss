@@ -6,8 +6,11 @@
   padding: 0;
 }
 
-*:focus {
-  outline: none;
+a, button, input, textarea {
+  &:focus {
+    outline: dotted var(--accent-color) 0.1rem;
+    outline-offset: 0.2rem;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,7 +166,7 @@ a {
     color: inherit;
   }
 
-  &:hover, &:focus {
+  &:hover {
     color: #FF2204;
   }
 }
