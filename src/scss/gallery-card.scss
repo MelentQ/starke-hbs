@@ -45,6 +45,21 @@
     background-color: white;
   }
 
+  &__text-name-container {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1.2rem;
+  }
+
+  &__link-icon {
+    margin-left: 1.2rem;
+    width: 0.9rem;
+    height: 1.6rem;
+
+    fill: var(--accent-color);
+  }
+
   &__place {
     display: block;
 
@@ -54,8 +69,6 @@
   }
 
   &__name {
-    margin-bottom: 1.2rem;
-
     @extend %fs-h5;
     font-weight: 600;
     color: #171723;

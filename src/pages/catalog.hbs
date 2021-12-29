@@ -12,11 +12,15 @@
             <img class="catalog-item__image" src="img/content/catalog/{{this.image}}" alt="{{this.name}}">
           </picture>
           <div class="catalog-item__texture-block">
-            <img class="catalog-item__texture-icon" src="img/content/icons/{{this.texture.image}}" alt="{{this.texture.label}}">
             <span class="catalog-item__texture-label">{{{this.texture.label}}}</span>
           </div>
           <div class="catalog-item__text-block">
-            <h3 class="catalog-item__name">{{this.name}}</h3>
+            <div class="catalog-item__text-name-container">
+              <h3 class="catalog-item__name">{{this.name}}</h3>
+              <svg class="catalog-item__link-icon">
+                <use xlink:href="#right-arrow">
+              </svg>
+            </div>
             <span class="catalog-item__specification">{{this.specification}}</span>
           </div>
         </a>

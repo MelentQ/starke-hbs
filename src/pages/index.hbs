@@ -32,8 +32,11 @@
                   {{/if}}
                   <img class="intro-slide__image" src="img/content/main-slider/{{this.image}}" alt="Слайд">
                 </picture>
-                <div class="intro-slide__image-label-container">
-                  <img class="intro-slide__image-label-icon" src="img/content/icons/texture-natural.svg" alt="{{this.imageLabel}}">
+                <div
+                  class="intro-slide__image-label-container intro-slide__image-label-container_theme_dark"
+                  style="background-image: url(img/content/textures/wood.png);"
+                >
+                  {{!-- class 2: intro-slide__image-label-container_theme_dark --}}
                   <span class="intro-slide__image-label">{{this.imageLabel}}</span>
                 </div>
               </div>

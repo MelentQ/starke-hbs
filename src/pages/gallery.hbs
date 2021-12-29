@@ -23,7 +23,12 @@
                 </picture>
               </div>
               <div class="gallery-card__text-container">
-                <h3 class="gallery-card__name">{{this.name}}</h3>
+                <div class="gallery-card__text-name-container">
+                  <h3 class="gallery-card__name">{{this.name}}</h3>
+                  <svg class="gallery-card__link-icon">
+                    <use xlink:href="#right-arrow">
+                  </svg>
+                </div>
                 <span class="gallery-card__place">{{this.place}}</span>
               </div>
             </a>
