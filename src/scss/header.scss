@@ -26,6 +26,10 @@
 
   &__inner {
     display: flex;
+
+    @include breakpoint(tablet) {
+      justify-content: space-between;
+    }
   }
 
   &__navigation {
@@ -34,6 +38,11 @@
 
     margin-right: 2rem;
     width: 65%;
+
+    @include breakpoint(tablet) {
+      width: unset;
+      margin-right: 3rem;
+    }
   }
 
   &__logo-link {
@@ -82,6 +91,10 @@
 
     width: 35%;
     padding-right: var(--content-padding);
+
+    @include breakpoint(tablet) {
+      width: unset;
+    }
   }
 
   &__telephone {

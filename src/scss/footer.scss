@@ -38,14 +38,14 @@
       grid-template-columns: 1fr;
 
       grid-template-areas: 'logo'
-                           'menu'
                            'contacts'
+                           'menu'
                            'copyright'
                            'links'
                            'made-by';
     }
     @include breakpoint(mobile) {
-      text-align: center;
+      // text-align: center;
     }
   }
 
@@ -57,10 +57,6 @@
     display: inline-block;
 
     @include defaultHoverEffect(0.8);
-
-    @include breakpoint(mobile) {
-      justify-self: center;
-    }
   }
 
   &__logo {
@@ -87,8 +83,8 @@
     font-weight: 700;
 
     @include breakpoint(mobile) {
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
     }
   }
   &__working-time {
@@ -99,6 +95,10 @@
     font-style: 1.1rem;
     font-weight: 600;
     color: var(--back-color);
+
+    @include breakpoint(mobile) {
+      margin-bottom: 1rem;
+    }
   }
   &__email {
     display: block;
@@ -110,8 +110,8 @@
     color: var(--accent-color) !important;
     
     @include breakpoint(mobile) {
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
     }
   }
 
@@ -126,8 +126,8 @@
     row-gap: 3rem;
 
     @include breakpoint(mobile) {
-      grid-template-columns: 1fr;
-      justify-items: center;
+      // grid-template-columns: 1fr;
+      // justify-items: center;
     }
   }
   &__list-item {
@@ -157,7 +157,7 @@
     @include flexRowGap(0.8rem);
 
     @include breakpoint(mobile) {
-      align-self: center;
+      // align-self: center;
     }
   }
 
@@ -170,7 +170,7 @@
     @include defaultHoverEffect(0.8);
 
     @include breakpoint(mobile) {
-      justify-content: center;
+      // justify-content: center;
     }
   }
 

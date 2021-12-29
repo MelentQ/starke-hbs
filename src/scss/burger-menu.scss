@@ -78,6 +78,10 @@
 
   &__list-item {
     border-bottom: solid 0.1rem rgba(255,255,255,0.5);
+
+    &:last-of-type {
+      border-bottom: none;
+    }
   }
 
   &__link {

@@ -86,6 +86,8 @@
 
   &__image {
     position: absolute;
+
+    max-width: 100%;
   }
 
   &__texture-block {
@@ -123,6 +125,8 @@
     bottom: 0;
 
     padding: 2rem;
+    max-width: 80%;
+    border-radius: 0 2rem 0 2rem;
     
     background-color: white;
 
@@ -133,10 +137,12 @@
   &__name {
     margin-bottom: 0.5rem;
 
-    font-weight: 600;
+    font-weight: 700;
+    @extend %fs-h4;
   }
 
   &__specification {
     font-weight: 400;
+    @extend %fs-h5;
   }
 }

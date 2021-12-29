@@ -37,6 +37,33 @@
     transform: translate(-50%, -50%);
   }
 
+  &__category {
+    position: absolute;
+
+    top: 2rem;
+    left: 2rem;
+
+    padding: 1.6rem;
+
+    background-color: black;
+    border-radius: 0 2rem;
+
+    @extend %fs-t3;
+    line-height: 1.1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+    z-index: 2;
+
+    @include breakpoint(mobile) {
+      top: 1.2rem;
+      left: 1.2rem;
+
+      padding: 1rem 1.6rem;
+    }
+  }
+
   &__specification {
     position: absolute;
     bottom: 1.6rem;

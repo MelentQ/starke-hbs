@@ -22,9 +22,10 @@
                   <img class="gallery-card__image" src="img/content/gallery/{{this.image}}" alt="{{this.name}}">
                 </picture>
               </div>
-
-              <span class="gallery-card__place">{{this.place}}</span>
-              <h3 class="gallery-card__name">{{this.name}}</h3>
+              <div class="gallery-card__text-container">
+                <h3 class="gallery-card__name">{{this.name}}</h3>
+                <span class="gallery-card__place">{{this.place}}</span>
+              </div>
             </a>
           </li>
         {{/each}}
