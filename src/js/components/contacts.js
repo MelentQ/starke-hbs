@@ -11,7 +11,10 @@ function contacts() {
 
   setDistributorsHeight();
 
-  fetch('data/contacts.json')
+  const url = '/contacts/data/contacts.php';
+  // const url = 'data/contacts.json';
+
+  fetch(url)
     .then(res => {
       return res.json()
     })
@@ -275,11 +278,12 @@ function initMapOverlay() {
     clickOnMap ? hide() : show();
   })
 
-  function findparentClass(node, clsName) {           
+  function findparentClass(node, clsName) {
+    if (!node) return false;
     if(node.className != clsName && node.className!=null){
-        return findparentClass(node.parentNode,clsName);                    
+      return findparentClass(node.parentNode,clsName);
     }else if(node.className!=null){
-        return true;    
+      return true;
     }
   }
 }

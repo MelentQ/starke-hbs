@@ -58,7 +58,7 @@
 
     @include breakpoint(desktop) {
       transform: translateY(0);
-      top: 0;
+      top: -0.4rem;
     }
   }
 

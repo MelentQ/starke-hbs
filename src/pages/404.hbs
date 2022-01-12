@@ -1,0 +1,19 @@
+{{#extend "layout"}}
+{{#content "main"}}
+
+<section class="error-page">
+  <picture>
+    <source srcset="img/404.jpg" media="(min-width: 600px)">
+    <img class="error-page__image" src="img/404.jpg" alt="MDN">
+  </picture>
+  <div class="container">
+    <div class="error-page__inner">
+      <h1 class="error-page__title">404</h1>
+      <p class="error-page__subtitle">Ой, такой страницы не существует!</p>
+      <a class="error-page__btn" href="/">Главная</a>
+    </div>
+  </div>
+</section>
+
+{{/content}}
+{{/extend}}
