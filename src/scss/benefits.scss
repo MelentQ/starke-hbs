@@ -134,22 +134,22 @@
       }
 
       .benefit__icon {
-        top: 9.5rem;
-        right: -7rem;
+        top: -4.5rem;
+        right: -12rem;
 
-        width: 14rem;
-        height: 14rem;
+        width: 28rem;
+        height: 28rem;
 
         @include breakpoint(tablet) {
-          top: 5.5rem;
-          right: 2rem;
-
-          width: calc(0.66 * 14rem);
-          height: calc(0.66 * 14rem);
+          top: -2.5rem;
+          right: -2rem;
+          
+          width: calc(.66*28rem);
+          height: calc(.66*28rem);
         }
         @include breakpoint(mobile) {
-          top: 5.5rem;
-          right: 2rem;
+          top: -1.5rem;
+          right: 0rem;
         }
       }
 
